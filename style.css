@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Sora', sans-serif;
+    color:#183153;
+}
+/* header style*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 120px;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: auto 20px;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    color: #183153;
+    margin: 20px;
+}
+a:link{
+    text-decoration: none;
+    color: #183153;
+}
+a:hover{
+    color: #Fab005;
+    text-decoration: underline #Fab005 solid 3px;
+    
+}
+a:active{
+    text-decoration: underline #Fab005 solid 3px;
+    
+}
+.register{
+    background-color: #ffffff;
+    height: 55px;
+    width: 122px;
+    padding: 15px 20px;
+    font-weight: 400;
+    margin: auto 10px;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #183153;
+    border-radius: 8px;
+}
+.log{
+    background-color: #Fab005;
+    height: 55px;
+    width: 122px;
+    padding: 15px 20px;
+    font-weight: 400;
+    margin: auto 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+/*footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #183153;
+    color: #ffffff;
+}
