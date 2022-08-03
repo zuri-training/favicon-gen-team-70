@@ -13,6 +13,14 @@ body {
   justify-content: center;
   margin: 0;
 }
+a{
+  text-decoration: none;
+  color: #183153;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
+}
 /* left part of the screen */
 .container1 {
   width: 576px;
@@ -22,6 +30,9 @@ body {
 }
 .logo {
   padding-left: 80px;
+}
+.blue {
+  display: none;
 }
 .signin {
   margin-top: 80px;
@@ -72,6 +83,8 @@ button:hover {
   overflow: hidden;
   width: 864px;
   height: 100vh;
+}
+.create {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -200,6 +213,12 @@ button:hover {
   font-size: 20px;
 }
 
+/* tranfer to sign in page */
+.signin_transfer {
+  display: none;
+  color: #183153;
+}
+
 @media all and (max-width: 1100px) and (min-width: 600px) {
   .or_cont {
     color: rgba(24, 49, 83, 1);
@@ -248,7 +267,13 @@ button:hover {
   }
   .container2 {
     height: 100%;
-    padding-top: 6em;
+  }
+  .logo {
+    display: none;
+  }
+  .blue {
+    display: flex;
+    margin: 20px 0 0 80px;
   }
   .or_cont {
     font-weight: 700;
@@ -276,5 +301,14 @@ button:hover {
     top: 50%;
     position: absolute;
     z-index: -2;
+  }
+
+  .signin_transfer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    padding: 0;
   }
 }
