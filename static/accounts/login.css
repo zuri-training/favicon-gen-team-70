@@ -281,8 +281,12 @@ a:hover {
   .container2 {
     height: 100%;
   }
+  .container2 h2 {
+    font-family: Sora;
+    font-size: 36px;
+  }
   .logo {
-    padding: 30px 0 40px 20px;
+    padding: 14px 0 10px 23px;
   }
   .form-control {
     margin: 0 20px;

@@ -13,12 +13,12 @@ body {
   justify-content: center;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
   color: #183153;
   cursor: pointer;
 }
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 /* left part of the screen */
@@ -89,7 +89,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 50px;
 }
 .container2 h2 {
   font-family: Sora;
@@ -99,7 +99,6 @@ button:hover {
   color: rgba(24, 49, 83, 1);
 }
 .getstarted {
-  margin: 1em 0;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0em;
@@ -273,8 +272,13 @@ button:hover {
   }
   .blue {
     display: flex;
-    margin: 20px 0 0 80px;
+    margin: 10px 0 0 30px;
   }
+  .container2 h2 {
+    font-family: Sora;
+    font-size: 36px;
+  }
+
   .or_cont {
     font-weight: 700;
     line-height: 3em;
