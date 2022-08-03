@@ -76,7 +76,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 .container2 h2 {
   font-family: Sora;
@@ -90,7 +90,7 @@ button:hover {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0em;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
   text-align: center;
   height: 25px;
   width: 206px;
