@@ -67,6 +67,10 @@ a:active{
     justify-content: center;
     border-radius: 8px;
 }
+/* main page*/
+.hero{
+    width: 50vw;
+}
 /*footer */
 footer{
     display: flex;
@@ -130,7 +134,7 @@ footer{
     color: #ffffff;
 }
 .com{
-    flex: 1 0 21%;
+    flex: 1 0 16%;
 }
 .com > ul{
     display: flex;
@@ -142,4 +146,5 @@ footer{
 .foot-note{
     display: flex;
     flex-direction: row;
+    padding: auto 20px;
 }
