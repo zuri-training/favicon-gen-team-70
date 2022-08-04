@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100vw;
     padding: 20px 120px;
     position: -webkit-sticky;
     position: sticky;
@@ -70,6 +71,75 @@ a:active{
 footer{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #183153;
     color: #ffffff;
+    width: 100vw;
+    height: 605px;
+}
+
+.text{
+    flex: 1 0 25%;
+    width: 301px;
+    height: 400px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin:50px;
+}
+.icon-f{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.text-f{
+    color: #ffffff;
+    margin: 5px 10px 10px 20px;
+}
+.dev{
+    flex: 1 0 16%;
+    width: 86px;
+    height: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
+.dev > ul{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+.list-title {
+    color: #ffffff;
+}
+
+.dev >ul > li>a{
+    color: #ffffff;
+}
+
+.resource{
+    flex: 1 0 16%;
+}
+.resource > ul{
+    display: flex;
+    flex-direction: column;
+}
+.resource >ul > li>a{
+    color: #ffffff;
+}
+.com{
+    flex: 1 0 21%;
+}
+.com > ul{
+    display: flex;
+    flex-direction: column;
+}
+.com >ul > li>a{
+    color: #ffffff;
+}
+.foot-note{
+    display: flex;
+    flex-direction: row;
 }
