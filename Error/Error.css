@@ -5,7 +5,7 @@
 }
 body
 {
-    background-image: url(./BG.png);
+    background-image: url(./images/BG.png);
     background-size: 100% 100%;
 }
 .container
@@ -64,7 +64,7 @@ button:hover
 {
     width: 40%;
     height: 520px;
-    background-image: url(./Error\ message.png);
+    background-image: url(./images/Error\ message.png);
     background-size: 100% 517px;
 }
 @media(max-width:414px)
@@ -118,7 +118,7 @@ button
 .bck_ground {
     width: 81%;
     height: 286px;
-    background-image: url(./Error\ message.png);
+    background-image: url(./images/Error\ message.png);
     background-size: 100% 284px;
 }
 }
@@ -175,7 +175,7 @@ button
 .bck_ground {
     width: 81%;
     height: 286px;
-    background-image: url(./Error\ message.png);
+    background-image: url(./images/Error\ message.png);
     background-size: 100% 284px;
 }
 }
