@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/static/accounts/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/static/accounts/login.js"></script>
+</head>
+
+<body>
+    <!-- right portion of the screen -->
+    <div class="container1">
+
+        <div class="signup">
+            <img class="emoji" src="/images/Sign in emoji1.svg" alt="" width="165px" height="110px">
+            <h2>Hello Friend !</h2>
+            <p>Register and get your journey started with us.</p>
+            <a href="register.html"><button>Sign Up</button></a>
+        </div>
+    </div>
+    <!-- left portion -->
+    <div class="container2">
+        <div class="logo">
+            <img src="/images/Frame 115.svg" alt="">
+        </div>
+        <div class="login">
+            <h2>Log in to Account</h2>
+            <p class="welcome">Welcome back.</p>
+            <form id="form" class="form">
+                <div class="form-control">
+                    <input type="text" class="name" placeholder="Name" id="username" onkeyup="validateName()" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password" id="password" onkeyup="validatePassword()" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="forgot_pass">
+                    <div class="form_radio">
+                        <input type="radio"><label>Remember me</label>
+                    </div>
+                    <a href="">Forgot Password?</a>
+                </div>
+                <button>Sign In</button>
+                <div class="signup_transfer">
+                    <span>Don't have an account?</span><a href="register.html"> Sign up</a>
+                </div>
+                <p class="or_cont">Or continue with</p>
+                <div class="google_content">
+                    <img src="/images/image 1.svg" alt="">
+                    <p class="goo">Google</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
