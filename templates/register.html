@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Registration</title>
+    <meta
+     name="description"
+     content="Register here to play the greatest game ever seen!"
+   />
+    <meta name="keywords" content="register, play, game" />
+    <!-- In the interest of modularity, once you get this working, -->
+    <!-- we recommend you create a stylesheet file and refer to it -->
+    <!-- from here using the line below -->
+    <!--link href="/css/non-existent-file.css" rel="stylesheet" type="text/css"-->
+    <!--  -->
+    <script language="JavaScript" type="text/javascript">
+      <!--
+     /* checkform() is the overall function called from */
+     /* our HTML when the user submits the form */
+     function checkform (form)
+     {
+         /* isEmpty() returns true and alerts the user if they left a field empty */
+         function isEmpty (fixwhat, s_called)
+         {
+             if (fixwhat=="")
+             {
+             alert("Please enter " + s_called);
+             return true;
+             } else {
+             return false;
+             }
+         }
+
+         /* charCheck() returns false and alerts the user if they used any non-alphanumeric characters */
+         function charCheck(fixwhat)
+         {
+             var validchars = '@-_.0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+             if(isValid(fixwhat,validchars))
+             {
+                 return true;
+             } else {
+                 alert("Please use only letters or numbers in this field");
+                 return false;
+             }
+         }
+
+         /* isValid is used by the charCheck() function to look through each 'validchars' one at a time */
+         function isValid(string,validchars)
+         {
+             for (var i=0; i< string.length; i++)
+             {
+             if (validchars.indexOf(string.charAt(i)) === -1) {return false;}
+             }
+             return true;
+         }
+
+         //check for empty fields
+         if (is_empty (form.t_email.value,"your email address")) { form.t_email.focus();  return false;}
+         if (is_empty (form.t_password.value,"your password")) { form.t_password.focus();  return false;}
+
+         //check for weird chars
+         if (charCheck(form.t_email.value)===false) {form.t_email.focus(); return false;}
+         if (charCheck(form.t_password.value)===false) {form.t_password.focus(); return false;}
+
+         return true ;
+     }
+     //-->
+    </script>
+
+    <!-- Some basic styles to set element colors, size, and align our form fields -->
+    <!-- As mentioned above, we recommend you place the following CSS into a file -->
+    <!-- So that every page of your site can refer to that one CSS file, which -->
+    <!-- increases ease of modification in the future. -->
+    <style type="text/css">
+      html,
+      body {
+        padding: 1;
+        margin: 1;
+      }
+
+      input {
+        font-size: 16px;
+        font-family: Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: #66aacc;
+        font-family: sans-serif, arial, helvetica;
+        padding-bottom: 50px;
+      }
+
+      .container {
+        background-color: #ffffff;
+        max-width: 600px;
+        margin: 20px auto 0 auto;
+        padding: 15px 20px 1px 20px;
+      }
+
+      .form-row {
+        padding: 10px 0;
+        display: flex;
+      }
+
+      .form-row label {
+        padding-right: 10px;
+      }
+
+      .form-row input {
+        padding-right: 10px;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>{{message}}</h1>
+
+    <div class="container">
+      <form
+       name="frmInfo"
+       action="/register"
+       method="post"
+       onsubmit="return checkform(this);"
+     >
+        <!-- text box for user to enter their Email address -->
+        <!-- Notice our input has an id of 't_Email'. -->
+        <!-- This is used by our checkform javascript function. -->
+        <div class="form-row">
+          <label for="Email">Email address:</label>
+          <input type="text" id="t_Email" name="t_Email" />
+        </div>
+
+        <!-- text box for user to create a Password -->
+        <!-- Notice our input has an id of 't_Password'. -->
+        <!-- This is used by our checkform javascript function. -->
+        <div class="form-row">
+          <label for="Email">Password:</label>
+          <input type="text" id="t_Password" name="t_Password" />
+        </div>
+
+        <!-- button for user to submit the form -->
+        <div class="form-row">
+          <input type="submit" id="btn_submit" value="Register" />
+        </div>
+
+        <!-- Close our form -->
+      </form>
+
+      <!-- Close our container div -->
+    </div>
+
+    <!-- Note: later you may wish to add an include pointer (include) to a common footer file here. -->
+    <!-- This is so that all pages share the same footer. Changing the one footer file will change -->
+    <!-- the footer of every page on your site. -->
+
+    <!-- Close the body of our HTML document -->
+  </body>
+</html>
