@@ -14,7 +14,7 @@ body{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    padding: 20px 120px;
+    padding: 20px 100px;
     position: -webkit-sticky;
     position: sticky;
     background-color: #ffffff;
@@ -24,13 +24,13 @@ body{
 ul{
     list-style: none;
     display: flex;
-    margin: auto 20px;
+    margin: auto 15px;
     align-items: center;
     justify-content: center;
 }
 li{
     color: #183153;
-    margin: 20px;
+    margin: 20px 15px;
 }
 a:link{
     text-decoration: none;
@@ -48,7 +48,7 @@ a:active{
 .register{
     background-color: #ffffff;
     height: 55px;
-    width: 122px;
+    width: 120px;
     padding: 15px 20px;
     font-weight: 400;
     margin: auto 10px;
@@ -60,7 +60,7 @@ a:active{
 .log{
     background-color: #Fab005;
     height: 55px;
-    width: 122px;
+    width: 120px;
     padding: 15px 20px;
     font-weight: 400;
     margin: auto 10px;
