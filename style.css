@@ -12,9 +12,10 @@ body{
 .navbar{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
+    justify-content: space-around;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 120px;
     position: -webkit-sticky;
     position: sticky;
     background-color: #ffffff;
@@ -24,13 +25,13 @@ body{
 ul{
     list-style: none;
     display: flex;
-    margin: auto 15px;
+    margin: auto 20px;
     align-items: center;
     justify-content: center;
 }
 li{
     color: #183153;
-    margin: 20px 15px;
+    margin: 20px;
 }
 a:link{
     text-decoration: none;
@@ -48,10 +49,10 @@ a:active{
 .register{
     background-color: #ffffff;
     height: 55px;
-    width: 120px;
+    width: 122px;
     padding: 15px 20px;
     font-weight: 400;
-    margin: auto 10px;
+    margin: auto;
     align-items: center;
     justify-content: center;
     border:2px solid #183153;
@@ -60,10 +61,10 @@ a:active{
 .log{
     background-color: #Fab005;
     height: 55px;
-    width: 120px;
+    width: 122px;
     padding: 15px 20px;
     font-weight: 400;
-    margin: auto 10px;
+    margin: auto;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -149,13 +150,14 @@ footer{
 .foot-note{
     display: flex;
     flex-direction: row;
-    padding: auto 20px;
+    padding: 20px;
+    justify-content: space-around;
 }
 .bar{
     display: block;
     border-top: 1px solid #ffffff;
     width: 80%;
-    margin: auto 5%;
+    margin: auto 10%;
     align-items: center;
     justify-content: center;
 }
