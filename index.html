@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!--Header and nav bar-->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="myNavBar">
         <img src="./assets/logo_hd.png" alt="logo" class="icon">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./dashboard/favicon_list.html">Generator</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="docs.html">Docs</a></li>
-        </ul>
-        <a href="./accounts/register.html"><button class="register">Register</button></a>
-        <a href="./accounts/login.html"><button class="log">Log in</button></a>
+        <div class="drop"><a href="javascript:void(0);" class="ico" onclick="myFunction()">
+            <i class="fa fa-bars fa-2x menu"aria-hidden="true"></i> </a>
+            <ul>
+                <li>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./dashboard/favicon_list.html">Generator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </li>
+               
+            </ul>
+            <a href="./accounts/register.html"><button class="register">Register</button></a>
+            <a href="./accounts/login.html"><button class="log">Log in</button></a>
+        </div>
+        <script src="index.js"></script>
         </nav>
     </header>
     <!--main body-->
@@ -40,7 +50,9 @@
             <img src="./assets/Hero page Picture.jpg" alt="" class="hero">
         </div>
         <div class="btn">
-            <button class="btn-blue">Get Started</button>
+            <a class="reg" href="./accounts/register">
+                 <button class="btn-blue">Get Started</button>
+                </a>
         </div>
         <div class="logo-container">
             <h2 class="text-h2">Stay on trend with latest favicons</h2>
@@ -90,7 +102,9 @@
         <div class="flex-container">
             <h2 class="ready">Ready to create awesome Favicons?</h2>
             <div class="btn">
-                <button class="btn-blue">Get Started</button>
+                <a class="reg" href="./accounts/register">
+                    <button class="btn-blue">Get Started</button>
+                   </a>
             </div>
             <img class="flex-image" src="" alt="">
         </div>
