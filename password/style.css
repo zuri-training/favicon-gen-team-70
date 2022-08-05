@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,body{
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ .form-container{
+     height: 520px;
+     width: 520px;
+    background: rgba(240, 241, 243, 1);
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #183153;
+    text-decoration: none
+}
+
+h1{
+    color: #183153;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+h2{
+    color: #183153;
+}
+
+p{
+    color: #183153;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: 300;
+}
+span{
+    position: absolute;
+     right: 80px;
+     cursor: pointer;
+}
+
+.fa{
+    font-size: 13px;
+    color: #7a797e;
+}
+
+.reset{
+    background: #183153;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.text{
+    font-size: medium;
+    padding: 0px;
+    margin: 6rem 0 0 0;
+    font-weight: lighter;
+}
+
+/* form */
+.form-group, input{
+
+   width: 95%;
+   height: 30px;
+   padding: 18px, 12px, 14px, 12px;
+   margin: 0 10px 10px 0;
+}
+
+
+/* button */
+
+ .btn-primary{
+    color: #fff;
+    text-align: center;
+    margin: 40px;
+}
+
+.btn{
+    background: #183153;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 40px;
+}
+
+
+.btn:hover{
+    color: #fff;
+    background: rgb(24, 49, 83);
+    cursor: pointer;
+}
+
+.back{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px){
+    .form-container{
+        width: 300px;
+        height: 90vh;
+    }
+    .form-group, input{
+   width: 85%;
+   height: 30px;
+   padding: 18px, 12px, 14px, 12px;
+   margin: 0 10px 10px 0;
+}
+span{
+    position: absolute;
+     right: 120px;
+     cursor: pointer;
+}
+
+}
