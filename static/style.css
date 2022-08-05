@@ -34,7 +34,9 @@ i, .desktop-links a {
 }
 header {
   display: flex;
-  padding: 20px;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -189,7 +191,8 @@ h1 {
 }
 @media screen and (min-width: 728px) and (max-width: 998px) {
   header {
-    width: 90%;
+    width: 100%;
+    /* padding: 30px; */
   }
   h1 {
     font-size: 50px;
@@ -270,6 +273,9 @@ h1 {
   }
   .desktop-btns a:hover {
     border-bottom-style: none;
+  }
+  .desktop-links{
+    margin-left: 90px;
   }
   .desktop-links div {
     margin-left: 20px;
