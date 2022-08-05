@@ -19,11 +19,11 @@ const form = document.getElementsByClassName('change');
 
 
 function customize(){
-    iconp.textContent = text.value
-    iconp.style.fontFamily = font.selectedIndex
-    iconp.style.color = fontColor.selectedIndex
+    iconp.innerHTML = text.value
+   
+    iconp.style.color = fontColor.option[fontColor.selectedIndex].iconp
     iconp.style.fontSize = textSize.value + 'px'
-    canvas.style.background = color.value
+    canvas.style.background = color.option[color.selectedIndex].canvas
 
 
     if(shape.selectedIndex == 0  ){
@@ -34,4 +34,8 @@ function customize(){
         canvas.style.borderRadius = '10px';
     }
     label.remove()
+}
+
+function fonnt(){
+    iconp.style.fontFamily = font.option[font.selectedIndex]
 }
