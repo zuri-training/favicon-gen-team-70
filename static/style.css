@@ -5,10 +5,6 @@
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
 }
-button{
-    font-family: "Sora", sans-serif;
-    cursor: pointer;
-}
 a,
 h5 {
   text-decoration: none;
