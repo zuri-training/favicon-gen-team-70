@@ -1,11 +1,11 @@
  var state = false;
  function toggle(){
      if(state){
-         document.getElementById("password").setAttribute("type","password");
+         document.getElementById("pswd1").setAttribute("type","password");
          state = false;
      }
      else{
-        document.getElementById("password").setAttribute("type", "text");
+        document.getElementById("pswd2").setAttribute("type", "text");
          state = true;
      }
  };
@@ -37,6 +37,7 @@
         return false
     };
      
+
      if(pw1 != pw2){
          document.getElementById("message2").innerHTML = "passwords did not match"
          return false;
