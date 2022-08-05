@@ -75,8 +75,6 @@ function validatePassword() {
 }
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
   checkInputs();
 });
 
