@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sora", sans-serif;
+  max-width: 100%;
+  height: 100%;
+  font-size: large;
+  background-color: #183153;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header {
+  border-bottom: 1px #ffffff solid;
+  margin-right: auto;
+  width: 100%;
+  padding: 1em 1em 1em 3.6em;
+  margin-bottom: 3em;
+  text-align: left;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "Sora";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+main {
+  width: 80%;
+}
+a {
+  padding-left: 2em;
+  text-decoration: none;
+}
+button {
+  padding: 1em 2em;
+  background-color: #009578;
+  border: 1px solid #009578;
+  border-radius: 10px;
+  margin-left: auto;
+  color: white;
+}
+.TEXT {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.drop-zone {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #183153;
+  background-color: #ffffff;
+  border: 2px dashed #183153;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.error {
+  display: none;
+}
+p {
+  color: #ffffff;
+  /* padding: 40px 0 10px 3.7em; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+}
+.upload {
+  color: #ffffff;
+  display: block;
+  max-width: 100%;
+  align-items: center;
+  /* margin-left: 3em; */
+}
+.upload,
+input {
+  text-align: left;
+  width: 100%;
+  /* margin-left: 1.9em; */
+  height: 54px;
+  position: relative;
+  border-radius: 10px;
+}
+::placeholder {
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+button {
+  background: rgba(24, 49, 83, 1);
+  color: white;
+  height: 41px;
+  width: 100px;
+  border: 2px #183153 solid;
+  border-radius: 8px;
+  top: 7px;
+  right: 7px;
+  /* padding: 10px, 16px, 10px, 16px; */
+  position: absolute;
+  cursor: pointer;
+}
+button:hover {
+  text-decoration: underline;
+}

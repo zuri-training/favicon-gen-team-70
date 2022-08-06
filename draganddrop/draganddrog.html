@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop</title>
+    <link rel="stylesheet" href="draganddrop.css">
+</head>
+
+<body>
+    <header>
+        <h1>Upload IMAGE</h1>
+    </header>
+    <main>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="drop-zone">
+                <span class="drop-zone__prompt">Select a JPEG file to Upload <br> Or drag and drop it here</span>
+                <input type="file" name="myFile" class="drop-zone__input" id="image"
+                    accept=".jpg,.png,.svg,.jpeg,.tiff">
+            </div>
+            <p class="size_error error"></p>
+            <p class="error_none error">No Image Uploaded</p>
+            <p>Or upload from a url</p>
+            <div class="upload">
+                <input id="input_url" type="text" placeholder="Add the file URL"><br>
+                <button id="button_url">Upload</button>
+            </div>
+        </form>
+    </main>
+    <script src="draganddrop.js"></script>
+</body>
+
+</html>
