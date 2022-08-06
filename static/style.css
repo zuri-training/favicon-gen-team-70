@@ -28,6 +28,7 @@ body {
 .icon {
   z-index: 20;
   color: rgba(24, 49, 83, 1);
+  margin-right: 10px;
 }
 i, .desktop-links a {
   color: rgba(24, 49, 83, 1);
