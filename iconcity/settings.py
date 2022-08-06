@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'accounts',
     'home',
     'dashboard',
+    'generate',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,88 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Sign Up</title>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'accounts/register.css' %}">
+{% endblock %}
+
+{% block script %}  
+    <script defer src="{% static 'accounts/register.js' %}"></script>
+{% endblock %}
+
+
+{% block body %}
+    <!-- left portion of the screen -->
+    <div class="container1">
+        <div class="logo">
+            <a href="{% url 'home:index' %}">
+                <img src="{% static 'assets/accounts/Group_26.svg' %}" alt="" width="110px" height="49px">
+            </a>
+        </div>
+
+        <div class="signin">
+            <img class="emoji" src="{% static 'assets/accounts/image_3.png' %}" alt="" width="165px" height="110px">
+            <h2>Welcome Back !</h2>
+            <p>Login to gain access to your favourite icons</p>
+            <a href="{% url 'accounts:login' %}"> <button>Sign In</button></a>
+        </div>
+    </div>
+    <!-- right portion -->
+    <div class="container2">
+        <a href="{% url 'home:index' %}">
+            <img src="{% static 'assets/accounts/Frame_115.svg' %}" alt="" class="blue">
+        </a>
+        <div class="create">
+            <h2>Create Account</h2>
+            {% if messages %}
+                {% for message in messages %}
+                    <p class=" {{ message.tags }} ">{{ message }}</p>
+                {% endfor %}
+            {% else %}
+                <p class="getstarted">Lets get you started.</p>
+            {% endif %}
+            <form id="form" class="form" action="{% url 'accounts:register' %}" method="post">
+                {% csrf_token %}
+                <div class="form-control">
+                    <input type="text" placeholder="First name" id="fname" onkeyup="validateFname()" name="firstname" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Last name" id="lname" onkeyup="validateLname()"name="lastname" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="email" placeholder="Email" id="email" onkeyup="validateEmail()" name="email" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="username" id="username" onkeyup="validateName()" name="username" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password" id="password" onkeyup="validatePassword()" name="password" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button type="submit">Sign Up</button>
+                <div class="signin_transfer">
+                    <span>You already have an account?</span><a href="{% url 'accounts:login' %}"> Login</a>
+                </div>
+                
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
