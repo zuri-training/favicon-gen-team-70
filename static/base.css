@@ -413,9 +413,7 @@ footer .logo{
   align-items: center;
 }
 footer hr{
-  color: #fff;
-  background: #fff;
-  height: 2px;
+  border: 1px solid hsla(0,0%,100%,0.5);
 }
 .b-footer p {
   margin-top: 20px;
@@ -454,7 +452,6 @@ footer ul li{
   .features {
     flex-grow: 1;
   }
-
   .l-footer {
     flex: 1 0px;
   }
