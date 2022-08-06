@@ -29,19 +29,33 @@
     </div>
     <!-- right portion -->
     <div class="container2">
-        <img src="../static/assets/accounts/Frame 115.svg" alt="" class="blue">
+        <a href="../index.html">
+            <img src="../static/assets/accounts/Frame 115.svg" alt="" class="blue">
+        </a>
         <div class="create">
             <h2>Create Account</h2>
             <p class="getstarted">Lets get you started.</p>
             <form id="form" class="form">
                 <div class="form-control">
-                    <input type="text" placeholder="Name" id="username" onkeyup="validateName()" />
+                    <input type="text" placeholder="First name" id="fname" onkeyup="validateFname()" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="Last name" id="lname" onkeyup="validateLname()" />
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <small>Error message</small>
                 </div>
                 <div class="form-control">
                     <input type="email" placeholder="Email" id="email" onkeyup="validateEmail()" />
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder="username" id="username" onkeyup="validateName()" />
                     <i class="fa fa-check-circle"></i>
                     <i class="fa fa-exclamation-circle"></i>
                     <small>Error message</small>
@@ -56,11 +70,7 @@
                 <div class="signin_transfer">
                     <span>You already have an account?</span><a href="./login.html"> Login</a>
                 </div>
-                <p class="or_cont">Or continue with</p>
-                <div class="google_content">
-                    <img src="../static/assets/accounts/image 1.svg" alt="">
-                    <p class="goo">Google</p>
-                </div>
+                
 
             </form>
         </div>
