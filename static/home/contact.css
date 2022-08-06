@@ -180,6 +180,130 @@ h1 {
     color: #fff;
 }
 
+/* Toggle */
+
+
+
+/* End of toggle */
+
+
+/* Section One */
+.bg-text{
+    width: 50%;
+    color: rgba(24, 49, 83, 1);
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+.text{
+    width: 50%;
+    padding-bottom: 30px;
+    color: rgba(70, 90, 117, 1);
+}
+
+.loc-text{
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    color: rgba(24, 49, 83, 1);
+}
+p{
+    color: rgba(70, 90, 117, 1);
+}
+
+.add{
+    text-transform: capitalize;
+    color: rgba(24, 49, 83, 1);
+    padding-top: 30px;
+}
+.phone{
+    padding-top: 30px;
+}
+.number{
+    color: rgba(24, 49, 83, 1);
+    text-transform: capitalize;
+}
+
+/* Section Two */
+ .section-form{
+    width: 100%;
+}
+.input-box{
+    padding-bottom: 20px;
+}
+.info{
+    color: rgba(70, 90, 117, 1);
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+form{
+    background: #E2DFDF;
+    height: 90vh;
+    padding: 40px;
+    border-radius: 10px;
+}
+form .user-details .input-box{
+    margin: 15px 0 12px 0;
+    /* width: calc(100% / 2 - 20px); */
+ } 
+ .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: black;
+}
+
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#message{
+    height: 80px;
+    width: 100%;
+    background: lightslategray;
+    font-size: 18px;
+}
+.btn{
+    background: rgba(24, 49, 83, 1);
+    color: #fff;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin: 10px;
+}
+.btn2{
+    color: #333;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.btn:hover{
+    background: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.btn2:hover{
+    background: rgba(24, 49, 83, 1);;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 374px) {
   h1 {
     font-size: 35px;
@@ -372,4 +496,65 @@ h1 {
     background: transparent;
     border: 2px solid #183153;
   }
+}
+
+@media screen and (max-width: 480px){
+.info-section{
+    background: #183153;
+  }
+.bg-text{
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 15%;
+  color: #fff;
+  width: 60%;
+}
+.text{
+  text-align: center;
+  width: 75%;
+  padding-left: 10%;
+  color: #fff;
+  font-size: 15px;
+}
+.loc-text{
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 20%;
+  color: #fff;
+}
+p{
+  text-align: center;
+  line-height: 2;
+  color: #fff;
+  letter-spacing: 2;
+}
+.add{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20%;
+}
+.number{
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 20%;
+  color: #fff;
+}
+
+.info{
+  text-align: center;
+  margin-top: 10%;
+}
+form{
+  background: #fff;
+  height: 70vh;
+}
+.details{
+  padding-left: 10px;
+}
+.user-details .input-box input{
+  width: 100%;
+  padding-left: 10px;
+}
 }
