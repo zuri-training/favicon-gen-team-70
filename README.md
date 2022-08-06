@@ -15,12 +15,13 @@ For Authenticated Users:
 - Users can save downloaded files
 - Users can choose to redownload a saved file
 
-**Using the Application**
+## For Developers
+**Steps to deploy the Application**
 - Step 1: Create a virtual environment
 - Step 2: Activate your virtual environment
-- Step 3: Install Django with this command: pip install Django
-- Step 4: Install the modules with this command: pip install -r requirement.txt
-- Step 5: Start the application with the command below: python manage.py runserver. (Ensure you are in the same directory that has the manage.py file)
+- Step 3: Install the modules with: pip install -r requirements.txt
+- Step 4: Start the application with the command below: python manage.py runserver. (Ensure you are in the same directory that has the manage.py file)
+- Step 5: Create a .env file and add the secret key
 - Step 6: Open link on your web browser
 
 
