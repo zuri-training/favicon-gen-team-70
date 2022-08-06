@@ -444,11 +444,7 @@ footer ul li{
   .copyright {
     text-decoration: overline;
     height: 0px;
-    /* border: 0.8px solid #FFFFFF; */
-
   }
-
-
   .b-footer ul {
     display: flex;
     flex-direction: row;
@@ -458,7 +454,6 @@ footer ul li{
   .features {
     flex-grow: 1;
   }
-
   .l-footer {
     flex: 1 0px;
   }

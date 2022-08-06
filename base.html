@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./static/assets/index/favicon-32x32.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./static/style.css" />
-    <title>IconCity</title>
-  </head>
 
-  <body>    0018284639
-    <header class="">
-      <div class="logo">
-        <img src="./static/assets/index/logo_hd.png">
-      </div>
-      <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
-      <div class="desktop desktop-link-div">
-        <div class="desktop-links">
-          <div>
-            <a href="#">Home</a>
-          </div>
-          <div>
-            <a href="#">Generator</a>
-          </div>
-          <div>
-            <a href="#">Docs</a>
-          </div>
-          <div>
-            <a href="#">Contact Us</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/assets/index/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./static/style.css" />
+  <title>IconCity</title>
+</head>
+
+<body>
+  <header class="">
+    <div class="logo">
+      <img src="./static/assets/index/logo_hd.png">
+    </div>
+    <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+    <div class="desktop desktop-link-div">
+      <div class="desktop-links">
+        <div>
+          <a href="#">Home</a>
         </div>
-        <div class="desktop-btns">
+        <div>
+          <a href="#">Generator</a>
+        </div>
+        <div>
+          <a href="#">Docs</a>
+        </div>
+        <div>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="desktop-btns">
+        <a href="./accounts/login.html"><button>Login</button></a>
+        <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <div class="mobile mobile-link-div">
+      <div class="links left">
+        <a href="#" class="spaced">
+          <h5>Home</h5>
+        </a>
+        <a href="#">
+          <h5>Generator</h5>
+        </a>
+        <a href="#">
+          <h5>Docs</h5>
+        </a>
+        <a href="#">
+          <h5>Contact Us</h5>
+        </a>
+        <div class="mobile-btn">
           <a href="./accounts/login.html"><button>Login</button></a>
-          <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
+          <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
         </div>
       </div>
-    </header>
-    <main class="">
-      <div class="mobile mobile-link-div">
-        <div class="links left">
-          <a href="#" class="spaced"><h5>Home</h5></a>
-          <a href="#"><h5>Generator</h5></a>
-          <a href="#"><h5>Docs</h5></a>
-          <a href="#"><h5>Contact Us</h5></a>
-          <div class="mobile-btn">
-            <a href="./accounts/login.html"><button>Login</button></a>
-            <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
-          </div>
-        </div>
-        <div class="outside-click" onclick="noShow()"></div>
+      <div class="outside-click" onclick="noShow()"></div>
+    </div>
+    <div class="main">
+      <!-- your main stuff here 3140840389-->
+      other things come here
+    </div>
+  </main>
+
+
+  <!--Footer Beginning-->
+
+
+  <footer class="footer">
+    <div class="l-footer">
+      <div class=" logo">
+        <img src="./static/assets/index/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
       </div>
-      <div class="main">
-        <!-- your main stuff here 3140840389-->
-        other things come here
-      </div>
-    </main>
-    <script src="./static/script.js"></script>
-  </body>
+      <p>Iconcity helps you generate your favorite favicons Quickly</p>
+    </div>
+    <ul class="r-footer">
+      <li class="features similar">
+        <h2>Developers</h2>
+        <ul class="box h-box">
+          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">API Status</a></li>
+        </ul>
+      </li>
+      <li class=" similar resource">
+        <h2>Resources</h2>
+        <ul class="box">
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+
+      <li class="similar">
+        <h2>Company</h2>
+        <ul class="box">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <hr>
+    <div class="b-footer">
+      <p>2022 Iconcity. All rights reserved</p>
+    </div>
+  </footer>
+
+
+  <!--Footer End-->
+
+
+  <script src="./static/script.js"></script>
+</body>
+
 </html>
