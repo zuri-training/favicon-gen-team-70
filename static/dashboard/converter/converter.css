@@ -206,7 +206,6 @@ h1 {
   background-color: rgba(149, 160, 176, 1);
   max-width: 65%;
   height: 700px;
-  position: relative;
 }
 
 .upload_form h1 {
@@ -311,8 +310,11 @@ button:hover {
 .error-message{
   font-size: 20px;
   position: absolute;
-  top: 50px;
+  top: 60%;
   display: none;
+}
+.relative{
+  position: relative;
 }
 .error{
   color: #dc3545;
@@ -487,6 +489,12 @@ button:hover {
   }
   .hide {
     display: none;
+  }
+  .upload_form{
+    position: relative;
+  }
+  .error-message{
+    top: 50px;
   }
 }
 /* end of header */
