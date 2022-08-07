@@ -249,6 +249,7 @@ form{
 }
 .drop-zone span {
   padding-top: 20px;
+<<<<<<< HEAD:static/dashboard/converter/converter.css
 }
 .vector {
   padding: 0;
@@ -260,6 +261,12 @@ form{
 }
 
 .vec1{
+=======
+  position: relative;
+}
+
+.vec2{
+>>>>>>> 458a533f22f9da268f96ecc7feb2f18baa888bc3:static/dashboard/dashboard.css
   position: absolute;
   right: 52px;
   top: 55px;
