@@ -129,7 +129,8 @@ header {
 }
 
 .mobile-btn .mobile-reg {
-  border: 2px solid #Fab005;
+  background: #fff;
+  color: #183153;
   border-radius: 15px;
 }
 
@@ -307,14 +308,12 @@ h1 {
     border: 2px solid #183153;
     border-radius: 15px;
   }
-
-  .desktop-btns button:hover,
-  a:hover {
-    color: #fab005;
+  .desktop-btns button:hover{
+    color: #Fab005;
   }
-
   .desktop-btns .desktop-reg:hover {
-    border: 2px solid #fab005;
+    background: #183153;
+    color: #fff;
   }
 
   .hide {
@@ -455,11 +454,20 @@ footer ul li{
   .l-footer {
     flex: 1 0px;
   }
+  .l-footer p{
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+  }
   .r-footer {
     flex: 2 0px;
   }
-  footer ul li  a :hover {
-    text-decoration: underline;
+  footer .box a{
+    padding: 0;
+  }
+  footer .box a:hover {
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 100%;
   }
 }
 
