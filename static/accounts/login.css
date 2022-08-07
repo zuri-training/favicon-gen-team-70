@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+/* right part of the screen */
+.container1 {
+  width: 576px;
+  background-color: rgba(24, 49, 83, 1);
+  height: 100vh;
+  padding-top: 40px;
+}
+
+.signup {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.signup h2 {
+  color: rgba(250, 176, 5, 1);
+  height: 60px;
+  width: 325px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.signup p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(245, 245, 245, 1);
+  margin-bottom: 20px;
+  height: 60px;
+  width: 443px;
+}
+button {
+  background-color: #183153;
+  border: 2px solid white;
+  color: rgba(245, 245, 245, 1);
+  width: 182px;
+  height: 60px;
+  padding: 15px, 30px, 15px, 30px;
+  font-family: Sora;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 10px;
+}
+button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* left portion */
+.container2 {
+  background-color: #f0f1f3;
+  overflow: hidden;
+  width: 864px;
+  height: 100vh;
+}
+.logo {
+  padding: 30px 0 0 80px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.container2 h2 {
+  font-family: Sora;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  color: rgba(24, 49, 83, 1);
+}
+.welcome {
+  margin: 1em 0;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  padding-bottom: 2em;
+  text-align: center;
+  height: 25px;
+  width: 206px;
+  color: rgba(24, 49, 83, 1);
+}
+.form {
+  height: 247px;
+  width: 640px;
+}
+.form-control {
+  position: relative;
+  display: flex;
+  margin-bottom: 5px;
+}
+.name {
+  margin-bottom: 20px;
+}
+.form-control input {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  height: 48px;
+  width: 640px;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.forgot_pass {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 20px 0;
+  color: #183153;
+}
+.form_radio input {
+  margin-right: 3px;
+}
+/* navigation */
+a {
+  text-decoration: none;
+  color: #183153;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.signup_transfer {
+  display: none;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  right: 12px;
+  top: 19px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  font-size: 12px;
+  position: absolute;
+  line-height: 3em;
+  top: 40px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+/* under sign up button */
+.or_cont {
+  color: rgba(24, 49, 83, 1);
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  line-height: 3em;
+}
+
+.or_cont:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgba(24, 49, 83, 1);
+  left: 110px;
+  top: 50%;
+  position: absolute;
+}
+
+.or_cont:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgba(24, 49, 83, 1);
+  right: 110px;
+  top: 50%;
+  position: absolute;
+}
+/* for the google section */
+.google_content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.google_content p {
+  padding-top: 1em;
+  font-size: 20px;
+}
+
+/* styled password field and placeholder */
+input[type="password"]{
+  font-family: verdana;
+  font-size: 15px;
+}
+::placeholder{
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+}
+@media all and (max-width: 1100px) and (min-width: 600px) {
+  .or_cont {
+    color: rgba(24, 49, 83, 1);
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    line-height: 3em;
+    font-weight: 700;
+  }
+
+  .or_cont:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgba(24, 49, 83, 1);
+    left: 110px;
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .or_cont:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgba(24, 49, 83, 1);
+    right: 110px;
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+  }
+}
+@media all and (max-width: 599px) {
+  body {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    height: 100vh;
+
+    /* background-image: url("/dashboard/Rectangle\ 336.jpg"); */
+  }
+  .container1 {
+    display: none;
+  }
+  .container2 {
+    height: 100%;
+  }
+  .container2 h2 {
+    font-family: Sora;
+    font-size: 36px;
+  }
+  .logo {
+    padding: 14px 0 10px 23px;
+  }
+  .form-control {
+    margin: 0 20px;
+  }
+  .forgot_pass {
+    margin: 10px 20px;
+  }
+  .or_cont {
+    font-weight: 700;
+    line-height: 3em;
+  }
+  .or_cont:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgba(24, 49, 83, 1);
+    left: 110px;
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .or_cont:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgba(24, 49, 83, 1);
+    right: 110px;
+    top: 50%;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .signup_transfer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    padding: 0;
+  }
+}

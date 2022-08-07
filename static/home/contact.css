@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+a,
+h5 {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+body {
+  width: 100vw;
+  background: hsl(0, 0%, 98%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bdr {
+  border: 1px solid black;
+}
+.hide {
+  display: none;
+}
+.icon {
+  z-index: 20;
+  color: rgba(24, 49, 83, 1);
+}
+i, .desktop-links a {
+  color: rgba(24, 49, 83, 1);
+}
+header {
+  display: flex;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.desktop {
+  display: none;
+}
+.outside-click {
+  grid-area: transparent;
+}
+.mobile links {
+  grid-area: link;
+}
+.mobile-link-div {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  display: grid;
+  overflow-x: hidden;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-areas: "transparent link";
+}
+.overflow {
+  overflow-y: hidden;
+}
+.blur {
+  backdrop-filter: blur(2px);
+  background: hsla(200, 35%, 13%, 0.4);
+}
+.mobile .links {
+  width: 100%;
+  background: #183153;
+  padding: 30px;
+  transition: transform 0.2s ease;
+}
+.links .features {
+  margin-top: 70px;
+}
+.links a {
+  display: flex;
+  padding: 10px;
+}
+.mobile .direction {
+  margin-left: 10px;
+}
+.mobile-btn {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-btn a {
+  padding: 0;
+}
+.mobile-btn button {
+  height: 50px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  color: #Fab005;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 18px;
+}
+.mobile-btn .mobile-reg {
+  border: 2px solid #Fab005;
+  border-radius: 15px;
+}
+
+.left {
+  transform: translateX(200%);
+}
+.show {
+  transform: translateX(0);
+}
+.hide {
+  display: none;
+}
+.fa-xmark {
+  color: #fff;
+}
+.block {
+  display: block;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.image-div {
+  width: 100%;
+}
+.image-div img {
+  width: 100%;
+}
+.head {
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 37px;
+}
+.h-one {
+  display: flex;
+  justify-content: center;
+}
+.head p {
+  margin-top: 20px;
+  padding: 10px;
+  color: hsl(0, 0%, 41%);
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+.head button {
+  margin-top: 40px;
+  color: hsl(0, 0%, 98%);
+  background: hsl(0, 0%, 8%);
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.head button:hover {
+  color: hsl(0, 0%, 8%);
+  background: transparent;
+  border: 2px solid #fab005;
+}
+.links .spaced {
+  margin-top: 80px;
+}
+.mobile-link-div .links a{
+    color: #fff;
+}
+
+@media screen and (max-width: 374px) {
+  h1 {
+    font-size: 35px;
+  }
+  .head p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 728px) and (max-width: 998px) {
+  header {
+    width: 100%;
+    /* padding: 30px; */
+  }
+  h1 {
+    font-size: 50px;
+  }
+  a,
+  h5 {
+    font-size: 25px;
+  }
+  .mobile-link-div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile .links {
+    width: 100%;
+  }
+  header {
+    padding: 10px;
+    font-size: 25px;
+  }  
+  .head p {
+    margin-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .head button {
+    margin-top: 20;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .mobile button {
+    font-size: 25px;
+  }
+  .sponsors {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 998px) {
+  header {
+    width: 100%;
+  }
+  .desktop h5 {
+    font-size: 16px;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop-link-div,
+  .desktop-links,
+  .desktop-btns {
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-link-div {
+    width: 90%;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .desktop-link-div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .desktop-link-div a:hover {
+    border-bottom-style: solid;
+    width: fit-content;
+    border-bottom-color: #fab005;
+  }
+  .desktop-btns a:hover {
+    border-bottom-style: none;
+  }
+  .desktop-links{
+    margin-left: 90px;
+  }
+  .desktop-links div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .direction {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .desktop-btns {
+    margin-right: 10px;
+  }
+  .desktop-btns button,
+  .head button {
+    height: 40px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    color: #183153;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .desktop-btns .desktop-reg {
+    margin-left: 30px;
+    width: 100px;
+    border: 2px solid #183153;
+    border-radius: 15px;
+  }
+  .desktop-btns button:hover,
+  a:hover {
+    color: #fab005;
+  }
+  .desktop-btns .desktop-reg:hover {
+    border: 2px solid #fab005;
+  }
+
+  .hide {
+    display: none;
+  }
+  .sub-main {
+    grid-area: submain;
+  }
+  .image-div {
+    grid-area: imagegrid;
+    width: 100%;
+  }
+  .image-div img {
+    width: 100%;
+    height: 600px;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    grid-template-areas: "submain imagegrid";
+    padding-left: 50px;
+    padding-right: 80px;
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  .head {
+    margin-top: 70px;
+    padding: 30px;
+    padding-left: 80px;
+    display: block;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .h-one {
+    display: block;
+  }
+  .head p {
+    margin-top: 20px;
+    padding-right: 50px;
+    width: 80%;
+    color: hsl(0, 0%, 41%);
+    text-align: left;
+    line-height: 25px;
+  }
+  .head button {
+    margin-top: 40px;
+    color: hsl(0, 0%, 98%);
+    background: hsl(0, 0%, 8%);
+    height: 50px;
+    width: 130px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .head button:hover {
+    color: #183153;
+    background: transparent;
+    border: 2px solid #183153;
+  }
+}
