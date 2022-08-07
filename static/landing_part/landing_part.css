@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500;600;700&display=swap');
+
+:root{
+    /* --font-size-1:18px; */
+    --font-weights-1:200;
+    --font-weights-2:400;
+    --font-weights-3:500;
+    --font-weights-4:600;
+    --font-weights-5:700;
+    --box-shadow:0 0rem 0.6rem var(--color-light);
+
+    --color-pink:hsl(322, 100%, 66%);
+    --box-shadow:0 0rem 0.6rem var(--color-light);
+}
+/* *{
+    margin:0;
+    padding:0;
+    outline:0;
+    appearance: none;
+    border:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+} */
+
+/* html{
+    font-size:var(--font-size);
+    font-weight: 400;
+} */
+
+
+/* a{
+    color:var(--color-dark);
+    font-size: var(--font-size);
+} */
+
+img{
+    display: block;
+    width: 100%;
+}
+
+small {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #183153;
+}
+.main {
+    background: #F0F1F3;
+    /* height: 100vh; */
+}
+
+.main .favicon_generator{
+    background-color: white;
+    padding: 5rem 7.5rem;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #575757;
+}
+
+.favicon_generator .favicon_generator_head {
+    text-align: center;
+    padding: 2rem 0;
+
+}
+
+.favicon_generator .favicon_generator_head h4{
+    color: #183153;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 0.5rem 0rem;   
+}
+
+
+.favicon_generator .favicon_generator_profile {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+
+}
+.favicon_generator .favicon_generator_profile .favicon_generator_content article{
+   display: grid;
+   /* gap: 1rem; */
+   grid-template-columns: 20% 80%;
+   gap: 1rem;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem 0;
+}
+
+
+.favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+    /* position: relative; */
+    width: 25rem;
+    height: auto;
+    transform: rotate(-10deg);
+    background: #FDDB8C;
+    box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+}
+
+
+.favicon_generator .favicon_generator_profile .favicon_generator_profile_side .img{
+    transform: rotate(10deg);
+    z-index: -1;
+
+}
+
+.favicon_generator .favicon_generator_profile .favicon_generator_content .fg_content_img {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FDE7B2;
+    box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+    border-radius: 10px;
+}
+.favicon_generator .favicon_generator_profile .favicon_generator_content .fg_content_img > img{
+    height: 42.7px;
+    width: 35.4px;
+}
+
+section .sec{
+    /* background-color: red; */
+    padding: 5rem 7.5rem;
+    font-family: 'Sora';
+    font-style: normal;
+    
+}
+
+section .sec2 {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+section .sec2 .get_started h4{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0D1B2E;
+    margin: 2rem 0;
+}
+
+.btn{
+    max-width:max-content;
+    text-transform: capitalize;
+    border: 0px solid ;
+    border-radius: 8px;
+    padding: 0.8rem 2.5rem;
+    background-color:#183153;
+    box-shadow:var(--box-shadow);
+    color: white;
+    font-weight: var(--font-weights-2);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#445c7e;
+    transition: all 300ms ease;
+
+}
+
+.btn-primary{
+    max-width:max-content;
+    text-transform: capitalize;
+    border: 0px solid ;
+    border-radius: 8px;
+    padding: 0.8rem 2.5rem;
+    background-color:white;
+    box-shadow:var(--box-shadow);
+    color: #183153;
+    font-weight: var(--font-weights-2);
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color:white;
+    transition: all 300ms ease;
+
+}
+
+section .sec3 {
+    background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+  margin: 1rem 0;
+  color: #183153;
+}
+
+section .sec3 .sec3_content_head h5{
+    font-family: Sora;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0em;
+    padding: 1rem 0;
+    color: #183153;
+}
+section .sec3_sc{
+    background: #183153;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+}
+section .sec3 .sec3_content_subscribe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+ input {
+
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background:none;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  padding: 0 15px;
+  resize: none;
+  transition: all 300ms ease;
+
+}
+input::placeholder{
+    color: rgb(191, 191, 191);
+}
+
+@media screen and (max-width:1113px){
+    .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+        /* position: relative; */
+        width: 300px;
+        height: auto;
+        transform: rotate(-10deg);
+        background: #FDDB8C;
+        box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+    }
+}
+@media screen and (max-width:960px){
+    .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+        /* position: relative; */
+        width: 400px;
+        height: auto;
+        transform: rotate(-10deg);
+        background: #FDDB8C;
+        box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+    }
+
+    .favicon_generator .favicon_generator_profile {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 8%;
+    }
+    .favicon_generator .favicon_generator_profile .favicon_generator_content {
+        /* padding: 2rem 0rem;
+        margin: 1rem 0rem;
+        display: flex;
+        gap: 1rem; */
+   
+    }
+
+    .main .favicon_generator{
+        padding: 1rem 2rem;
+    }
+}
+
+
+@media screen and (max-width:375px){
+
+    .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+        /* position: relative; */
+        width: 15rem;
+        height: auto;
+        transform: rotate(-10deg);
+        background: #FDDB8C;
+        box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+    }
+
+    /* .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+       display: none;
+    } */
+
+    input::placeholder{
+        color: rgb(191, 191, 191);
+        text-align: center;
+        /* margin-bottom: 3rem; */
+    }
+
+    .main .favicon_generator{
+        padding: 3rem 1rem;
+    }
+    .favicon_generator .favicon_generator_profile {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse; 
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .favicon_generator .favicon_generator_profile .favicon_generator_content {
+        padding: 2rem 0rem;
+        /* display: flex;
+        flex-direction: column;
+        gap: 1rem; */
+    }
+
+    .favicon_generator .favicon_generator_profile .favicon_generator_content article{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        text-align: center;
+        gap: 2rem; */
+     }
+
+     section .sec{
+        padding: 1rem 2rem;   
+    }
+
+    section .sec2 {
+      display: none;
+    }
+    section .sec2 .get_started h4{
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 40px;
+        color: #0D1B2E;
+        margin: 2rem 0;
+    }
+    /* section .sec3_sc{
+     
+        padding: 1rem;
+    } */
+
+    section .sec3 {
+        display: none;
+    }
+    .btn{
+        max-width:max-content;
+        text-transform: capitalize;
+        border: 0px solid ;
+        border-radius: 8px;
+        padding: 0.5rem 2.0rem;
+        background-color:#183153;
+        box-shadow:var(--box-shadow);
+        color: white;
+        font-weight: var(--font-weights-2);
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:#445c7e;
+        transition: all 300ms ease;
+    
+    }
+    
+    .btn-primary{
+        max-width:max-content;
+        text-transform: capitalize;
+        border: 0px solid ;
+        border-radius: 8px;
+        padding: 0.5rem 2.0rem;
+        background-color:white;
+        box-shadow:var(--box-shadow);
+        color: #183153;
+        font-weight: var(--font-weights-2);
+        cursor: pointer;
+    }
+    .btn-primary:hover{
+        color:white;
+        transition: all 300ms ease;
+    }
+    input {
+        padding: 0 1px;
+        text-align: center;
+      }
+
+    .favicon_generator .favicon_generator_head {
+        text-align: center;
+        padding: 2rem 0;
+        font-size: small;
+    }
+    .favicon_generator .favicon_generator_head h4{
+        font-size: medium;
+    }
+}

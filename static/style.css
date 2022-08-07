@@ -10,14 +10,14 @@
 a,
 h5 {
   text-decoration: none;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 500;
 }
 
 body {
   width: 100vw;
   background: hsl(0, 0%, 98%);
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -85,6 +85,7 @@ header {
 .blur {
   backdrop-filter: blur(2px);
   background: hsla(200, 35%, 13%, 0.4);
+  z-index: 3;
 }
 
 .mobile .links {
@@ -155,8 +156,10 @@ header {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  background: #F0F1F3;
+
 }
 
 h1 {
@@ -192,9 +195,8 @@ h1 {
     font-size: 50px;
   }
 
-  a,
-  h5 {
-    font-size: 25px;
+  a, h5 {
+    /* font-size: 25px; */
   }
 
   .mobile-link-div {
