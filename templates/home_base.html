@@ -29,7 +29,7 @@
     <div class="desktop desktop-link-div">
       <div class="desktop-links">
         <div>
-          <a href="#">Home</a>
+          <a href="{% url 'home:index' %}">Home</a>
         </div>
         <div>
           <a href="#">Generator</a>
@@ -42,15 +42,15 @@
         </div>
       </div>
       <div class="desktop-btns">
-        <a href="./accounts/login.html"><button>Login</button></a>
-        <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
+        <a href="{% url 'accounts:login' %}"><button>Login</button></a>
+        <a href="{% url 'accounts:register' %}"><button class="desktop-reg">Register</button></a>
       </div>
     </div>
   </header>
   <main class="">
     <div class="mobile mobile-link-div">
       <div class="links left">
-        <a href="#" class="spaced">
+        <a href="{% url 'home:index' %}" class="spaced">
           <h5>Home</h5>
         </a>
         <a href="#">
@@ -63,8 +63,8 @@
           <h5>Contact Us</h5>
         </a>
         <div class="mobile-btn">
-          <a href="./accounts/login.html"><button>Login</button></a>
-          <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
+          <a href="{% url 'accounts:login' %}"><button>Login</button></a>
+          <a href="{% url 'accounts:register' %}"><button class="mobile-reg">Register</button></a>
         </div>
       </div>
       <div class="outside-click" onclick="noShow()"></div>
