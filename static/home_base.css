@@ -455,6 +455,11 @@ footer ul li{
   .l-footer {
     flex: 1 0px;
   }
+  .l-footer p{
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+  }
   .r-footer {
     flex: 2 0px;
   }
