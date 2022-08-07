@@ -258,6 +258,9 @@ input::placeholder{
     }
 }
 @media screen and (max-width:750px){
+    section .sec {
+        padding: 0rem;
+    }
     section .sec2 {
         display: flex;
         flex-direction: column;
@@ -277,6 +280,27 @@ input::placeholder{
         background: #FDDB8C;
         box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
     }
+
+    
+    .btn{
+        max-width:max-content;
+        text-transform: capitalize;
+        border: 0px solid ;
+        border-radius: 8px;
+        padding: 0.5rem 1.0rem;
+        background-color:#183153;
+        box-shadow:var(--box-shadow);
+        color: white;
+        font-weight: var(--font-weights-2);
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:#445c7e;
+        transition: all 300ms ease;
+    
+    }
+    
+
 }
 
 
