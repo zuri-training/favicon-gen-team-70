@@ -1,0 +1,91 @@
+<!-- contact html here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/index/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/dashboard/dashboard.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="logo">
+            <img src="../static/assets/index/logo_hd.png">
+        </div>
+        <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+        <div class="desktop desktop-link-div">
+            <div class="desktop-links">
+                <div>
+                    <a href="#">Home</a>
+                </div>
+                <div>
+                    <a href="#">Generator</a>
+                </div>
+                <div>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div>
+                    <a href="#">Converter</a>
+                </div>
+                <div>
+                    <a href="#">Docs</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="mobile mobile-link-div">
+            <div class="links left">
+                <a href="#" class="spaced">
+                    <h5>Home</h5>
+                </a>
+                <a href="#">
+                    <h5>Generator</h5>
+                </a>
+                <a href="#">
+                    <h5>Docs</h5>
+                </a>
+                <a href="#">
+                    <h5>Contact Us</h5>
+                </a>
+                <div class="mobile-btn">
+                    <a href="./accounts/login.html"><button>Login</button></a>
+                    <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
+                </div>
+            </div>
+            <div class="outside-click" onclick="noShow()"></div>
+        </div>
+        <div class="main">
+            <!-- your main stuff here -->
+            <h1>Simply Delightful Favicon System</h1>
+            <p>Search for your favorite collection of icons and save for use at a later time.</p>
+        </div>
+        <div class="upload_form">
+            <div class="upload_h1">
+                <h1>Upload IMAGE</h1>
+            </div>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt"><img class="vec1" src="../static/assets/index/Vector.png" alt=""><img class="vec2"
+                        src="../static/assets/index/Vector (1).png" alt=""><br> <br>Select a JPEG file to Upload <br> Or drag and drop it here</span>
+                    <input type="file" name="myFile" class="drop-zone__input" id="image"
+                        accept=".jpg,.png,.svg,.jpeg,.tiff">
+                </div>
+                <button>Generate Favicon</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- footer stays here -->
+    </footer>
+    <script src="../static/dashboard/dashboard.js"></script>
+</body>
+
+</html>

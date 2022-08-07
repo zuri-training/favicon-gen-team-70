@@ -256,9 +256,13 @@ form{
   position: relative;
 }
 .vec2 {
+  position: relative;
+}
+
+.vec1{
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 52px;
+  top: 55px;
 }
 
 .drop-zone--over {
