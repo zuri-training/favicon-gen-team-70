@@ -294,13 +294,150 @@ display: none;
 .snap{
   background-color: #eac4f4;
 }
+footer{
+  width: 100vw;
+  /* Note dev this field should be edited i gave this spave so that other contents can stay here */
+  margin-top: 100%;  
+}
+footer h2{
+  font-size: 18px;
+}
+footer a{
+  font-size: 15px;
+}
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  color: #fff;
+  background-color: #183153;
+}
+
+.footer>* {
+  flex: 1 100%;
+}
+
+.l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+  display: inline-block;
+}
+
+
+h2 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 3em;
+}
+
+
+.footer a {
+  text-decoration: none;
+}
+
+.r-footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.r-footer>* {
+  flex: 1 100%;
+
+}
+
+.box a {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+.h-box {
+  column-gap: 1.25em;
+}
+
+.b-footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+.l-footer p {
+  /* padding-right: 20%; */
+  text-align: center;
+  color: #ffffff;
+}
+
+.b-footer ul {
+  display: grid
+}
+footer .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer hr{
+  border: 1px solid hsla(0,0%,100%,0.5);
+}
+.b-footer p {
+  margin-top: 20px;
+  font-size: 13px;
+}
+.similar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  footer .logo{
+    justify-content: left;
+  }
+
+  .r-footer>* {
+    flex: 1;
+  }
+
+  .copyright {
+    text-decoration: overline;
+    height: 0px;
+  }
+  .b-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .features {
+    flex-grow: 1;
+  }
+  .l-footer {
+    flex: 1 0px;
+  }
+  .r-footer {
+    flex: 2 0px;
+  }
+  footer ul li  a :hover {
+    text-decoration: underline;
+  }
+}
 @media screen and (max-width:600px){
   .version{
     align-items: center;
     justify-content: space-around;
   }
   .hxrx{
-    width: 250px;
+    width: 0px;
     height:300px;
   }
   .text{
