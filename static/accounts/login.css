@@ -186,17 +186,7 @@ a:hover {
   left: 0;
   visibility: hidden;
 }
-.error {
-  color:#e74c3c;
-}
-.success{
-  color:#2ecc71;
-}
-.django-message{
-  font-size: 15px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 .form-control.error small {
   visibility: visible;
 }

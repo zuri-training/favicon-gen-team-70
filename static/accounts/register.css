@@ -6,12 +6,6 @@
   max-width: 100%;
 }
 
-.error {
-  color: #e74c3c;
-}
-.success {
-  color: #2ecc71;
-}
 body {
   font-family: "Sora", sans-serif;
   display: flex;
@@ -224,14 +218,6 @@ button:hover {
   color: #183153;
 }
 /* styled password field and placeholder */
-input[type="password"] {
-  font-family: verdana;
-  font-size: 15px;
-}
-::placeholder {
-  font-family: "Sora", sans-serif;
-  font-size: 12px;
-}
 
 @media all and (max-width: 1100px) and (min-width: 600px) {
   .or_cont {
