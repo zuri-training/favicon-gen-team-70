@@ -1,0 +1,98 @@
+/* main section */
+.main2{
+  width: 100vw;
+ background: rgba(240, 241, 243, 1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 60px ;
+}
+.main2 h1{
+font-size: 40px;
+font-weight: 600;
+line-height: 50px;
+color: #183153;
+text-align: center;
+}
+.save_download{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.congrats{
+  padding: 20px;
+  background: hsla(215, 55%, 21%,0.4);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  margin-top: 10px;
+}
+
+form button{
+  color: rgba(240, 241, 243, 1);
+  background-color: #183153;
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  padding: 17px 0;
+  cursor: pointer;
+}
+form button:hover{
+  transform: scale(1.15);
+}
+
+@media screen and (max-width: 300px){
+  
+  .congrats h1{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+}
+@media screen and (min-width: 451px) and (max-width: 998px) {
+  header {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  a,
+  h5 {
+    font-size: 25px;
+  }
+  .mobile-link-div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile .links {
+    width: 100%;
+  }
+  header {
+    padding: 10px;
+    font-size: 25px;
+  }
+  .mobile button {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .desktop-btns a,
+  .desktop-btns button {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+  }
+  .save_download{
+    flex-direction: row;
+  }
+  form button{
+    margin: 37px 20px;
+  }
+}

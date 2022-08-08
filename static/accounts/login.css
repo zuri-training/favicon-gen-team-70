@@ -166,7 +166,6 @@ a:hover {
   right: 12px;
   top: 19px;
 }
-
 .form-control.success i.fa-check-circle {
   color: #2ecc71;
   visibility: visible;
@@ -240,6 +239,16 @@ input[type="password"]{
 ::placeholder{
   font-family: "Sora", sans-serif;
   font-size: 13px;
+}
+.django-message{
+  margin-top: 20px;
+  margin-bottom: 20px
+}
+.error{
+  color: #e74c3c;
+}
+.success{
+  color: #2ecc71;
 }
 @media all and (max-width: 1100px) and (min-width: 600px) {
   .or_cont {

@@ -156,7 +156,12 @@ button:hover {
   color: #e74c3c;
   visibility: visible;
 }
-
+.error{
+  color: #e74c3c;
+}
+.success{
+  color: #2ecc71;
+}
 .form-control small {
   color: #e74c3c;
   font-size: 12px;

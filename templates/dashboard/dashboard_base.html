@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block fonts %}{% endblock %}
     <link rel="stylesheet" href="{% static 'dashboard/dashboard_base.css' %}" />
     {% block style %}
     {% endblock %}
@@ -34,24 +35,25 @@
                     <a href="#">Docs</a>
                 </div>
                 <div>
-                    <a href="#">Generator</a>
+                    <a href="{url 'dashboard:index' }">Generator</a>
                 </div>
                 <div>
-                    <a href="#">Saved Favicons</a>
+                    <a href="{% url 'dashboard:saved_favicons' %}">Saved Favicons</a>
                 </div>
                 <div>
-                    <a href="#">Text-to-Favicon</a>
+                    <a href="{% url 'dashboard:text_to_favicon' %}">Text-to-Favicon</a>
                 </div>
                 <div>
                     <a href="#">Contact</a>
                 </div>
             </div>
             <div class="desktop-btns">
-                <a href="#" class="initials">JO</a>
+              <div class="initials"><h3>{{ initials }}</h3></div>
                 <a href="{% url 'accounts:logout' %}"><button class="desktop-reg bdr">Logout</button></a>
             </div>
         </div>
     </header>
+    {% block outer_main %}
     <main class="">
         <div class="mobile mobile-link-div">
             <div class="links left">
@@ -61,10 +63,10 @@
                 <a href="{% url 'dashboard:index' %}">
                     <h5>Generator</h5>
                 </a>
-                <a href="#">
+                <a href="{% url 'dashboard:saved_favicons' %}">
                     <h5>Saved Favicons</h5>
                 </a>
-                <a href="#">
+                <a href="{% url 'dashboard:text_to_favicon' %}">
                     <h5>Text-to-Favicon</h5>
                 </a>
                 <a href="#">
@@ -72,7 +74,7 @@
                 </a>
                 <div class="mobile-btn">
                     <div class="">
-                        <a href="#" class="initials">JO</a>
+                      <a href="" class="initials">{{ initials }}</a>
                     </div>
                     <a href="{% url 'accounts:logout' %}"><button class="mobile-reg">Logout</button></a>
                 </div>
@@ -84,7 +86,7 @@
         {% endblock %}
         <!-- endblock -->
     </main>
-
+    {% endblock %}
     <!--Footer Beginning-->
   <footer class="footer">
     <div class="l-footer">
@@ -127,8 +129,8 @@
     </div>
   </footer>
   <!-- base dashboard script -->
-    <script src="{% static 'dashboard/dashboard.js' %}"></script>
-    {% block base_script %}
+    <script src="{% static 'base_script.js' %}"></script>
+    {% block script %}
     {% endblock %}
 </body>
 
