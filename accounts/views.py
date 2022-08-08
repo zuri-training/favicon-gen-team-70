@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 import re
 # Create your views here.  
   
@@ -55,3 +56,8 @@ def login_view(request):
                 return redirect('accounts:login')
 
     return render(request,'accounts/login.html')
+
+@login_required(redirect_field_name="next", login_url="accounts:login")
+def logout_view(request):
+    auth.logout(request)
+    return redirect('home:index')

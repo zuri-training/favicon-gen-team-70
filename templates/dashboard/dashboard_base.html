@@ -12,9 +12,12 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'dashboard/dashboard_base.css' %}" />
-    {% block title %}
-    <title>Dashboard</title>
+    {% block style %}
     {% endblock %}
+    <title>
+      {% block title %}Dashboard{% endblock %}
+    </title>
+    
 </head>
 
 <body>
@@ -55,7 +58,7 @@
                 <a href="#" class="spaced">
                     <h5>Docs</h5>
                 </a>
-                <a href="#">
+                <a href="{% url 'dashboard:index' %}">
                     <h5>Generator</h5>
                 </a>
                 <a href="#">
@@ -86,7 +89,7 @@
   <footer class="footer">
     <div class="l-footer">
       <div class=" logo">
-        <img src="../static/assets/index/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
+        <img src="{% static 'assets/index/logo_white_ft.png' %}" id="w-logo" alt="Iconcity Logo" class="">
       </div>
       <p class="">Iconcity helps you generate your favourite favicon in the twinkle of an eye.</p>
     </div>
@@ -124,7 +127,7 @@
     </div>
   </footer>
   <!-- base dashboard script -->
-    <script src="../static/dashboard/dashboard.js"></script>
+    <script src="{% static 'dashboard/dashboard.js' %}"></script>
     {% block base_script %}
     {% endblock %}
 </body>
