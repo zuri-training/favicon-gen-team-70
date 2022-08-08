@@ -216,8 +216,20 @@ justify-content: space-around;
 .main2 img:hover{
     transform: scale(1.3);
 }
-.download_delete img{
-    margin-left: 10px;
+.download_delete{
+  display: flex;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form button{
+  outline: 0;
+  border: 0;
+}
+.download_delete form:nth-child(1){
+margin-right: 10px;
 }
 
 @media screen and (min-width: 451px) and (max-width: 998px) {
