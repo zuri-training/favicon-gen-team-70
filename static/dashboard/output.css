@@ -189,7 +189,17 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: column;
+}
+.congrats{
+  padding: 20px;
+  background: hsla(215, 55%, 21%,0.4);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 form button{
   color: rgba(240, 241, 243, 1);
@@ -198,8 +208,8 @@ form button{
   border-radius: 10px;
   width: 130px;
   padding: 17px 0;
-  margin: 37px 20px;
-
+  margin: 10px;
+  cursor: pointer;
 }
 form button:hover{
   transform: scale(1.15);
@@ -237,6 +247,12 @@ form button:hover{
     margin-top: 0;
     padding-top: 0;
     text-decoration: none;
+  }
+  .save_download{
+    flex-direction: row;
+  }
+  form button{
+    margin: 37px 20px;
   }
 }
 /* header media query */
@@ -313,7 +329,7 @@ form button:hover{
   }
   .desktop-btns .desktop-reg:hover {
     background: #183153;
-    color: #fff;
+    color: #fab005;
   }
   .hide {
     display: none;

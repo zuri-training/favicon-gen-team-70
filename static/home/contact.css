@@ -520,12 +520,12 @@ textarea{
     border: 2px solid #183153;
     border-radius: 15px;
   }
-  .desktop-btns button:hover,
-  a:hover {
+  .desktop-btns button:hover{
     color: #fab005;
   }
   .desktop-btns .desktop-reg:hover {
-    border: 2px solid #fab005;
+    border: #183153;
+    color: #fab005;
   }
 
   .hide {
