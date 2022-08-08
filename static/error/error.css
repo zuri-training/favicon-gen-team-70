@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sora", sans-serif;
+}
+button{
+    cursor: pointer;
+}
+body
+{
+    background-image: url(../static/assets/error/BG.png);
+    background-size: 100% 100%;
+}
+.container
+{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 7%;
+}
+.text_left
+{
+    text-align: left;
+    width: 40%;
+    height: 281px;
+    margin-bottom: -9px;
+    font-family: 'Sora', sans-serif;
+}
+h1
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    color: #DA2525;
+}
+p
+{
+    color: #183153;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    width: 56%;
+    padding: 35px 0px 40px;
+}
+button
+{
+    width: 30%;
+    color: white;
+    padding: 15px 30px;
+    background: #183153;
+    border: none;
+    border-radius: 8px;
+}
+button:hover
+{
+    border: 1px solid yellow;
+    background-color: transparent;
+    color: #183153;
+}
+.bck_ground
+{
+    width: 40%;
+    height: 520px;
+    background-image: url(../static/assets/error/message.png);
+    background-size: 100% 517px;
+}
+@media(max-width:414px)
+{
+    .container
+{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31%;
+}
+.text_left
+{
+    text-align: center;
+    width: 80%;
+    height: 281px;
+    font-family: 'Sora', sans-serif;
+}
+h1
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    color: #DA2525;
+}
+p
+{
+    color: #183153;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: auto;
+    width: 80%;
+    padding: 35px 0px 40px;
+}
+button
+{
+    width: 49%;
+    height: 31px;
+    color: white;
+    padding: 3px 17px;
+    background: #183153;
+    border: none;
+    border-radius: 8px;
+}
+.bck_ground {
+    width: 81%;
+    height: 286px;
+    background-image: url(../static/assets/error/message.png);
+    background-size: 100% 284px;
+}
+}
+@media(max-width:375px)
+{
+    .container
+{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 7%;
+}
+.text_left
+{
+    text-align: center;
+    width: 80%;
+    height: 281px;
+    /* margin-bottom: -10px; */
+    font-family: 'Sora', sans-serif;
+}
+h1
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    color: #DA2525;
+}
+p
+{
+    color: #183153;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin: auto;
+    width: 80%;
+    padding: 35px 0px 40px;
+}
+button
+{
+    width: 49%;
+    height: 31px;
+    color: white;
+    padding: 3px 17px;
+    background: #183153;
+    border: none;
+    border-radius: 8px;
+}
+.bck_ground {
+    width: 81%;
+    height: 286px;
+    background-image: url(../static/assets/error/message.png);
+    background-size: 100% 284px;
+}
+}

@@ -108,4 +108,3 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
         eMessage.classList.add('block');
     }
   }
-  
