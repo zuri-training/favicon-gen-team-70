@@ -327,14 +327,606 @@ h1 {
 }
 
 /* Ajayi your code starts here */
+/* top part of the code*/
+.version{
+  display: flex;
+  width: 90vw;
+  margin: 60px auto;
+  background-color: #183153;
+  color: #fff;
+  padding: 20px ;
+  border-radius: 8px;
+}
+.i{
+  font-weight: 200;
+  padding: 20px auto;
+}
+.text{
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 
+}
+.text-h1{
+  font-size: 40px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #183153;
+}
+.p{
+  color: #fab005;
+}
+.text-p{
+  width: 70%;
+  text-align: center;
+  margin: 20px auto;
+}
+.main-ill{
+  width: 60vw;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.hero{
+  width: 500px;
+  height: 500px;
+}
+
+.btn-blue{
+  background-color: #183153;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  width: 250px;
+  padding: 20px 40px;
+  margin: 50px 40vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.logo-container{
+  width: 100vw;
+  margin: 80px auto;
+  background-color: #f0f1f3;
+}
+.text-h2{
+  font-weight: 600;
+  font-size: 32px;
+  margin: 50px 30vw;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.logo-p{
+  width: 70%;
+  margin: auto 20vw;
+  padding: 50px auto;
+  align-items: center;
+  justify-content: center;
+}
+.logo-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.contain{
+  width: 200px;
+  height: 240px;
+  border-radius: 0px 50px;
+  margin:  auto;
+  align-items: center;
+  justify-content: center;
+}
+.contain > img{
+  margin: 50px;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.sport{
+  background-color: #ca9ad5;
+}
+.ins{
+  background-color: #b2d8f7;
+}
+.star{
+background-color: #fabbbc;
+display: none;
+}
+.fig{
+  background-color: #D0c3f7;
+}
+.gg{
+  background-color: #b2d8f7;
+}
+.snap{
+  background-color: #eac4f4;
+}
+/*mobile view for the top part*/
+@media screen and (max-width:600px){
+  .version{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero{
+    height:250px;
+    width: 250px;
+  }
+  .text{
+    width: 100vw;
+    text-align: justify;
+  }
+  .text-h1{
+    font-size: 18px;
+  }
+  .text-p{
+    width: 80%;
+    font-size: 12px;
+  }
+  .btn-blue{
+    width: 125px;
+    padding: 10px ;
+    margin: 50px 35vw 0px 35vw;
+    font-size: 12px;
+    font-weight: 400;
+    
+  }
+  .text-h2{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px 9vw;
+    padding-top: 30px;
+  }
+  .logo-container{
+    margin: 50px auto;
+  }
+  .logo-p{
+    width: 90%;
+    margin: auto 5vw;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+  }
+ 
+  .contain{
+    width: 100px;
+    height: 150px;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .contain > img{
+    margin: 30px 10px;
+    width: 80px;
+    height: 80px;
+  }
+  .star{
+    display: block;
+    }
+}
+/*adetola css*/
+:root{
+  /* --font-size-1:18px; */
+  --font-weights-1:200;
+  --font-weights-2:400;
+  --font-weights-3:500;
+  --font-weights-4:600;
+  --font-weights-5:700;
+  --box-shadow:0 0rem 0.6rem var(--color-light);
+
+  --color-pink:hsl(322, 100%, 66%);
+  --box-shadow:0 0rem 0.6rem var(--color-light);
+}
+
+
+img{
+  display: block;
+  width: 100%;
+}
+
+small {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #183153;
+}
+.main {
+  background: #F0F1F3;
+  /* height: 100vh; */
+}
+
+.main .favicon_generator{
+  background-color: white;
+  padding: 5rem 7.5rem;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #575757;
+}
+
+.favicon_generator .favicon_generator_head {
+  text-align: center;
+  padding: 2rem 0;
+
+}
+
+.favicon_generator .favicon_generator_head h4{
+  color: #183153;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  padding: 0.5rem 0rem;   
+}
+
+
+.favicon_generator .favicon_generator_profile {
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+
+}
+.favicon_generator .favicon_generator_profile .favicon_generator_content article{
+ display: grid;
+ /* gap: 1rem; */
+ grid-template-columns: 20% 80%;
+ gap: 1rem;
+ justify-content: center;
+ align-items: center;
+ padding: 1rem 0;
+}
+
+
+.favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+  /* position: relative; */
+  width: 25rem;
+  height: auto;
+  transform: rotate(-10deg);
+  background: #FDDB8C;
+  box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+}
+
+
+.favicon_generator .favicon_generator_profile .favicon_generator_profile_side .img{
+  transform: rotate(10deg);
+  z-index: -1;
+
+}
+
+.favicon_generator .favicon_generator_profile .favicon_generator_content .fg_content_img {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDE7B2;
+  box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+  border-radius: 10px;
+}
+.favicon_generator .favicon_generator_profile .favicon_generator_content .fg_content_img > img{
+  height: 42.7px;
+  width: 35.4px;
+}
+
+section .sec{
+  /* background-color: red; */
+  padding: 5rem 7.5rem;
+  font-family: 'Sora';
+  font-style: normal;
+  
+}
+
+section .sec2 {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+}
+
+section .sec2 .get_started h4{
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #0D1B2E;
+  margin: 2rem 0;
+}
+
+.btn{
+  max-width:max-content;
+  text-transform: capitalize;
+  border: 0px solid ;
+  border-radius: 8px;
+  padding: 0.8rem 2.5rem;
+  background-color:#183153;
+  box-shadow:var(--box-shadow);
+  color: white;
+  font-weight: var(--font-weights-2);
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:#445c7e;
+  transition: all 300ms ease;
+
+}
+
+.btn-primary{
+  max-width:max-content;
+  text-transform: capitalize;
+  border: 0px solid ;
+  border-radius: 8px;
+  padding: 0.8rem 2.5rem;
+  background-color:white;
+  box-shadow:var(--box-shadow);
+  color: #183153;
+  font-weight: var(--font-weights-2);
+  cursor: pointer;
+}
+.btn-primary:hover{
+  color:white;
+  transition: all 300ms ease;
+
+}
+
+section .sec3 {
+  background-color: white;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 3rem 0;
+margin: 1rem 0;
+color: #183153;
+}
+
+section .sec3 .sec3_content_head h5{
+  font-family: Sora;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  padding: 1rem 0;
+  color: #183153;
+}
+section .sec3_sc{
+  background: #183153;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+section .sec3 .sec3_content_subscribe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+input {
+
+border: none;
+outline: none;
+font-size: 16px;
+color: white;
+background:none;
+border-radius: 20px;
+border: 1px solid transparent;
+padding: 0 15px;
+resize: none;
+transition: all 300ms ease;
+
+}
+input::placeholder{
+  color: rgb(191, 191, 191);
+}
+
+@media screen and (max-width:1113px){
+  .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+      /* position: relative; */
+      width: 300px;
+      height: auto;
+      transform: rotate(-10deg);
+      background: #FDDB8C;
+      box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+  }
+}
+@media screen and (max-width:960px){
+  .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+      /* position: relative; */
+      width: 20rem;
+      margin-top: 3rem;
+      height: auto;
+      transform: rotate(-10deg);
+      background: #FDDB8C;
+      box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+  }
+
+  .favicon_generator .favicon_generator_profile {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 8%;
+  }
+
+
+  .main .favicon_generator{
+      padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width:750px){
+  section .sec {
+      padding: 0rem;
+  }
+  section .sec2 {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+  }
+
+  section .sec2 .get_started h4{
+      font-size: medium;
+  }
+
+  .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+      /* position: relative; */
+      width: 13rem;
+      margin-top: 3rem;
+      height: auto;
+      transform: rotate(-10deg);
+      background: #FDDB8C;
+      box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+  }
+
+  
+  .btn{
+      max-width:max-content;
+      text-transform: capitalize;
+      border: 0px solid ;
+      border-radius: 8px;
+      padding: 0.5rem 1.0rem;
+      background-color:#183153;
+      box-shadow:var(--box-shadow);
+      color: white;
+      font-weight: var(--font-weights-2);
+      cursor: pointer;
+  }
+  .btn:hover{
+      background-color:#445c7e;
+      transition: all 300ms ease;
+  
+  }
+  
+
+}
+
+
+@media screen and (max-width:375px){
+
+  .favicon_generator .favicon_generator_profile .favicon_generator_profile_side {
+      /* position: relative; */
+      width: 15rem;
+      height: auto;
+      transform: rotate(-10deg);
+      background: #FDDB8C;
+      box-shadow: inset 0px 4px 8px rgba(24, 49, 83, 0.15);
+  }
+
+  input::placeholder{
+      color: rgb(191, 191, 191);
+      text-align: center;
+      /* margin-bottom: 3rem; */
+  }
+
+  .main .favicon_generator{
+      padding: 3rem 1rem;
+  }
+  .favicon_generator .favicon_generator_profile {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column-reverse; 
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .favicon_generator .favicon_generator_profile .favicon_generator_content {
+      padding: 2rem 0rem;
+ 
+  }
+   section .sec{
+      padding: 1rem 2rem;   
+  }
+
+  section .sec2 {
+    display: none;
+  }
+  section .sec2 .get_started h4{
+      font-family: 'Sora';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 40px;
+      color: #0D1B2E;
+      margin: 2rem 0;
+  }
+
+
+  section .sec3 {
+      display: none;
+  }
+  .btn{
+      max-width:max-content;
+      text-transform: capitalize;
+      border: 0px solid ;
+      border-radius: 8px;
+      padding: 0.5rem 2.0rem;
+      background-color:#183153;
+      box-shadow:var(--box-shadow);
+      color: white;
+      font-weight: var(--font-weights-2);
+      cursor: pointer;
+  }
+  .btn:hover{
+      background-color:#445c7e;
+      transition: all 300ms ease;
+  
+  }
+  
+  .btn-primary{
+      max-width:max-content;
+      text-transform: capitalize;
+      border: 0px solid ;
+      border-radius: 8px;
+      padding: 0.5rem 2.0rem;
+      background-color:white;
+      box-shadow:var(--box-shadow);
+      color: #183153;
+      font-weight: var(--font-weights-2);
+      cursor: pointer;
+  }
+  .btn-primary:hover{
+      color:white;
+      transition: all 300ms ease;
+  }
+  input {
+      padding: 0 1px;
+      text-align: center;
+    }
+
+  .favicon_generator .favicon_generator_head {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: small;
+  }
+  .favicon_generator .favicon_generator_head h4{
+      font-size: medium;
+  }
+
+  
+
+}
 /* endblock  */
 
 /*footer beginning*/
 footer{
   width: 100vw;
   /* Note dev this field should be edited i gave this spave so that other contents can stay here */
-  margin-top: 100%;  
+  margin-top: auto;  
 }
 footer h2{
   font-size: 18px;
