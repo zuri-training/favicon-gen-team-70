@@ -162,6 +162,7 @@ input, select
     border: none;
     border-radius: 4px;
     margin: 2% 0 0 35%;
+    cursor: pointer;
 }
 
 @media(max-width: 1122px)
