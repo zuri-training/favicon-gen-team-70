@@ -252,8 +252,16 @@ form {
   position: relative;
 }
 
+.vector {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
 
-.vec2 {
+.vec1{
+  position: relative;
+}
+.vec2{
   position: absolute;
   right: 50px;
   bottom: 45px;
