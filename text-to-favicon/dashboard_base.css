@@ -142,6 +142,10 @@ header {
   display: flex;
   justify-content: center;
 }
+.main
+{
+  width: 100%;
+}
 /* end */
 .left {
   transform: translateX(200%);
