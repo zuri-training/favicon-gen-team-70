@@ -675,6 +675,7 @@ section .sec2 .get_started h4{
   font-weight: var(--font-weights-2);
   cursor: pointer;
 }
+
 .btn-primary:hover{
   color:white;
   transition: all 300ms ease;
@@ -713,6 +714,8 @@ section .sec3 .sec3_content_subscribe{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: #0D1B2E;
+  padding: 20px;
 
 }
 
@@ -722,9 +725,6 @@ border: none;
 outline: none;
 font-size: 16px;
 color: white;
-background:none;
-border-radius: 20px;
-border: 1px solid transparent;
 padding: 0 15px;
 resize: none;
 transition: all 300ms ease;
