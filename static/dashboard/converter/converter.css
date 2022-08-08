@@ -250,6 +250,9 @@ form{
 .drop-zone span {
   padding-top: 20px;
 }
+/* .drop-zone span {
+  padding-top: 20px;
+} */
 .vector {
   padding: 0;
   margin: 0;
@@ -264,6 +267,11 @@ form{
   right: 52px;
   top: 55px;
 }
+/* .vec2{
+  position: absolute;
+  right: 52px;
+  top: 55px;
+} */
 
 .drop-zone--over {
   border-style: solid;
