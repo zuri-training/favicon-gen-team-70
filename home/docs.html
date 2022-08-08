@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,25 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./static/assets/index/favicon-32x32.png" /> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/assets/index/favicon-32x32.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="{% static 'home_base.css' %}" />
-  <link rel="stylesheet" href="../static/home/docs.css"/>
-
-  {% block style %}
-  {% endblock %}
-
-  {% block head_script %}
-  {% endblock %}
-  <title>{% block title %}IconCity{% endblock %}</title>
+  <link rel="stylesheet" href="../static/home/docs.css" />
+  <title>IconCity</title>
 </head>
 
 <body>
   <header class="">
     <div class="logo">
-      <img src="{% static 'assets/home/index/logo_hd.png' %}">
+      <img src="../static/assets/index/logo_hd.png">
     </div>
     <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
     <div class="desktop desktop-link-div">
@@ -71,7 +63,6 @@
       <div class="outside-click" onclick="noShow()"></div>
     </div>
 
-    {% block main %}
     <div class="cotainer">
         <main class="item">
             <div class="info">
@@ -220,8 +211,8 @@
                             <img src="../static/assets/docs/collection.PNG" alt="Collection Page">
                         </ul>
 
-                        <ul>Step 5: You can choose to download a saved copy of your file in your profile by clicking save</ul>
-                        <ul>Here is a snapshot of all the favicons and the HTML embed code in a text file</ul>ul
+                        <ul><assetscan choose to download a saved copy of your file in your profile by clicking save</ul>
+                        <ul>Here is a snapshot of all the favicons and the HTML embed code in a text file</ul>
                         <ul>Code in text file. here is what it looks like:
                         <div class = "code-embed">
                             <xmp>
@@ -264,7 +255,7 @@
                         <ul>Step 5: Select background color</ul>
                         <ul>Step 6: Select background shape </ul>
                         <ul>Step 7: Click the download button to download</ul>
-                        <img src="text-to-icon.PNG" alt="Collection Page">
+                        <img src="../static/assets/docs/text-to-icon.PNG" alt="Collection Page">
 
 
                     </li>
@@ -290,7 +281,7 @@
                 </section>
             </div>
         </main>
-        {% endblock %}
+
 
         <!--Footer Beginning-->
 
@@ -298,7 +289,7 @@
   <footer class="footer">
     <div class="l-footer">
       <div class=" logo">
-        <img src="{% static '/assets/home/index/logo_white_ft.png' %}" id="w-logo" alt="Iconcity Logo" class="">
+        <img src="../static/assets/index/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
       </div>
       <p>Iconcity helps you generate your favourite favicon in the twinkle of an eye.</p>
     </div>
