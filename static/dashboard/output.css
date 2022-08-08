@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -7,14 +6,12 @@
   font-family: "Sora", sans-serif;
   max-width: 100%;
 }
-
 a,
 h5 {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
 }
-
 body {
   width: 100vw;
   background: hsl(0, 0%, 98%);
@@ -23,28 +20,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .bdr {
   border: 1px solid black;
 }
 
+/* header start */
 .hide {
   display: none;
 }
-
 .icon {
   z-index: 20;
   color: rgba(24, 49, 83, 1);
 }
-<<<<<<< HEAD:static/dashboard/dashboard.css
-=======
-
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
 i,
 .desktop-links a {
   color: rgba(24, 49, 83, 1);
 }
-
 header {
   display: flex;
   padding: 10px;
@@ -60,15 +51,12 @@ header {
 .desktop {
   display: none;
 }
-
 .outside-click {
   grid-area: transparent;
 }
-
 .mobile links {
   grid-area: link;
 }
-
 .mobile-link-div {
   top: 0;
   width: 100vw;
@@ -80,45 +68,36 @@ header {
   grid-template-columns: 0.3fr 1fr;
   grid-template-areas: "transparent link";
 }
-
 .overflow {
   overflow-y: hidden;
 }
-
 .blur {
   backdrop-filter: blur(2px);
   background: hsla(200, 35%, 13%, 0.4);
 }
-
 .mobile .links {
   width: 100%;
   background: #183153;
   padding: 30px;
   transition: transform 0.2s ease;
 }
-
 .links .features {
   margin-top: 70px;
 }
-
 .links a {
   display: flex;
   padding: 10px;
 }
-
 .mobile .direction {
   margin-left: 10px;
 }
-
 .mobile-btn {
   display: flex;
   flex-direction: column;
 }
-
 .mobile-btn a {
   padding: 0;
 }
-
 .mobile-btn button {
   height: 50px;
   width: 100%;
@@ -126,386 +105,197 @@ header {
   border: 0;
   background: transparent;
   color: #fab005;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   font-size: 18px;
+  margin-top: 30px;
 }
-
 .mobile-btn .mobile-reg {
-  border: 2px solid #fab005;
+  background: #fff;
+  color: #183153;
   border-radius: 15px;
+  font-weight: 600;
 }
-
+/* initials for dashboard */
+.desktop-btns .initials,
+.mobile-btn .initials {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 50%;
+  background: #183153;
+  color: #fff;
+}
+.desktop-btns .initials:hover{
+  color: #fab005;
+}
+.mobile-btn .initials{
+  background:transparent;
+  border: 2px solid #fab005;
+  padding: 10px;
+  color: #fab005;
+  width: 50px;
+  font-size: 20px;
+}
+.mobile-btn div{
+  display: flex;
+  justify-content: center;
+}
+/* end */
 .left {
   transform: translateX(200%);
 }
-
 .show {
   transform: translateX(0);
 }
-
 .hide {
   display: none;
 }
-
 .fa-xmark {
   color: #fff;
 }
-
 .block {
   display: block;
 }
-<<<<<<< HEAD:static/dashboard/dashboard.css
-.image-div {
-  width: 100%;
-}
-.image-div img {
-  width: 100%;
-}
-.head {
-  margin-top: 30px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-=======
-
-.main {
-  display: flex;
-  flex-direction: column;
-}
-
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
 h1 {
   font-size: 37px;
 }
-
 .links .spaced {
   margin-top: 80px;
 }
-<<<<<<< HEAD:static/dashboard/dashboard.css
 .mobile-link-div .links a {
   color: #fff;
 }
-.main {
+/* header end */
+
+/* main section */
+.main2{
   width: 100vw;
-  background: rgba(183, 191, 202, 1);
-  display: flex;
-  flex-direction: column;
-  height: 330px;
-  margin-top: 40px;
-  align-items: center;
-  padding-top: 3.5em;
-  color: #183153;
+ background: rgba(240, 241, 243, 1);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 60px ;
 }
-.main h1 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  letter-spacing: 0em;
+.main2 h1{
+font-size: 40px;
+font-weight: 600;
+line-height: 50px;
+color: #183153;
+text-align: center;
 }
-
-.main p {
-  font-size: 18px;
-  padding-top: 30px;
-  font-weight: 400;
-  line-height: 20px;
-  width: 35%;
-  letter-spacing: 0em;
-  text-align: center;
-}
-.upload_form {
+.save_download{
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  margin: 8em auto;
-  flex-direction: column;
-  background-color: rgba(149, 160, 176, 1);
-  max-width: 65%;
-  height: 535px;
-}
 
-.upload_form h1 {
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  width: 100%;
-  text-align: left;
 }
-.upload_h1 {
-  border-bottom: 1px #ffffff solid;
-  margin-right: auto;
-  width: 100%;
-  padding: 0 1em 1em 3.6em;
-  margin-bottom: 3em;
-}
-
-.drop-zone {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  flex-direction: column;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  cursor: pointer;
-  color: #183153;
-  background-color: #ffffff;
-  border: 2px dashed #183153;
-  border-radius: 10px;
-  height: 272px;
-  width: 55vw;
-}
-.drop-zone span{
-  padding-top: 20px;
-}
-.vector{
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-.vec2{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.drop-zone--over {
-  border-style: solid;
-}
-
-.drop-zone__input {
-  display: none;
-}
-
-.drop-zone__thumb {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #cccccc;
-  background-size: cover;
-  position: relative;
-}
-
-.drop-zone__thumb::after {
-  content: attr(data-label);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 5px 0;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.75);
-  font-size: 14px;
-  text-align: center;
-}
-button {
-  height: 60px;
-  width: 30%;
-  background: rgba(24, 49, 83, 1);
-  border-radius: 8px;
-  padding: 20px, 16px, 20px, 16px;
-  color: #cccccc;
+form button{
+  color: rgba(240, 241, 243, 1);
+  background-color: #183153;
   border: none;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-top: 40px;
-  cursor: pointer;
-}
-button:hover {
-  text-decoration: underline;
-=======
+  border-radius: 10px;
+  width: 130px;
+  padding: 17px 0;
+  margin: 37px 20px;
 
-.mobile-link-div .links a {
-  color: #fff;
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
+}
+form button:hover{
+  transform: scale(1.15);
 }
 
-@media screen and (max-width: 470px) {
-  h1 {
-    font-size: 35px;
-  }
-
-  .head p {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .main {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 90px;
-  }
-  .main h1 {
-    font-size: 22px;
-    line-height: 24px;
-    width: 70%;
-    padding: 0;
-  }
-  .main p {
-    font-size: 12px;
-    width: 70%;
-  }
-  .upload_form h1 {
-    font-size: 16px;
-    margin: auto;
-  }
-  button {
-    font-size: 10px;
-  }
-}
-<<<<<<< HEAD:static/dashboard/dashboard.css
 @media screen and (min-width: 451px) and (max-width: 998px) {
-=======
-
-@media screen and (min-width: 728px) and (max-width: 998px) {
-  /* header css */
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
   header {
     width: 100%;
-    /* padding: 30px; */
   }
-<<<<<<< HEAD:static/dashboard/dashboard.css
-  .main {
-    width: 100vw;
-  }
-  .main h1 {
-    font-size: 26px;
-  }
-  .main p{
-    width: 80%;
-  }
-=======
-
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
+  
   h1 {
     font-size: 50px;
   }
-
   a,
   h5 {
     font-size: 25px;
   }
-
   .mobile-link-div {
     grid-template-columns: 1fr 1fr;
   }
-
   .mobile .links {
     width: 100%;
   }
-
   header {
     padding: 10px;
     font-size: 25px;
-<<<<<<< HEAD:static/dashboard/dashboard.css
   }
-  .head p {
-    margin-top: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 25px;
-    line-height: 30px;
-=======
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
-  }
-
-  .head button {
-    margin-top: 20;
-    width: 200px;
-    height: 70px;
-    font-size: 20px;
-  }
-
   .mobile button {
     font-size: 25px;
   }
-  /* header css */
 }
-
+@media screen and (min-width: 728px) {
+  .desktop-btns a,
+  .desktop-btns button {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+  }
+}
+/* header media query */
 @media screen and (min-width: 998px) {
-  /* header css  */
   header {
     width: 100%;
   }
-
   .desktop h5 {
     font-size: 16px;
   }
-
   .mobile {
     display: none;
   }
-
   .desktop {
     display: block;
   }
-
   .desktop-link-div,
   .desktop-links,
   .desktop-btns {
     display: flex;
     flex-direction: row;
   }
-
   .desktop-link-div {
     width: 90%;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
   }
-
   .desktop-link-div a {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
   }
-
   .desktop-link-div a:hover {
     border-bottom-style: solid;
     width: fit-content;
     border-bottom-color: #fab005;
   }
-
   .desktop-btns a:hover {
     border-bottom-style: none;
   }
-<<<<<<< HEAD:static/dashboard/dashboard.css
-=======
-
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
   .desktop-links {
     margin-left: 90px;
   }
-
   .desktop-links div {
     margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .direction {
     margin-left: 10px;
     font-size: 13px;
   }
-
   .desktop-btns {
     margin-right: 10px;
   }
-
-  .desktop-btns button,
-  .head button {
+  .desktop-btns button {
     height: 40px;
     outline: 0;
     border: 0;
@@ -515,43 +305,32 @@ button:hover {
     cursor: pointer;
     font-size: 16px;
   }
-
   .desktop-btns .desktop-reg {
     margin-left: 30px;
     width: 100px;
     border: 2px solid #183153;
     border-radius: 15px;
   }
-
-  .desktop-btns button:hover,
-  a:hover {
-    color: #fab005;
-  }
-
   .desktop-btns .desktop-reg:hover {
-    border: 2px solid #fab005;
+    background: #183153;
+    color: #fff;
   }
-
   .hide {
     display: none;
   }
-  /* header css */
 }
+/* end of header */
 
-/* Ajayi your code starts here */
-
-/* endblock  */
-
-/*footer beginning*/
-footer{
+/* footer */
+footer {
   width: 100vw;
   /* Note dev this field should be edited i gave this spave so that other contents can stay here */
-  margin-top: 100%;  
+  /* margin-top: 100%;   */
 }
-footer h2{
+footer h2 {
   font-size: 18px;
 }
-footer a{
+footer a {
   font-size: 15px;
 }
 .footer {
@@ -562,7 +341,7 @@ footer a{
   background-color: #183153;
 }
 
-.footer>* {
+.footer > * {
   flex: 1 100%;
 }
 
@@ -571,7 +350,6 @@ footer a{
   margin-bottom: 2em;
   display: inline-block;
 }
-
 
 h2 {
   font-weight: 400;
@@ -587,7 +365,6 @@ h2 {
   line-height: 3em;
 }
 
-
 .footer a {
   text-decoration: none;
 }
@@ -597,9 +374,8 @@ h2 {
   flex-flow: row wrap;
 }
 
-.r-footer>* {
+.r-footer > * {
   flex: 1 100%;
-
 }
 
 .box a {
@@ -623,64 +399,43 @@ h2 {
 }
 
 .b-footer ul {
-  display: grid
+  display: grid;
 }
-footer .logo{
+footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer hr{
-  border: 1px solid hsla(0,0%,100%,0.5);
+footer hr {
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 .b-footer p {
   margin-top: 20px;
   font-size: 13px;
 }
-.similar{
+.similar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer ul li{
+footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 600px) {
-  footer .logo{
+  footer .logo {
     justify-content: left;
   }
 
-  .r-footer>* {
+  .r-footer > * {
     flex: 1;
   }
-<<<<<<< HEAD:static/dashboard/dashboard.css
-  .image-div img {
-    width: 100%;
-    height: 600px;
-  }
-  /* .main {
-    display: grid;
-    grid-template-columns: 1fr 0.6fr;
-    grid-template-areas: "submain imagegrid";
-    padding-left: 50px;
-    padding-right: 80px;
-    width: 100vw;
-    margin-bottom: 20px;
-  } */
-  .head {
-    margin-top: 70px;
-    padding: 30px;
-    padding-left: 80px;
-    display: block;
-=======
 
   .copyright {
     text-decoration: overline;
     height: 0px;
->>>>>>> 3a8543752d7bc54c32e29172a56b476b276457b2:static/style.css
   }
   .b-footer ul {
     display: flex;
@@ -694,11 +449,20 @@ footer ul li{
   .l-footer {
     flex: 1 0px;
   }
+  .l-footer p {
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+  }
   .r-footer {
     flex: 2 0px;
   }
-  footer ul li  a :hover {
-    text-decoration: underline;
+  footer .box a {
+    padding: 0;
+  }
+  footer .box a:hover {
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 100%;
   }
 }
 
