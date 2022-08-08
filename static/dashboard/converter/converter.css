@@ -278,7 +278,6 @@ form{
   background-size: cover;
   position: relative;
 }
-
 .drop-zone__thumb::after {
   content: attr(data-label);
   position: absolute;
@@ -308,7 +307,24 @@ button {
 button:hover {
   color: #fab005;
 }
-
+.error-message{
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  display: none;
+}
+.relative{
+  position: relative;
+}
+.error{
+  color: #dc3545;
+}
+.success{
+  color: rgb(24, 136, 24);
+}
+.block{
+  display: block;
+}
 @media screen and (max-width: 470px) {
   h1 {
     font-size: 35px;
@@ -337,11 +353,12 @@ button:hover {
     max-width: 100%;
   }
   .upload_form h1 {
-    font-size: 16px;
+    font-size: 20px;
     margin: auto;
   }
   button {
-    font-size: 10px;
+    font-size: 18px;
+    width: 50%;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 998px) {
@@ -472,6 +489,12 @@ button:hover {
   }
   .hide {
     display: none;
+  }
+  .upload_form{
+    position: relative;
+  }
+  .error-message{
+    top: 50px;
   }
 }
 /* end of header */

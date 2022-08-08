@@ -70,4 +70,42 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       thumbnailElement.style.backgroundImage = null;
     }
   }
+  const eMessage = document.querySelector('.error-message');
+  document.addEventListener('DOMContentLoaded',function(){
+    const form = document.querySelector('form');
+    const image = document.querySelector('#image');
+    image.onchange =function(){
+      eMessage.classList.remove('block');
+      validateSize(image);
+    }
+  
+    form.addEventListener('submit', (e)=>{
+      let imageCont = image.files[0];
+      // e.preventDefault();
+      if(imageCont == undefined){
+        eMessage.innerHTML = 'No Image uploaded!';
+        eMessage.classList.add('error');
+        eMessage.classList.add('block');
+        e.preventDefault();
+      }else{
+          if(validateSize(image)==false){
+              e.preventDefault();
+          }
+      }
+    })
+  })
+  function validateSize(input) {
+    const fileSize = input.files[0].size / 1024 / 1024; // in MiB
+    if (fileSize > 2) {
+        eMessage.classList.add('error');
+        eMessage.innerHTML = 'File size exceeds 2 MiB, Reupload!';
+        eMessage.classList.add('block');
+        return false;
+    }else{
+        eMessage.classList.remove('error');
+        eMessage.classList.add('success');
+        eMessage.innerHTML = 'File size is less than 2 MiB';
+        eMessage.classList.add('block');
+    }
+  }
   

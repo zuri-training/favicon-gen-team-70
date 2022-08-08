@@ -79,20 +79,22 @@
             <p>Upload an image to generate a favicon which you can download or save for use at a later time.</p>
         </div>
         <div class="upload_form">
+            <div class="relative"></div>
+            <p class="error-message"></p>
             <div class="upload_h1">
                 <h1 class="">Upload IMAGE</h1>
             </div>
-            <form action="" method="post" enctype="multipart/form-data" class="r">
+            <form enctype="multipart/form-data" class="">
                 <div class="drop-zone">
                     <div class="vector">
                         <img class="vec1" src="../static/assets/index/Vector.png" alt=""><img class="vec2" src="../static/assets/index/Vector (1).png" alt="">
                     </div>
 
                     <span class="drop-zone__prompt">Select a JPEG file to Upload <br> Or drag and drop it here</span>
-                    <input type="file" name="myFile" class="drop-zone__input" id="image"
+                    <input type="file" name="upload" class="drop-zone__input" id="image"
                         accept=".jpg,.png,.svg,.jpeg,.tiff">
                 </div>
-                <button type="submit">Generate Favicon</button>
+                <button>Generate Favicon</button>
             </form>
         </div>
     </main>
