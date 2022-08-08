@@ -1,4 +1,4 @@
-{% extends 'dasboard/dashboard_base.html' %}
+{% extends 'dashboard/dashboard_base.html' %}
 {% load static %}
 <!-- contact html here -->
     {% block style %}
@@ -21,7 +21,7 @@
         <form enctype="multipart/form-data" class="">
             <div class="drop-zone">
                 <div class="vector">
-                    <img class="vec1" src="../static/assets/index/Vector.png" alt=""><img class="vec2" src="../static/assets/index/Vector (1).png" alt="">
+                    <img class="vec1" src="{% static 'assets/index/Vector.png' %}" alt=""><img class="vec2" src="{% static 'assets/index/Vector(1).png' %}" alt="">
                 </div>
 
                 <span class="drop-zone__prompt">Select a JPEG file to Upload <br> Or drag and drop it here</span>

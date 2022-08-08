@@ -23,7 +23,7 @@
 <body>
     <header class="">
         <div class="logo">
-            <a href="#">
+            <a href="{% url 'dashboard:index' %}">
                 <img src="{% static 'assets/index/logo_hd.png' %}">
             </a>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="desktop-btns">
                 <a href="#" class="initials">JO</a>
-                <a href="#"><button class="desktop-reg bdr">Logout</button></a>
+                <a href="{% url 'accounts:logout' %}"><button class="desktop-reg bdr">Logout</button></a>
             </div>
         </div>
     </header>
@@ -97,7 +97,7 @@
       <li class="features similar">
         <h2>Developers</h2>
         <ul class="box h-box">
-          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Documentation</a></li>
           <li><a href="#">Tutorial</a></li>
           <li><a href="#">API Status</a></li>
         </ul>

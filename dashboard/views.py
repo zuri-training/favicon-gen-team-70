@@ -7,8 +7,3 @@ from django.contrib import messages
 @login_required(redirect_field_name="next", login_url="accounts:login")
 def index(request):
     return render(request,'dashboard/index.html')
-
-@login_required(redirect_field_name="next", login_url="accounts:login")
-def logout_view(request):
-    auth.logout(request)
-    return redirect('accounts:home')
