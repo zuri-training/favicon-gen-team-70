@@ -7,19 +7,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/index/favicon-32x32.png" />
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/index/favicon-32x32.png" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'dashboard/dashboard_base.css' %}" />
+    {% block title %}
     <title>Dashboard</title>
+    {% endblock %}
 </head>
 
 <body>
     <header class="">
         <div class="logo">
             <a href="#">
-                <img src="../static/assets/index/logo_hd.png">
+                <img src="{% static 'assets/index/logo_hd.png' %}">
             </a>
         </div>
         <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
@@ -69,12 +71,14 @@
                     <div class="">
                         <a href="#" class="initials">JO</a>
                     </div>
-                    <a href="./accounts/register.html"><button class="mobile-reg">Logout</button></a>
+                    <a href="{% url 'accounts:logout' %}"><button class="mobile-reg">Logout</button></a>
                 </div>
             </div>
             <div class="outside-click" onclick="noShow()"></div>
         </div>
         <!-- main block -->
+        {% block main %}
+        {% endblock %}
         <!-- endblock -->
     </main>
 
@@ -121,6 +125,8 @@
   </footer>
   <!-- base dashboard script -->
     <script src="../static/dashboard/dashboard.js"></script>
+    {% block base_script %}
+    {% endblock %}
 </body>
 
 </html>
