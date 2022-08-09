@@ -7,7 +7,7 @@
   font-family: "Sora", sans-serif;
 }
 html{
-  width: 100vw;
+  max-width: 100%;
 }
 a,
 h5 {
@@ -17,7 +17,7 @@ h5 {
 }
 
 body {
-  width: 100vw;
+  max-width: 100%;
   background: hsl(0, 0%, 98%);
   /* background: #E8EAEE; */
   display: flex;
@@ -371,7 +371,7 @@ h1 {
   margin: 20px auto;
 }
 .main-ill{
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -399,7 +399,7 @@ h1 {
   cursor: pointer;
 }
 .logo-container{
-  width: 100vw;
+  width: 100%;
   margin: 50px auto;
   padding: 5rem 0rem;
   background-color: #f0f1f3; 
@@ -415,7 +415,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 100%;
   padding: 4rem 0rem;
 }
 .contain{
@@ -545,7 +545,7 @@ small {
 .main {
   background: white;
   /* height: 100vh; */
-  width: 100vw;
+  width: 100%;
 }
 
 .main .favicon_generator{
@@ -624,7 +624,7 @@ small {
 }
 
 section .sec{
-  width: 100vw;
+  max-width: 100%;
   margin: auto;
   background-color: #F0F1F3;
   padding: 5rem 7.5rem;
@@ -940,7 +940,7 @@ input::placeholder{
 
 /*footer beginning*/
 footer{
-  width: 100vw;
+ max-width: 100%;
   /* Note dev this field should be edited i gave this spave so that other contents can stay here */
   margin-top: auto;  
 }
