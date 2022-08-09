@@ -29,48 +29,152 @@
       </div>
       <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
       <div class="desktop desktop-link-div">
+
         <div class="desktop-links">
           <div>
-            <a href="../index.html">Home</a>
+            <a href="#">Home</a>
           </div>
           <div>
-            <a href="../dashboard/index.html">Generator</a>
+            <a href="#">Generator</a>
           </div>
           <div>
-            <a href="../home/docs.html">Docs</a>
+            <a href="#">Docs</a>
           </div>
           <div>
-            <a href="./contact.html">Contact Us</a>
+            <a href="#">Contact Us</a>
           </div>
         </div>
+ <!-- <div> -->
         <div class="desktop-btns">
-          <a href="../accounts/login.html"><button>Login</button></a>
-          <a href="../accounts/register.html"><button class="desktop-reg">Register</button></a>
+          <a href="./accounts/login.html"><button>Login</button></a>
+          <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
         </div>
       </div>
     </header>
     <main class="">
       <div class="mobile mobile-link-div">
         <div class="links left">
-          <a href="../index.html" class="spaced"><h5>Home</h5></a>
-          <a href="../text-to-favicon/index.html"><h5>Generator</h5></a>
-          <a href="./docs.html"><h5>Docs</h5></a>
-          <a href="./contact.html"><h5>Contact Us</h5></a>
+          <a href="#" class="spaced"><h5>Home</h5></a>
+          <a href="#"><h5>Generator</h5></a>
+          <a href="#"><h5>Docs</h5></a>
+          <a href="#"><h5>Contact Us</h5></a>
           <div class="mobile-btn">
-            <a href="../accounts/login.html"><button>Login</button></a>
-            <a href="../accounts/register.html"><button class="mobile-reg">Register</button></a>
+            <a href="./accounts/login.html"><button>Login</button></a>
+            <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
           </div>
         </div>
         <div class="outside-click" onclick="noShow()"></div>
       </div>
-      <div class="main">
+      <!-- <div class="main"> -->
         <!-- your main stuff here -->
-        sarah codes come here. The footer will be below tho
+            <!-- Section one --> 
+        <div class="container">
+        <section class="info-section">
+          <h2 class="bg-text">get in touch with the best team support</h2>
+          <p class="text">Got any issues, or complaint or questions? Whatever it is, you can get in touch with the right team that's always willing to help.</p>
+          <div class="location">
+            <h2 class="loc-text">our office address</h2>
+            <p class="para">17a Akinsanyan St, Ojodu 101233  Ojodu Berger, Ikeja Lagos State</p>
+        </div>
+        <div class="email-address">
+            <h2 class="add">shoot us an email:</h2>
+            <p>icon-city.favicon@gmail.com</p>
+        </div>
+        <div class="phone">
+            <h2 class="num">reach us via phone:</h2>
+            <p>+234 111 23 4567, +234 848 78 888</p>
+        </div>
+        </section> 
+        <!-- End of first section -->
+
+        <!-- Section two -->
+          <section class="section-form">
+     <h3 class="info">tell us what's on your mind</h3>
+     <form id="form">
+         <div class="user-details">
+             <div class="input-box">
+                 <label for="name" class="details">Name</label>
+                 <input type="text" 
+                 id="name" 
+                 name="name" 
+                 required
+                 >
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="email" class="details">Email Address</label>
+                     <input 
+                     type="text" 
+                     id="email" 
+                     name="email"
+                     required
+                     >
+             </div>
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="phone" class="details">Phone Number</label>
+                     <input type="text" id="phone" name="phone" required
+                     >
+                 </div>
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="msg" class="details">Message</label><br>
+                     <textarea name="message" id="" cols="30" rows="10"></textarea>
+                 </div>
+             </div>
+         </div>
+           <button type="send" class="btn">Send Email</button>
+           <button type="cancel" class="btn2">Cancel</button>
+     </form>
+ </section> 
+        </div>
+    <!-- End of Section two -->
+
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="l-footer">
+      <div class=" logo">
+        <img src="../static/assets/index/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
       </div>
-    </main>
-    <footer>
-        <!-- footer stays here -->
-    </footer>
+      <p>Iconcity helps you generate your favorite favicons Quickly</p>
+    </div>
+    <ul class="r-footer">
+      <li class="features similar">
+        <h2>Developers</h2>
+        <ul class="box h-box">
+          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">API Status</a></li>
+        </ul>
+      </li>
+      <li class=" similar resource">
+        <h2>Resources</h2>
+        <ul class="box">
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+
+      <li class="similar">
+        <h2>Company</h2>
+        <ul class="box">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <hr>
+    <div class="b-footer">
+      <p>2022 Iconcity. All rights reserved</p>
+    </div>
+  </footer>
+  <!-- End of Footer -->
     <script src="../static/home/contact.js"></script>
   </body>
 </html>
