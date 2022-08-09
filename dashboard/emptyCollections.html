@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../static/dashboard/dashboard_base.css" />
+    <link rel="stylesheet" href="../static/dashboard/emptyCollections.css" />
     <title>Dashboard</title>
 </head>
 
@@ -41,8 +41,8 @@
                 </div>
             </div>
             <div class="desktop-btns">
-                <div class="initials"><h3>JO</h3></div>
-                <a href="../index.html"><button class="desktop-reg bdr">Logout</button></a>
+                <a href="#" class="initials">JO</a>
+                <a href="#"><button class="desktop-reg bdr">Logout</button></a>
             </div>
         </div>
     </header>
@@ -66,14 +66,41 @@
                 </a>
                 <div class="mobile-btn">
                     <div class="">
-                      <div class="initials"><h3>JO</h3></div>
+                        <a href="#" class="initials">JO</a>
                     </div>
-                    <a href="../index.html"><button class="mobile-reg">Logout</button></a>
+                    <a href="./accounts/register.html"><button class="mobile-reg">Logout</button></a>
                 </div>
             </div>
             <div class="outside-click" onclick="noShow()"></div>
         </div>
         <!-- main block -->
+        <div class="main">
+            
+            <div class="image">
+                <img
+                    src="../static/assets/noCollection.png"
+                    id="w-logo"
+                    alt="emptyCollections Logo"
+            />
+            </div>
+    
+            <div class="content">
+                <h1>Your collection is empty</h1>
+                <br />
+                <p>
+                A collection is where you have your saved favicons and you can revisit
+                them to <br />
+                reuse them. Click on the button below to create a new favicon
+                </p>
+    
+                <br />
+            <a href="../accounts/login.html"
+                ><button class="noCollections">Generate Favicon</button></a>
+                <br />
+            </div>
+        </div>
+    
+    
         <!-- endblock -->
     </main>
 
@@ -118,7 +145,6 @@
       <p>2022 Iconcity. All rights reserved</p>
     </div>
   </footer>
-  <!-- base script -->
     <script src="../static/script.js"></script>
 </body>
 

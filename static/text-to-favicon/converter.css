@@ -1,0 +1,417 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #E2DFDF;
+}
+.container
+{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+.fav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+}
+.fav h2{
+    font-size: 25px;
+    padding: 10px;
+    color: #183153;
+    font-weight: 700;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+label
+{
+    margin: 0px 0px -10px 14px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #183153;
+
+}
+input, select
+{
+    height: 38px;
+    width: 408px;
+    border: none;
+    border-radius: 0px;
+    margin: 15px;
+}
+#img
+{
+    position: relative;
+    top: 52px;
+    right: 122px;
+}
+#p
+{
+    font-family: 'Sora', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 102px;
+    color: #183153;
+    position: relative;
+    left: 10px;
+}
+.right_cont
+{
+    /* position: fixed; */
+    left: 50%;
+    margin: 56px;
+    width: 24%;
+    height: 250px;
+}
+.scroll
+{
+    position: fixed;
+}
+.scrolled
+{
+    position: absolute;
+    top: 128%;
+}
+#label
+{
+    position: relative;
+    top: 44px;
+    left: 103px;
+    color: white;
+    font-size: 12px;
+}
+#canvas
+{
+    background: #183153;
+    width: 45%;
+    margin: auto;
+}
+#iconp
+{
+    font-family: 'Pacifico', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 102px;
+    color: white;
+    position: relative;
+    left: 39px;
+    bottom: 16px;
+}
+.iconf
+{
+    height: 32px;
+    position: relative;
+    top: 55px;
+    left: 7px;
+}
+.icon
+{
+    height: 32px;
+    margin-left: 55px;
+}
+#up_btn:hover, #u_btn:hover, #sel_btn:hover
+{
+    border: 1px solid #FAB005;
+    background: transparent;
+    color: #465A75;
+}
+#up_btn, #u_btn, #sel_btn
+{
+    border: none;
+    border-radius: 3px;
+    background-color: #465A75;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#up_btn
+{
+    width: 40%;
+    height: 47px;
+    margin: 0px 0 11px 12px;
+    display: inline-block;
+    line-height: 46px;
+    font-size: 23px;
+}
+#u_btn
+{
+    width: 78%;
+    height: 38px;
+    position: relative;
+    top: 47px;
+    right: 2px;
+    display: inline-block;
+    line-height: 42px;
+    font-size: 23px;
+}
+#sel_btn
+{
+    width: 78%;
+    height: 38px;
+    margin-left: 14px;
+    font-size: 22px;
+}
+#dwn_btn
+{
+    width: 37%;
+    height: 14%;
+    background: #FAB005;
+    color: #183153;
+    border: none;
+    border-radius: 4px;
+    margin: 2% 0 0 35%;
+    cursor: pointer;
+}
+
+@media(max-width: 1122px)
+{
+    .right_cont
+    {
+        left: 58%;
+    }
+    #canvas
+    {
+        width: 57%;
+    }
+    #label
+    {
+        left: 65px;
+    }
+}
+
+@media(max-width: 995px)
+{
+    .right_cont
+    {
+        left: 58%;
+    }
+    #canvas
+    {
+        width: 64%;
+    }
+    #label
+    {
+        left: 56px;
+    }
+}
+
+@media(max-width: 950px)
+{
+.container
+{
+    width: 76%;
+}
+input, select
+{
+    height: 30px;
+    width: 212px;
+}
+.right_cont
+{
+    left: 44%;
+    width: 36%;
+    height: 200px;
+}
+
+}
+
+
+@media (max-width: 934px)
+{
+.container
+{
+    width: 64%;
+}
+.right_cont
+{
+    left: 44%;
+    width: 32%
+}
+#label 
+{
+    left: 82px;
+}
+#canvas
+{
+    width: 50%;
+}    
+}
+
+@media(max-width:835px)
+{
+    .right_cont
+    {
+        width: 35%;
+    } 
+}
+
+@media(max-width:790px)
+{
+    #canvas
+    {
+        width: 60%;
+    }
+    #label
+    {
+        left: 67px;
+    } 
+}
+
+
+@media(max-width:690px)
+{
+    #label
+    {
+        left: 55px;
+    } 
+}
+
+
+@media(max-width:650px)
+{
+    .container
+    {
+        width: 75%;
+    }
+    #label
+    {
+        left: 47px;
+    } 
+    #canvas
+    {
+        width: 69%;
+    }
+}
+
+
+@media(max-width:570px)
+{
+    .container
+    {
+        width: 82%;
+    }
+    .right_cont
+    {
+        width: 38%;
+    }
+}
+
+
+@media(max-width:550px)
+{
+.container
+{
+    width: 90%;
+}
+input, select
+{
+    height: 26px;
+    width: 170px;
+    border: none;
+    border-radius: 0px;
+    margin: 15px;
+}
+.right_cont
+{
+    left:40%;
+    margin: 56px;
+    width: 40%;
+    height: 200px;
+}
+#up_btn
+{
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+}
+#u_btn
+{
+    width: 57%;
+    height: 38px;
+    top: 14px;
+    font-size: 16px;
+}
+#sel_btn
+{
+    width: 56%;
+    font-size: 16px;
+}
+}
+
+@media(max-width:500px)
+{
+input, select
+{
+    height: 26px;
+    width: 140px;
+    border: none;
+    border-radius: 0px;
+    margin: 15px;
+}
+.right_cont
+{
+    left: 37%;
+    margin: 56px;
+    width: 46%;
+    height: 200px;
+}
+#up_btn
+{
+    width: 40%;
+    height: 40px;
+    font-size: 16px;
+}
+#u_btn
+{
+    width: 57%;
+    height: 38px;
+    top: 14px;
+    font-size: 16px;
+}
+#sel_btn
+{
+    width: 56%;
+    font-size: 16px;
+}
+}
+
+@media(max-width:440px)
+{
+    .right_cont
+    {
+        left: 37%;
+        margin: 56px;
+        width: 51%;
+        height: 200px;
+    }
+}
+
+@media(max-width:390px)
+{
+.container
+{
+    width: 98%;
+}
+.right_cont
+{
+   left: 33%;
+   margin: 56px; 
+   width: 56%;
+   height: 200px;
+}
+}
