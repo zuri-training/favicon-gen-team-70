@@ -1,0 +1,39 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% load static %}
+<!-- contact html here -->
+
+    {% block style %}
+        <link rel="stylesheet" href="{% static 'dashboard/emptyCollections.css' %}" />
+    {% endblock %}
+
+    {% block title %}Dashboard{% endblock %}
+
+    {% block main %}
+        <!-- main block -->
+        <div class="main">
+            
+            <div class="image">
+                <img
+                    src="{% static 'assets/dashboard/noCollection.png' %}"
+                    id="w-logo"
+                    alt="emptyCollections Logo"
+            />
+            </div>
+    
+            <div class="content">
+                <h1>Your collection is empty</h1>
+                <br />
+                <p>
+                A collection is where you have your saved favicons and you can revisit
+                them to <br />
+                reuse them. Click on the button below to create a new favicon
+                </p>
+    
+                <br />
+            <a href="{% url 'dashboard:index' %}"
+                ><button class="noCollections">Generate Favicon</button></a>
+                <br />
+            </div>
+        </div>
+    {% endblock %}
+        <!-- endblock -->
