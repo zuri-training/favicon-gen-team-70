@@ -94,10 +94,7 @@ shape.addEventListener('change', () => {
 
 dwn_btn.onclick = function() {
     // const target = document.getElementById('favicon');
-
-
-    html2canvas(canvass, {  allowTaint: true,
-        foreignObjectRendering: true,}).then((canvas) => {
+    html2canvas(canvass).then((canvas) => {
        const base64image = canvas.toDataURL("image/png");
        var anchor = document.createElement('a');
        anchor.setAttribute("href", base64image);
