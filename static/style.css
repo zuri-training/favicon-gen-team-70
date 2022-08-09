@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
 }
-
+html{
+  width: 100vw;
+}
 a,
 h5 {
   text-decoration: none;
@@ -17,10 +19,12 @@ h5 {
 body {
   width: 100vw;
   background: hsl(0, 0%, 98%);
+  /* background: #E8EAEE; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* z-index: -4; */
 }
 
 .bdr {
@@ -367,14 +371,18 @@ h1 {
   margin: 20px auto;
 }
 .main-ill{
-  width: 60vw;
+  width: 100vw;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  /* margin: auto; */
+  padding-top: 1rem;
 }
+
 .hero{
-  width: 500px;
-  height: 500px;
+  max-width: 60%;
+  height: auto;
+  margin: 2rem;
 }
 
 .btn-blue{
@@ -388,38 +396,33 @@ h1 {
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  cursor: pointer;
 }
 .logo-container{
   width: 100vw;
-  margin: 80px auto;
-  background-color: #f0f1f3;
+  margin: 50px auto;
+  padding: 5rem 0rem;
+  background-color: #f0f1f3; 
+  text-align: center;
 }
 .text-h2{
   font-weight: 600;
   font-size: 32px;
-  margin: 50px 30vw;
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem 0;
 }
-.logo-p{
-  width: 70%;
-  margin: auto 20vw;
-  padding: 50px auto;
-  align-items: center;
-  justify-content: center;
-}
+
 .logo-flex{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100vw;
+  padding: 4rem 0rem;
 }
 .contain{
   width: 200px;
   height: 240px;
   border-radius: 0px 50px;
-  margin:  auto;
+  margin: 1rem auto;
   align-items: center;
   justify-content: center;
 }
@@ -540,8 +543,9 @@ small {
   color: #183153;
 }
 .main {
-  background: #F0F1F3;
+  background: white;
   /* height: 100vh; */
+  width: 100vw;
 }
 
 .main .favicon_generator{
@@ -620,7 +624,9 @@ small {
 }
 
 section .sec{
-  /* background-color: red; */
+  width: 100vw;
+  margin: auto;
+  background-color: #F0F1F3;
   padding: 5rem 7.5rem;
   font-family: 'Sora';
   font-style: normal;
@@ -690,7 +696,7 @@ gap: 2rem;
 justify-content: center;
 align-items: center;
 text-align: center;
-padding: 3rem 0;
+padding: 5rem 0;
 margin: 1rem 0;
 color: #183153;
 }
@@ -714,13 +720,23 @@ section .sec3 .sec3_content_subscribe{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #0D1B2E;
+  background-color: #183153;
   padding: 20px;
+  border: 1px solid;
+  border-radius: 0.5rem;
 
+}
+section .sec3 .sec3_content_subscribe .btn-sub{
+  background-color: white;
+  color: #0D1B2E;
+}
+section .sec3 .sec3_content_subscribe .btn-sub:hover{
+  /* background-color: white; */
+  color: #fab005;
 }
 
 input {
-
+background-color: transparent;
 border: none;
 outline: none;
 font-size: 16px;
