@@ -27,9 +27,10 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 - Step 1: Create a virtual environment (python -m venv <virtualEnvironmentName>
 - Step 2: Activate your virtual environment (virtualEnvironmentName/scripts/activate)
 - Step 3: Install the modules (pip install -r requirements.txt)
-- Step 4: Start the application command: python manage.py runserver. (Ensure you are in the same directory that has the manage.py file)
-- Step 5: Create a .env file and add the secret key
-- Step 6: Open link on your web browser
+- Step 4: Create a .env file and add a secret key
+- Step 5: Start the application command: python manage.py runserver. (Ensure you are in the same directory that has the manage.py file)
+- Step 6: If you encounter the ***ModuleNotFoundError: No module named 'decouple'***, Install the decouple module with the command (pip install python-decouple)
+- Step 7: Open link on your web browser
 
 
 
