@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
+  max-width: 100%;
 }
 
 a,
@@ -34,7 +35,7 @@ body {
 .icon {
   z-index: 20;
   color: rgba(24, 49, 83, 1);
-  margin-right: 10px;
+  
 }
 
 i,
@@ -123,14 +124,18 @@ header {
   border: 0;
   background: transparent;
   color: #Fab005;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   font-size: 18px;
+  margin-top: 30px;
 }
 
 .mobile-btn .mobile-reg {
   border: 2px solid #Fab005;
   border-radius: 15px;
+  background: #fff;
+  color: #183153;
+  font-weight: 600;
 }
 
 .left {
@@ -182,6 +187,7 @@ h1 {
 }
 
 @media screen and (min-width: 728px) and (max-width: 998px) {
+  /* header css */
   header {
     width: 100%;
     /* padding: 30px; */
@@ -219,9 +225,11 @@ h1 {
   .mobile button {
     font-size: 25px;
   }
+  /* header css */
 }
 
 @media screen and (min-width: 998px) {
+  /* header css  */
   header {
     width: 100%;
   }
@@ -308,26 +316,24 @@ h1 {
     border-radius: 15px;
   }
 
-  .desktop-btns button:hover{
+  .desktop-btns button:hover,
+  a:hover {
     color: #fab005;
   }
 
   .desktop-btns .desktop-reg:hover {
-    background: #183153;
+    border: 2px solid #fab005;
   }
 
   .hide {
     display: none;
   }
+  /* header css */
 }
-
-
 
 /*footer beginning*/
 footer{
   width: 100vw;
-  /* Note dev this field should be edited i gave this spave so that other contents can stay here */
-  margin-top: 100%;  
 }
 footer h2{
   font-size: 18px;
