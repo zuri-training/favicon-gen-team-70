@@ -119,16 +119,13 @@ header {
 /* initials for dashboard */
 .desktop-btns .initials,
 .mobile-btn .initials {
-  width: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 0;
   padding-bottom: 0;
   border-radius: 50%;
   background: #183153;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 .desktop-btns .initials:hover{
   color: #fab005;
@@ -287,6 +284,70 @@ h1 {
   }
 }
 /* end of header */
+/*main block*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.image {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    object-position: 50%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.content {
+    text-align: center;
+
+}
+
+.noCollections{
+    display:inline-block;
+    padding: 1em;
+    border:0.16em solid #FFFFFF;
+    border-radius: 8px;
+    margin:0 0.5em 0.5em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"Sora", sans-serif;
+    font-weight:550;
+    color:#fff;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: #1e3557;
+    cursor:pointer;
+}
+.noCollections:hover{
+    color: #fab005;;
+    background-color:#413742;
+    text-transform:uppercase;
+    transition: 0.7s;
+}
+.noCollections:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+@media all and (max-width:480px){
+    .noCollections{
+        display:block;
+        margin:0.4em auto;
+        
+    }
+}
+/* end of main block */
 
 /* footer */
 footer {

@@ -119,13 +119,16 @@ header {
 /* initials for dashboard */
 .desktop-btns .initials,
 .mobile-btn .initials {
-  padding-left: 12px;
-  padding-right: 12px;
+  width: 50px;
   padding-top: 0;
   padding-bottom: 0;
   border-radius: 50%;
   background: #183153;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 .desktop-btns .initials:hover{
   color: #fab005;
@@ -201,6 +204,10 @@ text-align: center;
   align-items: center;
   justify-content: center;
 }
+form{
+  margin-top: 10px;
+}
+
 form button{
   color: rgba(240, 241, 243, 1);
   background-color: #183153;
@@ -208,13 +215,21 @@ form button{
   border-radius: 10px;
   width: 130px;
   padding: 17px 0;
-  margin: 10px;
   cursor: pointer;
 }
 form button:hover{
   transform: scale(1.15);
 }
 
+@media screen and (max-width: 300px){
+  
+  .congrats h1{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+}
 @media screen and (min-width: 451px) and (max-width: 998px) {
   header {
     width: 100%;
