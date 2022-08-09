@@ -15,7 +15,33 @@
       <div class="main2">
         <h3>My saved favicons</h3>
         <div class="saved_collection">
+        {% for zip in zips %}
           <div class="saved_sect">
+            <div class="img_left">
+              <img src="{% static 'assets/index/Vector(2).svg' %}" alt="" /><span
+                >{{ zip.name }}</span
+              >
+            </div>
+            <div class="download_delete">
+                <form  method="POST" action="{% url 'dashboard:delete' zip.pk %}">
+                    {% csrf_token %}
+                    <button type="submit">
+                        <img src="{% static 'assets/index/Vector(1).svg' %}" alt="" />
+                    </button>
+                </form>
+                <form method="POST" action="{% url 'dashboard:download' zip.pk %}">
+                    {% csrf_token %}
+                    <button type="submit">
+                        <img
+                          src="{% static 'assets/index/Vector.svg' %}"
+                          alt=""
+                        />
+                    </button>
+                </form>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- <div class="saved_sect">
             <div class="img_left">
               <img src="../static/assets/index/Vector(2).svg" alt="" /><span
                 >Icon city</span
@@ -102,29 +128,7 @@
                     </button>
                 </form>
             </div>
-          </div>
-          <div class="saved_sect">
-            <div class="img_left">
-              <img src="../static/assets/index/Vector(2).svg" alt="" /><span
-                >Icon city</span
-              >
-            </div>
-            <div class="download_delete">
-                <form>
-                    <button type="submit">
-                        <img src="../static/assets/index/Vector(1).svg" alt="" />
-                    </button>
-                </form>
-                <form>
-                    <button type="submit">
-                        <img
-                          src="../static/assets/index/Vector.svg"
-                          alt=""
-                        />
-                    </button>
-                </form>
-            </div>
-          </div>
+          </div> -->
           
         </div>
       </div>
