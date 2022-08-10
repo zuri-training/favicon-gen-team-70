@@ -21,7 +21,7 @@ Issue link for documentation: https://github.com/zuri-training/favicon-gen-team-
 
 [Task Delegation](https://github.com/orgs/zuri-training/projects/466/views/1)
 
-- Merging and closing of pull requests and issues
+- Reviewing, Merging and closing of pull requests and issues(60 plus)
 
 
 - Created the repository and drafted a readme file for the repository
