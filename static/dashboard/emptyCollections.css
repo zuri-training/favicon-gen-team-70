@@ -277,7 +277,7 @@ h1 {
   }
   .desktop-btns .desktop-reg:hover {
     background: #183153;
-    color: #fff;
+    color: #fab005;
   }
   .hide {
     display: none;
@@ -289,7 +289,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 3%;
+    padding-bottom: 100px;
 }
 
 .image {
@@ -298,11 +298,14 @@ main {
     border-radius: 5px;
     margin-top: 10%;
     padding: 25px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     object-position: 50%;
+    display: flex;
+    justify-content: center;
+
+
 
 }
 
@@ -325,9 +328,10 @@ main {
     text-align:center;
     transition: all 0.15s;
     background-color: #1e3557;
+    cursor:pointer;
 }
 .noCollections:hover{
-    color: rgb(205, 221, 173);
+    color: #fab005;;
     background-color:#413742;
     text-transform:uppercase;
     transition: 0.7s;
@@ -343,7 +347,6 @@ main {
         
     }
 }
-
 /* end of main block */
 
 /* footer */
