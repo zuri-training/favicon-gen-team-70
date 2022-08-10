@@ -9,3 +9,5 @@ My contributions
 * Design empty collections page
 * Added a create icon button which links back to the home sign in page! https://github.com/zuri-training/favicon-gen-team-70/pull/53
 https://jemvaris.github.io/favicon-gen-team-70/dashboard/emptyCollections.html
+
+*Design Contact us page https://jemvaris.github.io/favicon-gen-team-70/home/authenticatedContact.html
