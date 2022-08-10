@@ -1,0 +1,189 @@
+<!-- contact html here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/index/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/home/contact.css" />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="logo">
+            <a href="/index.html">
+                <img src="../static/assets/index/logo_hd.png">
+            </a>
+        </div>
+        <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+        <div class="desktop desktop-link-div">
+            <div class="desktop-links">
+                <div>
+                    <a href="../home/docs.html">Docs</a>
+                </div>
+                <div>
+                    <a href="./index.html">Generator</a>
+                </div>
+                <div>
+                    <a href="./savedicons.html">Saved Favicons</a>
+                </div>
+                <div>
+                    <a href="../text-to-favicon/index.html">Text-to-Favicon</a>
+                </div>
+                <div>
+                    <a href="../home/contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="desktop-btns">
+                
+                <a href="../index.html"><button class="desktop-reg bdr">Logout</button></a>
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="mobile mobile-link-div">
+            <div class="links left">
+                <a href="../home/docs.html" class="spaced">
+                    <h5>Docs</h5>
+                </a>
+                <a href="./index.html">
+                    <h5>Generator</h5>
+                </a>
+                <a href="./savedicons.html">
+                    <h5>Saved Favicons</h5>
+                </a>
+                <a href="../text-to-favicon/index.html">
+                    <h5>Text-to-Favicon</h5>
+                </a>
+                <a href="../home/contact.html">
+                    <h5>Contact</h5>
+                </a>
+                <div class="mobile-btn">
+                    <div class="">
+                      
+                    </div>
+                    <a href="../index.html"><button class="mobile-reg">Logout</button></a>
+                </div>
+            </div>
+            <div class="outside-click" onclick="noShow()"></div>
+        </div>
+
+      <!-- your main stuff here -->
+      <!-- Section One -->
+        <div class="container">
+        <section class="info-section">
+          <h2 class="bg-text">get in touch with the best team support</h2>
+          <p class="text">Got any issues, or complaint or questions? Whatever it is, you can get in touch with the right team that's always willing to help.</p>
+          <div class="location">
+            <h2 class="loc-text">our office address</h2>
+            <p class="para">17a Akinsanyan St, Ojodu 101233  Ojodu Berger, Ikeja Lagos State</p>
+        </div>
+        <div class="email-address">
+            <h2 class="add">shoot us an email:</h2>
+            <p>icon-city.favicon@gmail.com</p>
+        </div>
+        <div class="phone">
+            <h2 class="num">reach us via phone:</h2>
+            <p>+234 111 23 4567, +234 848 78 888</p>
+        </div>
+        </section> 
+        <!-- End of first section -->
+
+        <!-- Section two -->
+          <section class="section-form">
+     <h3 class="info">tell us what's on your mind</h3>
+     <form id="form">
+         <div class="user-details">
+             <div class="input-box">
+                 <label for="name" class="details">Name</label>
+                 <input type="text" 
+                 id="name" 
+                 name="name" 
+                 required
+                 >
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="email" class="details">Email Address</label>
+                     <input 
+                     type="text" 
+                     id="email" 
+                     name="email"
+                     required
+                     >
+             </div>
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="phone" class="details">Phone Number</label>
+                     <input type="text" id="phone" name="phone" required
+                     >
+                 </div>
+             </div>
+             <div class="user-details">
+                 <div class="input-box">
+                     <label for="msg" class="details">Message</label><br>
+                     <textarea name="message" id="" cols="30" rows="10"></textarea>
+                 </div>
+             </div>
+         </div>
+        <input type="submit" class="btn" id="button" value="Send Email" >
+           <button type="cancel" class="btn2">Cancel</button>
+     </form>
+ </section> 
+        </div>
+    <!-- End of Section two -->
+
+    <!-- footer -->
+  <footer class="footer">
+    <div class="l-footer">
+      <div class=" logo">
+        <img src="../static/assets/index/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
+      </div>
+      <p>Iconcity helps you generate your favorite favicons Quickly</p>
+    </div>
+    <ul class="r-footer">
+      <li class="features similar">
+        <h2>Developers</h2>
+        <ul class="box h-box">
+          <li><a href="#">Doumentation</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">API Status</a></li>
+        </ul>
+      </li>
+      <li class=" similar resource">
+        <h2>Resources</h2>
+        <ul class="box">
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </li>
+
+      <li class="similar">
+        <h2>Company</h2>
+        <ul class="box">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Socials</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <hr>
+    <div class="b-footer">
+      <p>2022 Iconcity. All rights reserved</p>
+    </div>
+  </footer> 
+   <!--End of footer  -->
+    <script src="../static/home/contact.js"></script>
+  </body>
+</html>
+
+
