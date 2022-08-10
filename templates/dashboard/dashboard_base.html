@@ -31,7 +31,7 @@
         <div class="desktop desktop-link-div">
             <div class="desktop-links">
                 <div>
-                    <a href="#">Docs</a>
+                    <a href="{% url 'home:docs' %}">Docs</a>
                 </div>
                 <div>
                     <a href="{% url 'dashboard:index' %}">Generator</a>
@@ -43,7 +43,7 @@
                     <a href="{% url 'dashboard:text_to_favicon' %}">Text-to-Favicon</a>
                 </div>
                 <div>
-                    <a href="#">Contact</a>
+                    <a href="{% url 'home:contact' %}">Contact</a>
                 </div>
             </div>
             <div class="desktop-btns">
@@ -55,7 +55,7 @@
     <main class="">
         <div class="mobile mobile-link-div">
             <div class="links left">
-                <a href="#" class="spaced">
+                <a href="{% url 'home:docs' %}" class="spaced">
                     <h5>Docs</h5>
                 </a>
                 <a href="{% url 'dashboard:index' %}">
@@ -67,7 +67,7 @@
                 <a href="{% url 'dashboard:text_to_favicon' %}">
                     <h5>Text-to-Favicon</h5>
                 </a>
-                <a href="#">
+                <a href="{% url 'home:contact' %}">
                     <h5>Contact</h5>
                 </a>
                 <div class="mobile-btn">
@@ -96,17 +96,17 @@
       <li class="features similar">
         <h2>Developers</h2>
         <ul class="box h-box">
-          <li><a href="#">Documentation</a></li>
-          <li><a href="#">Tutorial</a></li>
-          <li><a href="#">API Status</a></li>
+          <li><a href="{% url 'home:docs' %}">Documentation</a></li>
+          <li><a href="{% url 'home:docs' %}">Tutorial</a></li>
+          <li><a href="{% url 'home:docs' %}">API Status</a></li>
         </ul>
       </li>
       <li class=" similar resource">
         <h2>Resources</h2>
         <ul class="box">
-          <li><a href="#">Introduction</a></li>
+          <li><a href="{% url 'home:docs' %}">Introduction</a></li>
           <li><a href="#">Blog</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="{% url 'home:docs' %}">Help</a></li>
         </ul>
       </li>
 
@@ -114,8 +114,8 @@
         <h2>Company</h2>
         <ul class="box">
           <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Socials</a></li>
+          <li><a href="{% url 'home:contact' %}">Contact</a></li>
+          <li><a href="{% url 'home:contact' %}">Socials</a></li>
         </ul>
       </li>
 
