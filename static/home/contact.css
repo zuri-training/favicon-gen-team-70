@@ -754,7 +754,6 @@ textarea{
   }
 }
 
-
 @media(max-width: 332px)
 {
     .container
@@ -966,6 +965,261 @@ textarea{
     background: transparent;
     border: 2px solid #183153;
   }
+}
+
+/* Section one */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  /* height: 80vh; */
+  margin: auto;
+}
+
+.info-section {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: 80%;
+  color: rgb(15, 5, 82);
+}
+
+.section-form {
+  flex: 1;
+}
+
+.bg-text {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  font-weight: bold;
+}
+.text {
+  width: 70%;
+  margin-bottom: 2.5rem;
+}
+
+.loc-text {
+  text-transform: capitalize;
+  width: 70%;
+  margin-top: 3rem;
+}
+
+.location p {
+  width: 85%;
+  margin-bottom: 2.5rem;
+}
+
+.add {
+  text-transform: capitalize;
+}
+.email-address {
+  margin-bottom: 2.5rem;
+}
+
+.num {
+  text-transform: capitalize;
+}
+.phone {
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+/* SECTION TWO */
+.section-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#form {
+  background: rgb(206, 201, 201);
+  height: 600px;
+  width: 90%;
+  padding-left: 2rem;
+}
+  .loc-text,
+  .add, .num{
+    font-weight: medium;
+    font-size: 1.3rem;
+  }
+
+.info {
+  text-transform: capitalize;
+}
+form .user-details .input-box{
+    margin: 15px 0 12px 0;
+}
+ .user-details .input-box input{
+    height: 45px;
+    width: 90%;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: black;
+}
+
+.user-details .input-box .details{
+  margin-left: 10px;
+  padding-top: 20px;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+textarea{
+   margin-left: 10px;
+    height: 80px;
+    width: 90%;
+    border: rgba(70, 90, 117, 1);
+}
+.btn{
+    background: rgba(24, 49, 83, 1);
+    color: #fff;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin: 10px;
+}
+.btn2{
+    color: #333;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.btn:hover{
+    background: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.btn2:hover{
+    background: rgba(24, 49, 83, 1);;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 1px;
+  }
+  .loc-text,
+  .add, .num {
+    font-weight: bold;
+    margin-top: .5rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .bg-text{
+    margin-top: 1rem;
+    font-weight: bold;
+    width: 65%;
+    margin-left: 5rem;
+    font-size: 20px;
+  }
+  .text{
+    line-height: 1.6;
+    margin-left: 2.5rem;
+  }
+  .para{
+    margin-left: 2rem;
+  }
+
+  p{
+    text-align: center;
+  }
+  
+  .info-section {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+    width: 100%;
+  }
+  .section-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #form{
+    margin-left: 2rem;
+  }
+  .btn{
+    background: rgba(24, 49, 83, 1);
+    color: #fff;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin: 10px;
+}
+.btn2{
+    color: #333;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+}
+@media screen and (min-width: 820px)
+{
+  .container{
+    height: auto;
+  }
+  .btn{
+    background: rgba(24, 49, 83, 1);
+    color: #fff;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin: 10px;
+}
+.btn2{
+    color: #333;
+    padding: 9px;
+    width: 100px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+}
+
+
+@media(max-width: 332px)
+{
+    .container
+    {
+        font-size: 12px;
+    }
+    label 
+    {
+        margin: 9px 0 -25px 8px;
+    }
+    input 
+    {
+        margin-bottom: 3%;
+        height: 26px;
+    }
+    #form{
+      padding-left: 0.8rem;
+    }
 }
 
 /*footer beginning*/
