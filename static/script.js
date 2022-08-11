@@ -3,11 +3,13 @@ isClicked = false;
 const icon = document.querySelector(".icon");
 const body = document.querySelector("body");
 const links = document.querySelector(".links");
+const mobile = document.querySelector(".mobile-link-div");
 document.addEventListener("DOMContentLoaded", function () {
-
+  
 });
 function show(){
-  document.querySelector(".mobile-link-div").classList.toggle("blur");
+  mobile.classList.toggle("blur");
+  mobile.classList.toggle("notseen");
   body.classList.toggle("overflow");
     if (!isClicked) {
       links.classList.remove("left");

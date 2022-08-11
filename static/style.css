@@ -97,7 +97,10 @@ header {
 .links .features {
   margin-top: 70px;
 }
-
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 .links a {
   display: flex;
   padding: 10px;
@@ -303,10 +306,10 @@ h1 {
   }
 
   .desktop-btns .desktop-reg {
-    margin-left: 30px;
+    margin-left: 16px;
     width: 100px;
     border: 2px solid #183153;
-    border-radius: 15px;
+    border-radius: 8px;
   }
   .desktop-btns button:hover{
     color: #Fab005;

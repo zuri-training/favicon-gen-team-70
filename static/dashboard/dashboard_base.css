@@ -273,10 +273,10 @@ h1 {
     font-size: 16px;
   }
   .desktop-btns .desktop-reg {
-    margin-left: 30px;
+    margin-left: 16px;
     width: 100px;
     border: 2px solid #183153;
-    border-radius: 15px;
+    border-radius: 8px;
   }
   .desktop-btns .desktop-reg:hover {
     background: #183153;
