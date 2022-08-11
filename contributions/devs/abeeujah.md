@@ -1,3 +1,8 @@
+- Name: Ujah Abraham Abah
+- Track: Full Stack
+- ID: I4G005942F44
+- Team: Team_70
+
 Did the routing for the html pages on the frontend branch
 https://github.com/zuri-training/favicon-gen-team-70/pull/45
 
