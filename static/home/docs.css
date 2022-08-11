@@ -1,0 +1,103 @@
+/*Main Content Beginning*/
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+*{
+    font-family: 'Sora', sans-serif; 
+    margin: 0;
+    color: #183153;
+}
+table, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item{
+    grid-template-columns: 70%;
+    background-color: white;
+    width: 90%;
+    justify-content: center;
+    overflow-x: auto;
+    display: grid;
+    margin: auto;
+}
+.info{
+    grid-template-columns: 80%;
+    width: 100%;
+    line-height: 3rem;
+    padding: 100px 0;
+}
+li{
+    list-style-type: none;
+}
+img{
+    width: 80%;
+    height:auto;
+}
+summary{
+    border-style: none;
+}
+xmp{
+   
+    width: fit-content;
+    height: auto;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media screen and (max-width: 600px) {
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      text-align: right;
+    }
+   
+}
+@media screen and (max-width: 400px) {
+   table{
+    width: 100%;
+   } 
+   .container{
+    width: 100%;
+   }
+  .item{
+    width: 100%;
+  }
+  .item{
+    grid-template-columns: 70%;
+    background-color: white;
+    width: 90%;
+    justify-content: center;
+    overflow-x: auto;
+    display: grid;
+    margin: auto;
+}
+    xmp{
+        max-width: 100%;
+    }
+}
+
+/*Main Content End*/
