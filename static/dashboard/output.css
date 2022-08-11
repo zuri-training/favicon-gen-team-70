@@ -21,7 +21,7 @@ body {
   align-items: center;
 }
 .bdr {
-  border: 1px solid black;
+  border: none;
 }
 
 /* header start */
@@ -29,8 +29,9 @@ body {
   display: none;
 }
 .icon {
-  z-index: 20;
+  z-index: 2;
   color: rgba(24, 49, 83, 1);
+  margin-left: 5px;
 }
 i,
 .desktop-links a {
@@ -47,13 +48,28 @@ header {
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
+/* added */
+header{
+  flex-direction: column-reverse;
+}
+.added{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.added i{
+  border: 2px solid #fab005;
+  color: #fab005;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* added end */
 .desktop {
   display: none;
-}
-.notseen{
-  visibility: hidden;
-  transition: 0.2s;
 }
 .outside-click {
   grid-area: transparent;
@@ -61,6 +77,19 @@ header {
 .mobile links {
   grid-area: link;
 }
+.tiles{
+  margin-top: 16px;
+}
+.tiles, .logo{
+  width: 100%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+/* changed */
 .mobile-link-div {
   top: 0;
   width: 100vw;
@@ -69,8 +98,8 @@ header {
   left: 0;
   display: grid;
   overflow-x: hidden;
-  grid-template-columns: 0.3fr 1fr;
-  grid-template-areas: "transparent link";
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-areas: "link transparent";
 }
 .overflow {
   overflow-y: hidden;
@@ -88,18 +117,28 @@ header {
 .links .features {
   margin-top: 70px;
 }
-.links a {
+.links a{
+  display: flex;
+  padding: 8px;
+  margin-top: 8px; /* changed */
+}
+/* added */
+.links a h5{
+  margin-left: 16px;
+
+}
+.links .mobile-btn{
+  margin-top: 100px;
   display: flex;
   padding: 10px;
+  flex-direction: row;
 }
+
 .mobile .direction {
   margin-left: 10px;
 }
-.mobile-btn {
-  display: flex;
-  flex-direction: column;
-}
 .mobile-btn a {
+  margin-top: 0;
   padding: 0;
 }
 .mobile-btn button {
@@ -137,21 +176,14 @@ header {
 .desktop-btns .initials:hover{
   color: #fab005;
 }
-.mobile-btn .initials{
-  background:transparent;
-  border: 2px solid #fab005;
-  padding: 10px;
-  color: #fab005;
-  width: 50px;
-  font-size: 20px;
-}
 .mobile-btn div{
   display: flex;
   justify-content: center;
 }
 /* end */
+/* changed */
 .left {
-  transform: translateX(200%);
+  transform: translateX(-200%);  /* added */
 }
 .show {
   transform: translateX(0);
@@ -165,11 +197,16 @@ header {
 .block {
   display: block;
 }
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 h1 {
   font-size: 37px;
 }
+/*  i edited this */
 .links .spaced {
-  margin-top: 80px;
+  margin-top: 10px;
 }
 .mobile-link-div .links a {
   color: #fff;
@@ -275,10 +312,55 @@ form button:hover{
   }
 }
 /* header media query */
-@media screen and (min-width: 998px) {
+@media screen and (min-width: 451px) and (max-width: 998px) {
   header {
     width: 100%;
   }
+  
+  h1 {
+    font-size: 50px;
+  }
+  a,
+  h5 {
+    font-size: 25px;
+  }
+  .mobile-link-div {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mobile .links {
+    width: 100%;
+  }
+  header {
+    padding: 10px;
+    font-size: 25px;
+  }
+  .mobile button {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 728px) {
+  .desktop-btns a,
+  .desktop-btns button {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+  }
+}
+/* header media query */
+@media screen and (min-width: 998px) {
+  header {
+    width: 100%;
+    margin-top: 0;
+  }
+  .logo{
+    display: block;
+    width: auto;
+  }
+  /* added */
+header{
+  flex-direction: row;
+}
+/* added end */
   .desktop h5 {
     font-size: 16px;
   }
@@ -344,11 +426,10 @@ form button:hover{
     margin-left: 30px;
     width: 100px;
     border: 2px solid #183153;
-    border-radius: 15px;
+    border-radius: 8px;
   }
   .desktop-btns .desktop-reg:hover {
-    background: #183153;
-    color: #fab005;
+    background: #fab005;
   }
   .hide {
     display: none;
