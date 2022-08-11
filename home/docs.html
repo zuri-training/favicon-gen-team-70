@@ -17,51 +17,79 @@
 <body>
   <header class="">
     <div class="logo">
-      <img src="../static/assets/index/logo_hd.png">
+        <a href="/index.html">
+            <img src="../static/assets/index/logo_hd.png">
+        </a>
     </div>
-    <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+    <div class="tiles mobile">
+      <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+    </div>
     <div class="desktop desktop-link-div">
-      <div class="desktop-links">
-        <div>
-          <a href="./index.html">Home</a>
+        <div class="desktop-links">
+            <div>
+                <a href="../home/docs.html">Home</a>
+            </div>
+            <div>
+                <a href="./index.html">Generator</a>
+            </div>
+            <div>
+                <a href="./savedicons.html">Contact Us</a>
+            </div>
+            <div>
+                <a href="../text-to-favicon/index.html">Docs</a>
+            </div>
         </div>
-        <div>
-          <a href="./dashboard/index.html">Generator</a>
+        <div class="desktop-btns">
+            <a href="../index.html"><button class="bdr reg">Register</button></a>
+            <a href="../index.html"><button class="desktop-reg bdr">Login</button></a>
         </div>
-        <div>
-          <a href="./home/docs.html">Docs</a>
-        </div>
-        <div>
-          <a href="./home/contact.html">Contact Us</a>
-        </div>
-      </div>
-      <div class="desktop-btns">
-        <a href="../accounts/login.html"><button>Login</button></a>
-        <a href="../accounts/register.html"><button class="desktop-reg">Register</button></a>
-      </div>
     </div>
-  </header>
-  <main class="">
-    <div class="mobile mobile-link-div">
-      <div class="links left">
-        <a href="./index.html" class="spaced">
-          <h5>Home</h5>
-        </a>
-        <a href="./dashboard/index.html">
-          <h5>Generator</h5>
-        </a>
-        <a href="./home/docs.html">
-          <h5>Docs</h5>
-        </a>
-        <a href="./home/contact.html">
-          <h5>Contact Us</h5>
-        </a>
-        <div class="mobile-btn">
-          <a href="./accounts/login.html"><button>Login</button></a>
-          <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
+</header>
+<main class="">
+    <div class="mobile mobile-link-div notseen">
+        <div class="links left">
+            <div class="added">
+              <div class="svg">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="35" cy="35" r="34.5" stroke="#FAB005"/>
+                  <path d="M35.2666 33.1166C35.1 33.1 34.9 33.1 34.7166 33.1166C30.75 32.9833 27.6 29.7333 27.6 25.7333C27.6 21.65 30.9 18.3333 35 18.3333C39.0833 18.3333 42.4 21.65 42.4 25.7333C42.3833 29.7333 39.2333 32.9833 35.2666 33.1166Z" stroke="#FAB005" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26.9333 39.2667C22.9 41.9667 22.9 46.3667 26.9333 49.05C31.5167 52.1167 39.0333 52.1167 43.6167 49.05C47.65 46.35 47.65 41.95 43.6167 39.2667C39.05 36.2167 31.5333 36.2167 26.9333 39.2667Z" stroke="#FAB005" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                     
+              </div>
+              <i class="fa-solid fa-xmark" onclick="noShow()"></i>
+            </div>
+            <a href="#" class="spaced">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 17.9983C18 18.2635 17.8946 18.5179 17.7071 18.7054C17.5196 18.893 17.2652 18.9983 17 18.9983H1C0.734784 18.9983 0.48043 18.893 0.292893 18.7054C0.105357 18.5179 2.4071e-07 18.2635 2.4071e-07 17.9983V7.48832C-0.000105484 7.33593 0.0346172 7.18554 0.101516 7.04862C0.168415 6.9117 0.26572 6.79188 0.386 6.69832L8.386 0.476319C8.56154 0.339764 8.7776 0.265625 9 0.265625C9.2224 0.265625 9.43846 0.339764 9.614 0.476319L17.614 6.69832C17.7343 6.79188 17.8316 6.9117 17.8985 7.04862C17.9654 7.18554 18.0001 7.33593 18 7.48832V17.9983ZM16 16.9983V7.97632L9 2.53232L2 7.97632V16.9983H16Z" fill="#FAB005"/>
+                </svg>                    
+                <h5>Home</h5>
+            </a>
+            <a href="#">
+              <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 8C1.46957 8 0.960859 7.78929 0.585786 7.41421C0.210714 7.03914 0 6.53043 0 6C0 5.46957 0.210714 4.96086 0.585786 4.58579C0.960859 4.21071 1.46957 4 2 4C2.53043 4 3.03914 4.21071 3.41421 4.58579C3.78929 4.96086 4 5.46957 4 6C4 6.53043 3.78929 7.03914 3.41421 7.41421C3.03914 7.78929 2.53043 8 2 8ZM8 6C7.46957 6 6.96086 5.78929 6.58579 5.41421C6.21071 5.03914 6 4.53043 6 4C6 3.46957 6.21071 2.96086 6.58579 2.58579C6.96086 2.21071 7.46957 2 8 2C8.53043 2 9.03914 2.21071 9.41421 2.58579C9.78929 2.96086 10 3.46957 10 4C10 4.53043 9.78929 5.03914 9.41421 5.41421C9.03914 5.78929 8.53043 6 8 6ZM14 4C13.4696 4 12.9609 3.78929 12.5858 3.41421C12.2107 3.03914 12 2.53043 12 2C12 1.46957 12.2107 0.96086 12.5858 0.585787C12.9609 0.210714 13.4696 0 14 0C14.5304 0 15.0391 0.210714 15.4142 0.585787C15.7893 0.96086 16 1.46957 16 2C16 2.53043 15.7893 3.03914 15.4142 3.41421C15.0391 3.78929 14.5304 4 14 4Z" fill="#FAB005"/>
+                </svg>                    
+                <h5>Generate</h5>
+            </a>
+            <a href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 0C4.486 0 0 4.486 0 10V14.143C0 15.167 0.897 16 2 16H3C3.26522 16 3.51957 15.8946 3.70711 15.7071C3.89464 15.5196 4 15.2652 4 15V9.857C4 9.59178 3.89464 9.33743 3.70711 9.14989C3.51957 8.96236 3.26522 8.857 3 8.857H2.092C2.648 4.987 5.978 2 10 2C14.022 2 17.352 4.987 17.908 8.857H17C16.7348 8.857 16.4804 8.96236 16.2929 9.14989C16.1054 9.33743 16 9.59178 16 9.857V16C16 17.103 15.103 18 14 18H12V17H8V20H14C16.206 20 18 18.206 18 16C19.103 16 20 15.167 20 14.143V10C20 4.486 15.514 0 10 0Z" fill="#FAB005"/>
+                </svg>                    
+                <h5 class="cnt">Contact Us</h5>
+            </a>
+            <a href="#">
+              <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.91995 13.5111H13.08M2.17495 1.25109C1.91409 1.25762 1.66611 1.36585 1.48395 1.55268C1.30179 1.73952 1.19987 1.99015 1.19995 2.25109V19.8011C1.19987 20.062 1.30179 20.3127 1.48395 20.4995C1.66611 20.6863 1.91409 20.7946 2.17495 20.8011H15.825C16.0902 20.8011 16.3445 20.6957 16.5321 20.5082C16.7196 20.3207 16.825 20.0663 16.825 19.8011V6.24609H12.825C12.5641 6.23957 12.3161 6.13134 12.134 5.94451C11.9518 5.75767 11.8499 5.50704 11.85 5.24609V1.24609L2.17495 1.25109ZM11.805 1.25109L16.8 6.24609L11.805 1.25109ZM4.91995 10.4861H13.08H4.91995ZM4.91995 16.5361H13.08H4.91995Z" stroke="#FAB005" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+                <h5>Docs</h5>
+            </a>
+            <div class="mobile-btn login">
+                <button>Log In</button>
+            </div>
+            <div class="mobile-btn">
+                <button class="mobile-reg">Register</button>
+            </div>
         </div>
-      </div>
-      <div class="outside-click" onclick="noShow()"></div>
+        <div class="outside-click" onclick="noShow()"></div>
     </div>
     <div class="main">
       <!-- your main stuff here 3140840389-->
@@ -83,6 +111,8 @@
             <h1>What do you get when you use our favicon generator</h1>
             <p>You get the following when you use our favicon generator</br>
               Favicon of different sizes outlined in the table below:</p>
+
+            <div class="table-div">
             <table cellspacing="5" cellpadding="5">
               <tr>
                 <th>Sizes</th>
@@ -190,15 +220,40 @@
                 <td>Fit to required screen</td>
               </tr>
             </table>
+          </div>
   
             <p>You also get a HTML embed code in a text file which developers can add while building their
               applications</p>
   
-  
+              <section class="text-ico">
+                <h1>Using our Unique Text to Icon Feature</h1>
+                <div class = "guidelines">
+                  <div clas = "picture">
+                    <img src="../static/assets/docs/text-to-icon.PNG" alt="Collection Page"></div>
+                  <div class = "steps">
+        
+                    <div class = "steps-no">Step 1:</div>
+                    <div class = "steps-lines">Select text for your favicon</div>
+                    <div class = "steps-no">Step 2:</div>
+                    <div class = "steps-lines">Select your preferable font</div>
+                    <div class = "steps-no">Step 3:</div>
+                    <div class = "steps-lines">Select your font color</div>
+                    <div class = "steps-no">Step 4:</div>
+                    <div class = "steps-lines">Input your text size</div>
+                    <div class = "steps-no">Step 5:</div>
+                    <div class = "steps-lines">Select background color</div>
+                    <div class = "steps-no">Step 6:</div>
+                    <div class = "steps-lines">Select background shape</div>
+                    <div class = "steps-no">Step 7:</div>
+                    <div class = "steps-lines">Click download button to download</div>
+                  </div>
+                </div>
+              </section>
+
             <section class="how-to">
-              <h1>How to use the product</h1>
+              <h1 class = "headings">How to use the product</h1>
               <li>
-                <ul>Step 1: Create an account by clicking the Sign Up button in the page below:<br>
+                <ul>Step 1: Create an account by clicking the <a href="../accounts/register.html">Sign Up</a> button in the page below:<br>
                   <img src="../static/assets/docs/click-sign-up.png" alt="Signing in">
                 </ul>
                 <ul>Step 2: Enter your details and click Sign Up. For existing users;
@@ -209,12 +264,12 @@
                 <ul>Step 3: Click on the folder icon, select your file and click Generate Favicon.
                   <img src="../static/assets/docs/drag & drop.PNG" alt="Generatek Favicon">
                 </ul>
-                <ul>Once these instructions are followed; you would now see a saved copy of your file on your dashboard
+                <ul>Once these instructions are followed; you would now see a saved copy of your file on your dashboard</ul>
                   <img src="../static/assets/docs/collection.PNG" alt="Collection Page">
                 </ul>
   
                 <ul>
-                  <assetscan choose to download a saved copy of your file in your profile by clicking save</ul> <ul>Here
+                    A  copy of your file is automatically downloaded on your profile. Here
                     is a snapshot of all the favicons and the HTML embed code in a text file
                 </ul>
                 <ul>Code in text file. here is what it looks like: </ul>
@@ -265,22 +320,6 @@
   </xmp>
   
                   <p>To use this code; copy the required code snipet to your HTML file</p>
-  
-              </li>
-            </section>
-  
-            <section class="text-ico">
-              <h1>Using our Unique Text to Icon Feature</h1>
-              <li>
-                <ul>Step 1: Input text for your favicon</ul>
-                <ul>Step 2: Select your preferable font</ul>
-                <ul>Step 3: Select your font color</ul>
-                <ul>Step 4: Input your text size </ul>
-                <ul>Step 5: Select background color</ul>
-                <ul>Step 6: Select background shape </ul>
-                <ul>Step 7: Click the download button to download</ul>
-                <img src="../static/assets/docs/text-to-icon.PNG" alt="Collection Page">
-  
   
               </li>
             </section>
