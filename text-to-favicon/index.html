@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../static/text-to-favicon/converter.css" />
+    <link rel="stylesheet" href="../static/text-to-favicon/dashboard_base.css" />
+  </head>
+  <body>
+    <header class="">
+      <div class="logo">
+          <a href="#">
+              <img src="../static/assets/text-to-favicon/logo_hd.png">
+          </a>
+      </div>
+      <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
+      <div class="desktop desktop-link-div">
+          <div class="desktop-links">
+              <div>
+                  <a href="../home/docs.html">Docs</a>
+              </div>
+              <div>
+                  <a href="../dashboard/index.html">Generator</a>
+              </div>
+              <div>
+                  <a href="../dashboard/savedicons.html">Saved Favicons</a>
+              </div>
+              <div>
+                  <a href="#">Text-to-Favicon</a>
+              </div>
+              <div>
+                  <a href="../home/contact.html">Contact</a>
+              </div>
+          </div>
+          <div class="desktop-btns">
+              <a href="#" class="initials">JO</a>
+              <a href="../accounts/register.html"><button class="desktop-reg bdr">Logout</button></a>
+          </div>
+      </div>
+  </header>
+  <main class="">
+    <!-- mobile block -->
+      <div class="mobile mobile-link-div" style="z-index: 1;">
+          <div class="links left">
+              <a href="../home/docs.html" class="spaced">
+                  <h5>Docs</h5>
+              </a>
+              <a href="../dashboard/index.html">
+                  <h5>Generator</h5>
+              </a>
+              <a href="../dashboard/savedicons.html">
+                  <h5>Saved Favicons</h5>
+              </a>
+              <a href="./index.html">
+                  <h5>Text-to-Favicon</h5>
+              </a>
+              <a href="../home/contact.html">
+                  <h5>Contact</h5>
+              </a>
+              <div class="mobile-btn">
+                  <div class="">
+                      <a href="#" class="initials">JO</a>
+                  </div>
+                  <a href="../accounts/register.html"><button class="mobile-reg">Logout</button></a>
+              </div>
+          </div>
+          <div class="outside-click" onclick="noShow()"></div>
+      </div>
+      <!-- main block -->
+      <div class="fav">
+        <h2 class="">Text to Favicon</h2>
+      </div>
+    <div class="container">
+      <div>
+        <form action="" class="form">
+          <label for="text">Text</label>
+          <input type="text" name="text" placeholder="Icon City" id="text" onchange="customize()"/>
+          <label for="font">Font</label>
+          <select name="" id="font">
+            <option value="" selected>'Pacifico', sans-serif</option>
+            <option value="">'Helvetica', sans-serif</option>
+            <option value="">'Arial', sans-serif</option>
+            <option value="">'Arial Black', sans-serif</option>
+            <option value="">'Verdana', sans-serif</option>
+            <option value="">'Tahoma', sans-serif</option>
+            <option value="">'Trebuchet MS', sans-serif</option>
+            <option value="">'Impact', sans-serif</option>
+            <option value="">'Gill Sans', sans-serif</option>
+            <option value="">'Times New Roman', serif</option>
+            <option value="">'Georgia', serif</option>
+            <option value="">'Palatino', serif</option>
+            <option value="">'Baskerville', serif</option>
+            <option value="">'Andalé Mono', monospace</option>
+            <option value="">'Courier', monospace</option>
+            <option value="">'Lucida', monospace</option>
+            <option value="">'Monaco', monospace</option>
+            <option value="">'Bradley Hand', cursive</option>
+            <option value="">'Brush Script MT', cursive</option>
+            <option value="">'Luminari', fantasy</option>
+            <option value="">'Comic Sans MS', cursive</option>
+          </select>
+          <label for="fontColor">Font Color</label>
+          <select name="" id="fontColor">
+            <option value="">#ffffff</option>
+            <option value="">#1abc9c</option>
+            <option value="">#16a085</option>
+            <option value="">#2ecc71</option>
+            <option value="">#27ae60</option>
+            <option value="">#3498db</option>
+            <option value="">#2980b9</option>
+            <option value="">#9b59b6</option>
+            <option value="">#8e44ad</option>
+            <option value="">#34495e</option>
+            <option value="">#2c3e50</option>
+            <option value="">#f1c40f</option>
+            <option value="">#f39c12</option>
+            <option value="">#e67e22</option>
+            <option value="">#d35400</option>
+            <option value="">#e74c3c</option>
+            <option value="">#c0392b</option>
+            <option value="">#ecf0f1</option>
+            <option value="">#bdc3c7</option>
+            <option value="">#95a5a6</option>
+            <option value="">#7f8c8d</option>
+          </select>
+          <label for="TextSize">Text Size</label>
+          <input type="number" name="fontSize" placeholder="25" id="textSize"/>
+          <label for="Color">Background Color</label>
+          <select name="" id="Color">
+            <option value="">#f44336</option>
+            <option value="">#e91e63</option>
+            <option value="">#9c27b0</option>
+            <option value="">#673ab7</option>
+            <option value="">#3f51b5</option>
+            <option value="">#2196f3</option>
+            <option value="">#03a9f4</option>
+            <option value="">#00bcd4</option>
+            <option value="">#009688</option>
+            <option value="">#4caf50</option>
+            <option value="">#8bc34a</option>
+            <option value="">#cddc39</option>
+            <option value="">#ffeb3b</option>
+            <option value="">#ffc107</option>
+            <option value="">#ff9800</option>
+            <option value="">#ff5722</option>
+            <option value="">#795548</option>
+            <option value="">#9e9e9e</option>
+            <option value="">#607d8b</option>
+            <option value="">#ffffff</option>
+            <option value="">#000000</option>
+          </select>
+          <label for="BckShape">Background Shape</label>
+          <select name="" id="BckShape">
+            <option value="">Square</option>
+            <option value="">Circle</option>
+            <option value="">Rounded</option>
+          </select>
+        </form>
+        <p id="p">OR</p>
+        <form action="">
+          <label for="imgFile" id="up_btn">
+            <img
+              src="../static/assets/text-to-favicon/uploadup.png"
+              alt=""
+              style="position: inherit; height: 18px"
+            />
+            Upload Image
+          </label>
+          <input type="file" accept="image/svg, image/jpeg, image/png" id="imgFile" onchange="loadFile(event)" hidden />
+          <label for="">Logo Text</label>
+          <input type="text" id="logoText" placeholder="IC"/>
+          <label for="">Text Font</label>
+          <select name="" id="logoFont">
+            <option value="">'Pacifico', sans-serif</option>
+            <option value="">'Helvetica', sans-serif</option>
+            <option value="">'Arial', sans-serif</option>
+            <option value="">'Arial Black', sans-serif</option>
+            <option value="">'Verdana', sans-serif</option>
+            <option value="">'Tahoma', sans-serif</option>
+            <option value="">'Trebuchet MS', sans-serif</option>
+            <option value="">'Impact', sans-serif</option>
+            <option value="">Gill Sans'', sans-serif</option>
+            <option value="">'Times New Roman', serif</option>
+            <option value="">'Georgia', serif</option>
+            <option value="">'Palatino', serif</option>
+            <option value="">'Baskerville', serif</option>
+            <option value="">'Andalé Mono', monospace</option>
+            <option value="">'Courier', monospace</option>
+            <option value="">'Lucida', monospace</option>
+            <option value="">'Monaco', monospace</option>
+            <option value="">'Bradley Hand', cursive</option>
+            <option value="">'Brush Script MT', cursive</option>
+            <option value="">'Luminari', fantasy</option>
+            <option value="">'Comic Sans MS', cursive</option>
+          </select>
+          <label for="">Text Color</label>
+          <select name="" id="logoFontColor">
+            <option value="">#1abc9c</option>
+            <option value="">#16a085</option>
+            <option value="">#2ecc71</option>
+            <option value="">#27ae60</option>
+            <option value="">#3498db</option>
+            <option value="">#2980b9</option>
+            <option value="">#9b59b6</option>
+            <option value="">#8e44ad</option>
+            <option value="">#34495e</option>
+            <option value="">#2c3e50</option>
+            <option value="">#f1c40f</option>
+            <option value="">#f39c12</option>
+            <option value="">#e67e22</option>
+            <option value="">#d35400</option>
+            <option value="">#e74c3c</option>
+            <option value="">#c0392b</option>
+            <option value="">#ecf0f1</option>
+            <option value="">#bdc3c7</option>
+            <option value="">#95a5a6</option>
+            <option value="">#7f8c8d</option>
+          </select>
+          <label for="">Text Size</label>
+          <input type="text" id="logoTextSize" placeholder="25"/>
+          <label for="">Logo Color</label>
+          <select name="" id="logoColor">
+            <option value="">#1abc9c</option>
+            <option value="">#16a085</option>
+            <option value="">#2ecc71</option>
+            <option value="">#27ae60</option>
+            <option value="">#3498db</option>
+            <option value="">#2980b9</option>
+            <option value="">#9b59b6</option>
+            <option value="">#8e44ad</option>
+            <option value="">#34495e</option>
+            <option value="">#2c3e50</option>
+            <option value="">#f1c40f</option>
+            <option value="">#f39c12</option>
+            <option value="">#e67e22</option>
+            <option value="">#d35400</option>
+            <option value="">#e74c3c</option>
+            <option value="">#c0392b</option>
+            <option value="">#ecf0f1</option>
+            <option value="">#bdc3c7</option>
+            <option value="">#95a5a6</option>
+            <option value="">#7f8c8d</option>
+          </select>
+          <label for="">Logo Shape</label>
+          <select name="" id="logoShape">
+            <option value="">Square</option>
+            <option value="">Circle</option>
+            <option value="">Rounded</option>
+          </select>
+        </form>
+        <button id="sel_btn">Select From Library</button>
+        <label for="img" id="u_btn">
+          <img
+            src="../static/assets/text-to-favicon/uploadup.png"
+            alt=""
+            style="position: inherit; height: 18px"
+          />
+          Upload Logo Image
+        </label>
+        <input type="file" accept="image/svg, image/jpeg, image/png" id="img" onchange="loadFile(event)" hidden />
+      </div>
+      <div class="right_cont scroll" id="right">
+        <div id="label">
+          <span class="span">Logo</span>
+          <span class="span" style="margin-left: 70px">Text</span>
+        </div>
+        <div id="canvas">
+          <img src="../static/assets/text-to-favicon/Group 35ic.png" alt="" id="icon" class="iconf" />
+          <p id="iconp" style="overflow: hidden;">Icon City</p>
+        </div>
+        <button id="dwn_btn">
+          <img
+            src="../static/assets/text-to-favicon/downloaddnw.png"
+            alt=""
+            style="height: 10px; width: 10px; position: inherit"
+          />
+          Download
+        </button>
+      </div>
+    </div>
+      <!-- endblock -->
+  </main>
+    
+    <footer class="footer" style="margin-top: 10%;">
+      <div class="l-footer">
+        <div class=" logo">
+          <img src="../static/assets/text-to-favicon/logo_white_ft.png" id="w-logo" alt="Iconcity Logo" class="">
+        </div>
+        <p class="">Iconcity helps you generate your favourite favicon in the twinkle of an eye.</p>
+      </div>
+      <ul class="r-footer">
+        <li class="features similar">
+          <h2>Developers</h2>
+          <ul class="box h-box">
+            <li><a href="../home/docs.html">Doumentation</a></li>
+            <li><a href="../home/docs.html">Tutorial</a></li>
+            <li><a href="../home/docs.html">API Status</a></li>
+          </ul>
+        </li>
+        <li class=" similar resource">
+          <h2>Resources</h2>
+          <ul class="box">
+            <li><a href="../home/docs.html">Introduction</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../home/docs.html">Help</a></li>
+          </ul>
+        </li>
+  
+        <li class="similar">
+          <h2>Company</h2>
+          <ul class="box">
+            <li><a href="#">About</a></li>
+            <li><a href="../home/contact.html">Contact</a></li>
+            <li><a href="../home/contact.html">Socials</a></li>
+          </ul>
+        </li>
+  
+      </ul>
+      <hr>
+      <div class="b-footer">
+        <p>2022 Iconcity. All rights reserved</p>
+      </div>
+    </footer>
+    <script src="../static/text-to-favicon/html2canvas.js"></script>
+    <script src="../static/text-to-favicon/dashboard.js"></script>
+    <script src="../static/text-to-favicon/converter.js"></script>
+  </body>
+</html>

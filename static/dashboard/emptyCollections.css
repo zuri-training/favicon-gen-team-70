@@ -51,10 +51,6 @@ header {
 .desktop {
   display: none;
 }
-.notseen{
-  visibility: hidden;
-  transition: 0.2s;
-}
 .outside-click {
   grid-area: transparent;
 }
@@ -123,16 +119,13 @@ header {
 /* initials for dashboard */
 .desktop-btns .initials,
 .mobile-btn .initials {
-  width: 50px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-top: 0;
   padding-bottom: 0;
   border-radius: 50%;
   background: #183153;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 .desktop-btns .initials:hover{
   color: #fab005;
@@ -159,6 +152,10 @@ header {
 .hide {
   display: none;
 }
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 .fa-xmark {
   color: #fff;
 }
@@ -176,64 +173,6 @@ h1 {
 }
 /* header end */
 
-/* main section */
-.main2{
-  width: 100vw;
- background: rgba(240, 241, 243, 1);
- display: flex;
- flex-direction: column;
- align-items: center;
- padding: 60px ;
-}
-.main2 h1{
-font-size: 40px;
-font-weight: 600;
-line-height: 50px;
-color: #183153;
-text-align: center;
-}
-.save_download{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.congrats{
-  padding: 20px;
-  background: hsla(215, 55%, 21%,0.4);
-  border-radius: 5px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-form{
-  margin-top: 10px;
-}
-
-form button{
-  color: rgba(240, 241, 243, 1);
-  background-color: #183153;
-  border: none;
-  border-radius: 10px;
-  width: 130px;
-  padding: 17px 0;
-  cursor: pointer;
-}
-form button:hover{
-  transform: scale(1.15);
-}
-
-@media screen and (max-width: 300px){
-  
-  .congrats h1{
-    font-size: 25px;
-    line-height: 30px;
-    margin-bottom: 10px;
-  }
-
-}
 @media screen and (min-width: 451px) and (max-width: 998px) {
   header {
     width: 100%;
@@ -266,12 +205,6 @@ form button:hover{
     margin-top: 0;
     padding-top: 0;
     text-decoration: none;
-  }
-  .save_download{
-    flex-direction: row;
-  }
-  form button{
-    margin: 37px 20px;
   }
 }
 /* header media query */
@@ -353,8 +286,73 @@ form button:hover{
   .hide {
     display: none;
   }
+
 }
 /* end of header */
+/*main block*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.image {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    object-position: 50%;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.content {
+    text-align: center;
+
+}
+
+.noCollections{
+    display:inline-block;
+    padding: 1em;
+    border:0.16em solid #FFFFFF;
+    border-radius: 8px;
+    margin:0 0.5em 0.5em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:"Sora", sans-serif;
+    font-weight:550;
+    color:#fff;
+    text-align:center;
+    transition: all 0.15s;
+    background-color: #1e3557;
+    cursor:pointer;
+}
+.noCollections:hover{
+    color: #fab005;;
+    background-color:#413742;
+    text-transform:uppercase;
+    transition: 0.7s;
+}
+.noCollections:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+@media all and (max-width:480px){
+    .noCollections{
+        display:block;
+        margin:0.4em auto;
+        
+    }
+}
+/* end of main block */
 
 /* footer */
 footer {

@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
+  max-width: 100%;
 }
-
 a,
 h5 {
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
 }
-
 body {
   width: 100vw;
   background: hsl(0, 0%, 98%);
@@ -22,26 +20,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .bdr {
   border: 1px solid black;
 }
 
+/* header start */
 .hide {
   display: none;
 }
-
 .icon {
-  z-index: 20;
+  z-index: 2;
   color: rgba(24, 49, 83, 1);
-  margin-right: 10px;
+  margin-left: 5px;
 }
-
 i,
 .desktop-links a {
   color: rgba(24, 49, 83, 1);
 }
-
 header {
   display: flex;
   padding: 10px;
@@ -53,19 +48,48 @@ header {
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
-
+/* added */
+header{
+  flex-direction: column-reverse;
+}
+.added{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.added i{
+  border: 2px solid #fab005;
+  color: #fab005;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+/* added end */
 .desktop {
   display: none;
 }
-
 .outside-click {
   grid-area: transparent;
 }
-
 .mobile links {
   grid-area: link;
 }
-
+.tiles{
+  margin-top: 16px;
+}
+.tiles, .logo{
+  width: 100%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+/* changed */
 .mobile-link-div {
   top: 0;
   width: 100vw;
@@ -74,266 +98,257 @@ header {
   left: 0;
   display: grid;
   overflow-x: hidden;
-  grid-template-columns: 0.3fr 1fr;
-  grid-template-areas: "transparent link";
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-areas: "link transparent";
 }
-
 .overflow {
   overflow-y: hidden;
 }
-
 .blur {
   backdrop-filter: blur(2px);
   background: hsla(200, 35%, 13%, 0.4);
 }
-
 .mobile .links {
   width: 100%;
   background: #183153;
   padding: 30px;
   transition: transform 0.2s ease;
 }
-
 .links .features {
   margin-top: 70px;
 }
+.links a{
+  display: flex;
+  padding: 8px;
+  margin-top: 8px; /* changed */
+}
+/* added */
+.links a h5{
+  margin-left: 16px;
 
-.links a {
+}
+.links .mobile-btn{
   display: flex;
   padding: 10px;
+  flex-direction: row;
 }
-
-.mobile .direction {
-  margin-left: 10px;
+.links .login{
+  margin-top: 24px;
 }
-
-.mobile-btn {
-  display: flex;
-  flex-direction: column;
-}
-
 .mobile-btn a {
+  margin-top: 0;
   padding: 0;
 }
-
 .mobile-btn button {
+  background: #fab005;
   height: 50px;
-  width: 100%;
+  width: 80%;
   outline: 0;
   border: 0;
-  background: transparent;
-  color: #Fab005;
-  font-weight: 500;
+  color: #183153;
+  font-weight: 600;
   cursor: pointer;
   font-size: 18px;
+  border-radius: 8px;
 }
-
 .mobile-btn .mobile-reg {
-  border: 2px solid #Fab005;
-  border-radius: 15px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  font-weight: 600;
 }
-
+/* initials for dashboard */
+.desktop-btns .initials,
+.mobile-btn .initials {
+  width: 50px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 50%;
+  background: #183153;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+} 
+.desktop-btns .initials:hover{
+  color: #fab005;
+}
+.mobile-btn div{
+  display: flex;
+  justify-content: center;
+}
+/* end */
+/* changed */
 .left {
-  transform: translateX(200%);
+  transform: translateX(-200%);  /* added */
 }
-
 .show {
   transform: translateX(0);
 }
-
 .hide {
   display: none;
 }
-
 .fa-xmark {
   color: #fff;
 }
-
 .block {
   display: block;
 }
-
-.main {
-  display: flex;
-  flex-direction: column;
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
 }
-
 h1 {
   font-size: 37px;
 }
-
+/*  i edited this */
 .links .spaced {
-  margin-top: 80px;
+  margin-top: 40px;
 }
-
 .mobile-link-div .links a {
   color: #fff;
 }
+/* header end */
 
-@media screen and (max-width: 374px) {
-  h1 {
-    font-size: 35px;
-  }
-
-  .head p {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media screen and (min-width: 728px) and (max-width: 998px) {
+@media screen and (min-width: 451px) and (max-width: 998px) {
   header {
     width: 100%;
-    /* padding: 30px; */
   }
-
+  
   h1 {
     font-size: 50px;
   }
-
   a,
   h5 {
     font-size: 25px;
   }
-
   .mobile-link-div {
     grid-template-columns: 1fr 1fr;
   }
-
   .mobile .links {
     width: 100%;
   }
-
   header {
     padding: 10px;
     font-size: 25px;
   }
-
-  .head button {
-    margin-top: 20;
-    width: 200px;
-    height: 70px;
-    font-size: 20px;
-  }
-
   .mobile button {
     font-size: 25px;
   }
 }
-
+@media screen and (min-width: 728px) {
+  .desktop-btns a,
+  .desktop-btns button {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+  }
+}
+/* header media query */
 @media screen and (min-width: 998px) {
   header {
     width: 100%;
+    margin-top: 0;
   }
-
+  .logo{
+    display: block;
+    width: auto;
+  }
+  /* added */
+header{
+  flex-direction: row;
+}
+/* added end */
   .desktop h5 {
     font-size: 16px;
   }
-
   .mobile {
     display: none;
   }
-
   .desktop {
     display: block;
   }
-
   .desktop-link-div,
   .desktop-links,
   .desktop-btns {
     display: flex;
     flex-direction: row;
   }
-
   .desktop-link-div {
     width: 90%;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 500;
   }
-
   .desktop-link-div a {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
   }
-
   .desktop-link-div a:hover {
     border-bottom-style: solid;
     width: fit-content;
     border-bottom-color: #fab005;
   }
-
   .desktop-btns a:hover {
     border-bottom-style: none;
   }
-
   .desktop-links {
     margin-left: 90px;
   }
-
   .desktop-links div {
     margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .direction {
     margin-left: 10px;
     font-size: 13px;
   }
-
   .desktop-btns {
     margin-right: 10px;
   }
-
-  .desktop-btns button,
-  .head button {
+  .desktop-btns button {
     height: 40px;
     outline: 0;
     border: 0;
-    background: transparent;
+    border: 2px solid #183153;
     color: #183153;
     font-weight: 500;
     cursor: pointer;
     font-size: 16px;
-  }
-
-  .desktop-btns .desktop-reg {
-    margin-left: 30px;
     width: 100px;
-    border: 2px solid #183153;
-    border-radius: 15px;
+    border-radius: 8px;
   }
-
-  .desktop-btns button:hover,
-  a:hover {
-    color: #fab005;
+  .desktop-btns .reg:hover{
+    background: #fab005;
   }
-
+  .desktop-btns .desktop-reg {
+    margin-left: 16px;
+    background: #fab005;
+  }
   .desktop-btns .desktop-reg:hover {
-    border: 2px solid #fab005;
+    background: transparent;
   }
-
   .hide {
     display: none;
   }
 }
+/* end of header */
 
-
-
-/*footer beginning*/
-footer{
+/* footer */
+footer {
   width: 100vw;
   /* Note dev this field should be edited i gave this spave so that other contents can stay here */
-  margin-top: 100%;  
+  /* margin-top: 100%;   */
 }
-footer h2{
+footer h2 {
   font-size: 18px;
 }
-footer a{
+footer a {
   font-size: 15px;
 }
 .footer {
@@ -344,7 +359,7 @@ footer a{
   background-color: #183153;
 }
 
-.footer>* {
+.footer > * {
   flex: 1 100%;
 }
 
@@ -353,7 +368,6 @@ footer a{
   margin-bottom: 2em;
   display: inline-block;
 }
-
 
 h2 {
   font-weight: 400;
@@ -369,7 +383,6 @@ h2 {
   line-height: 3em;
 }
 
-
 .footer a {
   text-decoration: none;
 }
@@ -379,9 +392,8 @@ h2 {
   flex-flow: row wrap;
 }
 
-.r-footer>* {
+.r-footer > * {
   flex: 1 100%;
-
 }
 
 .box a {
@@ -405,37 +417,37 @@ h2 {
 }
 
 .b-footer ul {
-  display: grid
+  display: grid;
 }
-footer .logo{
+footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer hr{
-  border: 1px solid hsla(0,0%,100%,0.5);
+footer hr {
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 .b-footer p {
   margin-top: 20px;
   font-size: 13px;
 }
-.similar{
+.similar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer ul li{
+footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 600px) {
-  footer .logo{
+  footer .logo {
     justify-content: left;
   }
 
-  .r-footer>* {
+  .r-footer > * {
     flex: 1;
   }
 
@@ -455,11 +467,20 @@ footer ul li{
   .l-footer {
     flex: 1 0px;
   }
+  .l-footer p {
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+  }
   .r-footer {
     flex: 2 0px;
   }
-  footer ul li  a :hover {
-    text-decoration: underline;
+  footer .box a {
+    padding: 0;
+  }
+  footer .box a:hover {
+    border-bottom: 1px solid #fff;
+    border-bottom-width: 100%;
   }
 }
 
