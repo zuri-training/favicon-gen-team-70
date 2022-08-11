@@ -9,6 +9,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
   inputElement.addEventListener("change", (e) => {
     if (inputElement.files.length) {
       updateThumbnail(dropZoneElement, inputElement.files[0]);
+      dropZoneElement.classList.add("drop-zone--over");
     }
   });
 
@@ -31,7 +32,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
     }
 
-    dropZoneElement.classList.remove("drop-zone--over");
+    dropZoneElement.classList.add("drop-zone--over");
   });
 });
 
