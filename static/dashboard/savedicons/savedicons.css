@@ -153,6 +153,10 @@ header {
 .show {
   transform: translateX(0);
 }
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 .hide {
   display: none;
 }
@@ -231,6 +235,7 @@ form button{
   outline: 0;
   border: 0;
 }
+/* adjusted */
 .download_delete form:nth-child(1){
 margin-right: 10px;
 }

@@ -51,6 +51,10 @@ header {
 .desktop {
   display: none;
 }
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 .outside-click {
   grid-area: transparent;
 }

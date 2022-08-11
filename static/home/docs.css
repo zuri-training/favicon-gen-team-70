@@ -3,25 +3,36 @@
 *{
     font-family: 'Sora', sans-serif; 
     margin: 0;
-    color: #183153;
 }
 table, tr{
-    border: 1px solid black;
+    border: 1px solid #B2B2B2;
     border-collapse: collapse;
-    width: 100%;
+    width: 80%;
     border-left: none;
     border-right: none;
+    background-color: #E8EAEE;
+    font-size: 20px;margin-left: 10%;
+}
+
+.table-div{
+    width: 100%;
+    height: auto;
+    background: #E8EAEE;
+}
+td{
+    padding: 20px;
 }
 
 .container{
     display: grid;
     justify-content: center;
     align-items: center;
-    
+    color: #183153;
+    font-size: 20px;
+    background: #E2DFDF;
 }
 .item{
     grid-template-columns: 70%;
-    background-color: white;
     width: 90%;
     justify-content: center;
     overflow-x: auto;
@@ -42,8 +53,9 @@ img{
     height:auto;
 }
 summary{
-    border-style: none;
+    outline: none;
 }
+
 xmp{
    
     width: fit-content;
@@ -51,6 +63,22 @@ xmp{
     border-radius: 20px;
     font-family: 'Courier New', Courier, monospace;
 }
+.guidelines{
+    display: flex;
+    flex-direction: row;
+}
+.steps{
+    line-height: 32px;
+}
+.steps-no{
+    font-weight: 800;
+}
+.picture{
+    display:flex;
+    flex-direction: column;
+    
+}
+
 
 @media screen and (max-width: 600px) {
     table thead {
@@ -75,6 +103,11 @@ xmp{
       text-align: right;
     }
    
+}
+.headings{
+    font-weight: 700px;
+    font-size: 32px;
+    color: #303030;
 }
 @media screen and (max-width: 400px) {
    table{
@@ -101,3 +134,4 @@ xmp{
 }
 
 /*Main Content End*/
+
