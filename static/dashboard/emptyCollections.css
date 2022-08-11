@@ -152,6 +152,10 @@ header {
 .hide {
   display: none;
 }
+.notseen{
+  visibility: hidden;
+  transition: 0.2s;
+}
 .fa-xmark {
   color: #fff;
 }
@@ -282,6 +286,7 @@ h1 {
   .hide {
     display: none;
   }
+
 }
 /* end of header */
 /*main block*/
