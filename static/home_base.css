@@ -122,7 +122,7 @@ header {
   outline: 0;
   border: 0;
   background: transparent;
-  color: #Fab005;
+  color: #fab005;
   font-weight: 500;
   cursor: pointer;
   font-size: 18px;
@@ -301,16 +301,39 @@ h1 {
     cursor: pointer;
     font-size: 16px;
   }
-  .desktop-btns button:hover{
-    color:#fab005;
+  .desktop-btns button:hover {
+    color: #fab005;
   }
   .desktop-btns .desktop-reg {
-    margin-left: 30px;
-    width: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 15px;
+    width: 148px;
+    height: 55px;
     border: 2px solid #183153;
-    border-radius: 15px;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #183153;
+    animation-timing-function: ease-out;
+    animation-duration: 100ms;
   }
+
   .desktop-btns .desktop-reg:hover {
+    background: #183153;
+    color: #fff;
+  }
+  .desktop-btns .desktop-login:hover {
     background: #183153;
     color: #fff;
   }
@@ -318,20 +341,40 @@ h1 {
   .hide {
     display: none;
   }
+
+  .desktop-btns .desktop-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 15px;
+    width: 122px;
+    height: 55px;
+    background: #fab005;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #183153;
+  }
 }
-
-
 
 /*footer beginning*/
-footer{
+footer {
   width: 100vw;
   /* Note dev this field should be edited i gave this spave so that other contents can stay here */
-  margin-top: 100%;  
+  margin-top: 100%;
 }
-footer h2{
+footer h2 {
   font-size: 18px;
 }
-footer a{
+footer a {
   font-size: 15px;
 }
 .footer {
@@ -342,7 +385,7 @@ footer a{
   background-color: #183153;
 }
 
-.footer>* {
+.footer > * {
   flex: 1 100%;
 }
 
@@ -351,7 +394,6 @@ footer a{
   margin-bottom: 2em;
   display: inline-block;
 }
-
 
 h2 {
   font-weight: 400;
@@ -367,7 +409,6 @@ h2 {
   line-height: 3em;
 }
 
-
 .footer a {
   text-decoration: none;
 }
@@ -377,9 +418,8 @@ h2 {
   flex-flow: row wrap;
 }
 
-.r-footer>* {
+.r-footer > * {
   flex: 1 100%;
-
 }
 
 .box a {
@@ -403,37 +443,37 @@ h2 {
 }
 
 .b-footer ul {
-  display: grid
+  display: grid;
 }
-footer .logo{
+footer .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer hr{
-  border: 1px solid hsla(0,0%,100%,0.5);
+footer hr {
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
 }
 .b-footer p {
   margin-top: 20px;
   font-size: 13px;
 }
-.similar{
+.similar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-footer ul li{
+footer ul li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media screen and (min-width: 600px) {
-  footer .logo{
+  footer .logo {
     justify-content: left;
   }
 
-  .r-footer>* {
+  .r-footer > * {
     flex: 1;
   }
 
@@ -453,7 +493,7 @@ footer ul li{
   .l-footer {
     flex: 1 0px;
   }
-  .l-footer p{
+  .l-footer p {
     text-align: left;
     margin-left: 20px;
     padding: 5px;
@@ -461,7 +501,7 @@ footer ul li{
   .r-footer {
     flex: 2 0px;
   }
-  footer .box a{
+  footer .box a {
     padding: 0;
   }
   footer .box a:hover {
