@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'dashboard/dashboard_base.css' %}" />
-    {% block style %}
-    {% endblock %}
-    <title>
-      {% block title %}Dashboard{% endblock %}
-    </title>
+        {% block style %}
+        {% endblock %}
+        <link rel="stylesheet" href="{% static 'dashboard/dashboard_base.css' %}" />
+        <title>
+          {% block title %}Dashboard{% endblock %}
+        </title>
 </head>
 
 <body>
@@ -37,18 +37,18 @@
                     <a href="{% url 'dashboard:index' %}">Generator</a>
                 </div>
                 <div>
-                    <a href="{% url 'dashboard:saved_favicons' %}">My Collections</a>
+                    <a href="{% url 'dashboard:saved_favicons' %}">Saved Favicons</a>
                 </div>
                 <div>
                     <a href="{% url 'dashboard:text_to_favicon' %}">Text-to-Favicon</a>
                 </div>
                 <div>
-                    <a href="#">Contact</a>
+                    <a href="../home/contact.html">Contact</a>
                 </div>
             </div>
             <div class="desktop-btns">
                 <div class="initials"><h3>{{ initials }}</h3></div>
-                <a href="{% url 'accounts:logout' %}"><button class="desktop-reg bdr">Logout</button></a>
+                <a href="{% url 'accounts:logout' %}"><button class="desktop-reg">Logout</button></a>
             </div>
         </div>
     </header>
@@ -111,9 +111,9 @@
             <div class="outside-click" onclick="noShow()"></div>
         </div>
         <!-- main block -->
+        {% block main %}
 
-
-
+        {% endblock %}
         
         <!-- endblock -->
     </main>
