@@ -141,7 +141,7 @@ header{
 .mobile-btn button {
   background: #fab005;
   height: 50px;
-  width: 80%;
+  width: 100px;
   outline: 0;
   border: 0;
   color: #183153;
@@ -234,6 +234,7 @@ h1 {
   }
   .mobile button {
     font-size: 25px;
+    width: 120px;
   }
 }
 @media screen and (min-width: 728px) {
