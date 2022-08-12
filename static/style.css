@@ -639,7 +639,7 @@ section .sec{
 
 section .sec2 {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   justify-content: center;
   align-items:center;
   text-align: center;
@@ -654,6 +654,19 @@ section .sec2 .get_started h4{
   color: #0D1B2E;
   margin: 2rem 0;
 }
+.mySlides {
+  display: none;
+  transition: transform 0.2s ease;
+  /* padding: 2rem; */
+
+}
+.myimage{
+  vertical-align: middle;
+  /* width: 0.2rem; */
+  transition: transform 0.2s ease;
+
+}
+
 
 .btn{
   max-width:max-content;
