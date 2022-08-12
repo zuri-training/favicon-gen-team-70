@@ -32,6 +32,18 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 - Step 6: If you encounter the ***ModuleNotFoundError: No module named 'decouple'***, Install the decouple module with the command (pip install python-decouple)
 - Step 7: Open link on your web browser
 
+## Developer Contributors
+- Ezeoke Chiamaka
+- Jude Okoye
+- Kingsley Onwubuya
+- Stephanie Umenwa
+- Ujah Abraham Abah
+- Senanyo Benwari
+- Ajayi Olusegun Israel
+- Sarah Adu
+- Jemima Ifeanyichukwu
+- Byron Taaka
+- Adewole Noah
 
 
 
