@@ -354,19 +354,22 @@ h1 {
 
 }
 .text-h1{
-  font-size: 40px;
-  width: 70%;
-  margin: auto;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 57px;
+text-align: center;
   color: #183153;
 }
 .p{
   color: #fab005;
 }
 .text-p{
+  font-family: 'Sora';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
   width: 70%;
   text-align: center;
   margin: 20px auto;
@@ -409,12 +412,25 @@ h1 {
   background-color: #f0f1f3; 
   text-align: center;
 }
+
 .text-h2{
-  font-weight: 600;
-  font-size: 32px;
+
+font-weight: 600;
+font-size: 32px;
+line-height: 40px;
+
   padding: 1rem 0;
+  color: #183153;
 }
 
+.logo-p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  
+  color: #465A75;
+}
 .logo-flex{
   display: flex;
   flex-direction: row;
@@ -565,8 +581,33 @@ small {
 .favicon_generator .favicon_generator_head {
   text-align: center;
   padding: 2rem 0;
+  font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: #465A75;
 
 }
+
+.fg_content_desc h5{
+
+font-weight: 600;
+font-size: 28px;
+line-height: 35px;
+color: #183153;
+}
+
+.fg_content_desc small{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  
+  
+  /* Color/Primary/primary-300 */
+  
+  color: #64758C;
+}
+
 
 .favicon_generator .favicon_generator_head h4{
   color: #183153;
