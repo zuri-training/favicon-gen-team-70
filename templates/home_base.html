@@ -100,35 +100,6 @@
                 </div>
             </div>
             <div class="outside-click" onclick="noShow()"></div>
-=======
-  <header class="">
-    <div class="logo">
-      <a href="{% url 'home:index' %}">
-        <img src="{% static 'assets/index/logo_hd.png' %}">
-      </a>
-    </div>
-    <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
-    <div class="desktop desktop-link-div">
-      <div class="desktop-links">
-        <div>
-          <a href="{% url 'home:index' %}">Home</a>
-        </div>
-        <div>
-          <a href="{% url 'dashboard:index' %}">Generator</a>
-        </div>
-        <div>
-          <a href="{% url 'home:docs' %}">Docs</a>
-        </div>
-        <div>
-          <a href="{% url 'home:contact' %}">Contact Us</a>
-        </div>
-      </div>
-      <div class="desktop-btns">
-        <a href="{% url 'accounts:register' %}"><button class="desktop-reg">Register</button></a>
-        <a href="{% url 'accounts:login' %}"><button class="desktop-login">Login</button></a>
-      </div>
-    </div>
-  </header>
   <main class="">
     <div class="mobile mobile-link-div">
       <div class="links left">
@@ -147,7 +118,6 @@
         <div class="mobile-btn">
           <a href="{% url 'accounts:register' %}"><button class="mobile-reg">Register</button></a>
           <a href="{% url 'accounts:login' %}"><button>Login</button></a>
->>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </div>
         <!-- main block -->
         {% block main %}
@@ -168,29 +138,17 @@
       <li class="features similar">
         <h2>Developers</h2>
         <ul class="box h-box">
-<<<<<<< HEAD
-          <li><a href="../home/docs.html">Doumentation</a></li>
-          <li><a href="../home/docs.html">Tutorial</a></li>
-          <li><a href="../home/docs.html">API Status</a></li>
-=======
           <li><a href="{% url 'home:docs' %}">Doumentation</a></li>
           <li><a href="{% url 'home:docs' %}">Tutorial</a></li>
           <li><a href="{% url 'home:docs' %}">API Status</a></li>
->>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
       <li class=" similar resource">
         <h2>Resources</h2>
         <ul class="box">
-<<<<<<< HEAD
-          <li><a href="../home/docs.html">Introduction</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="../home/docs.html">Help</a></li>
-=======
           <li><a href="{% url 'home:docs' %}">Introduction</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="{% url 'home:docs' %}">Help</a></li>
->>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
 
@@ -198,13 +156,8 @@
         <h2>Company</h2>
         <ul class="box">
           <li><a href="#">About</a></li>
-<<<<<<< HEAD
-          <li><a href="../home/contact.html">Contact</a></li>
-          <li><a href="../home/contact.html">Socials</a></li>
-=======
           <li><a href="{% url 'home:contact' %}">Contact</a></li>
           <li><a href="{% url 'home:contact' %}">Socials</a></li>
->>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
 
