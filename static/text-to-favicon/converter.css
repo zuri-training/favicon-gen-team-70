@@ -71,20 +71,11 @@ input, select
 }
 .right_cont
 {
-    /* position: fixed; */
+    position: absolute;
     left: 50%;
     margin: 56px;
     width: 24%;
     height: 250px;
-}
-.scroll
-{
-    position: fixed;
-}
-.scrolled
-{
-    position: absolute;
-    top: 128%;
 }
 #label
 {
@@ -93,6 +84,10 @@ input, select
     left: 103px;
     color: white;
     font-size: 12px;
+}
+#stxt
+{
+    margin-left: 50px;
 }
 #canvas
 {
@@ -124,13 +119,13 @@ input, select
     height: 32px;
     margin-left: 55px;
 }
-#up_btn:hover, #u_btn:hover, #sel_btn:hover
+#u_btn:hover
 {
     border: 1px solid #FAB005;
     background: transparent;
     color: #465A75;
 }
-#up_btn, #u_btn, #sel_btn
+#u_btn
 {
     border: none;
     border-radius: 3px;
@@ -138,15 +133,6 @@ input, select
     text-align: center;
     color: white;
     cursor: pointer;
-}
-#up_btn
-{
-    width: 40%;
-    height: 47px;
-    margin: 0px 0 11px 12px;
-    display: inline-block;
-    line-height: 46px;
-    font-size: 23px;
 }
 #u_btn
 {
@@ -158,13 +144,6 @@ input, select
     display: inline-block;
     line-height: 42px;
     font-size: 23px;
-}
-#sel_btn
-{
-    width: 78%;
-    height: 38px;
-    margin-left: 14px;
-    font-size: 22px;
 }
 #dwn_btn
 {
@@ -250,6 +229,10 @@ input, select
 {
     width: 50%;
 }    
+#u_btn {
+    width: 89%;
+    font-size: 16px;
+}
 }
 
 @media(max-width:835px)
@@ -258,6 +241,10 @@ input, select
     {
         width: 35%;
     } 
+    #u_btn {
+        width: 88%;
+        font-size: 17px;
+    }
 }
 
 @media(max-width:790px)
@@ -333,23 +320,17 @@ input, select
     width: 40%;
     height: 200px;
 }
-#up_btn
-{
-    width: 40%;
-    height: 40px;
-    font-size: 16px;
-}
 #u_btn
 {
-    width: 57%;
+    width: 86%;
     height: 38px;
     top: 14px;
-    font-size: 16px;
+    font-size: 14px;
 }
-#sel_btn
+#dwn_btn
 {
-    width: 56%;
-    font-size: 16px;
+    width: 52%;
+    margin: 2% 0 0 26%;
 }
 }
 
@@ -370,22 +351,11 @@ input, select
     width: 46%;
     height: 200px;
 }
-#up_btn
-{
-    width: 40%;
-    height: 40px;
-    font-size: 16px;
-}
 #u_btn
 {
     width: 57%;
     height: 38px;
     top: 14px;
-    font-size: 16px;
-}
-#sel_btn
-{
-    width: 56%;
     font-size: 16px;
 }
 }
@@ -398,6 +368,15 @@ input, select
         margin: 56px;
         width: 51%;
         height: 200px;
+    }
+    #dwn_btn
+    {
+        width: 49%;
+        margin: 2% 0 0 26%;
+    }
+    #u_btn {
+        width: 94%;
+        font-size: 13px;
     }
 }
 
@@ -414,4 +393,5 @@ input, select
    width: 56%;
    height: 200px;
 }
+
 }
