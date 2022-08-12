@@ -8,7 +8,7 @@ def contact(request):
     return render(request, 'home/contact.html')
 
 def docs(request):
-    return render(request, 'docs.html')
+    return render(request, 'home/docs.html')
 
-def error_view(request, exception):
+def error(request, exception):
     return render(request, 'error/error.html')

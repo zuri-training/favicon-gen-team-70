@@ -119,3 +119,21 @@ def download(request,zip_id):
         download_zip = Zip.objects.get(id=zip_id)
         return FileResponse(download_zip.zip_file, as_attachment=True)
     return redirect('dashboard:index')
+
+@login_required(redirect_field_name="next", login_url="accounts:login")
+def docs(request):
+    current_user = request.user
+    initials = f"{current_user.first_name[0]}{current_user.last_name[0]}"
+    initials =  initials.upper()
+    return render(request,'dashboard/docs.html',{
+        'initials':initials,
+    })
+
+@login_required(redirect_field_name="next", login_url="accounts:login")
+def contact(request):
+    current_user = request.user
+    initials = f"{current_user.first_name[0]}{current_user.last_name[0]}"
+    initials =  initials.upper()
+    return render(request,'dashboard/contact.html',{
+        'initials':initials,
+    })

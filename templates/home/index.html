@@ -1,11 +1,12 @@
 {% extends 'home_base.html' %}
 {% load static %}
-
+{% block style %}
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+    {% endblock %}
 {% block title %}IconCity{% endblock %}
 
 {% block main %}
 <div class="main">
-    <!-- your main stuff here 3140840389-->
     <div class="version">
       <span class="i">Icon city 1.1.1 is available to all user</span>
     </div>
@@ -19,9 +20,9 @@
       </p>
   </div>
   <div class="main-ill">
-      <img class="hero" src="./static/assets/index/HeropagePicture.jpg" alt="">
+      <img class="hero" src="{% static 'assets/index/HeropagePicture.jpg' %}" alt="">
   </div>
-      <a class="reg" href="./accounts/register">
+      <a class="reg" href="{% url 'accounts:register' %}">
            <button class="btn-blue">Get Started</button>
           </a>
   <div class="logo-container">
@@ -30,22 +31,22 @@
           favicons to make your website stand out </p>
       <div class="logo-flex">
           <div class="contain sport">
-              <img src="./static/assets/index/sportify.png" alt="icons">
+              <img src="{% static 'assets/index/sportify.png' %}" alt="icons">
           </div>
           <div class="contain fig">
-              <img src="./static/assets/index/figma.png" alt="icons">
+              <img src="{% static 'assets/index/figma.png' %}" alt="icons">
           </div>
           <div class="contain gg">
-              <img src="./static/assets/index/google.png" alt="icons">
+              <img src="{% static 'assets/index/google.png' %}" alt="icons">
           </div>
           <div class="contain ins">
-              <img src="./static/assets/index/instagram.png" alt="icons">
+              <img src="{% static 'assets/index/instagram.png' %}" alt="icons">
           </div>
           <div class="contain snap">
-              <img src="./static/assets/index/snapchat.png" alt="icons">
+              <img src="{% static 'assets/index/snapchat.png' %}" alt="icons">
           </div>
           <div class="contain star">
-              <img src="./static/assets/index/starbuck.png" alt="icons">
+              <img src="{% static 'assets/index/starbuck.png' %}" alt="icons">
           </div>
       </div>  
   </div>
@@ -65,14 +66,14 @@
               <div class="favicon_generator_profile_side">
                   <div class="img">
                       <img
-                          src="./static/assets/index/social_icon_collection.png"
+                          src="{% static 'assets/index/social_icon_collection.png' %}"
                           alt="">
                   </div>
               </div>
               <div class="favicon_generator_content">
                   <article>
                       <div class="fg_content_img">
-                          <img src="./static/assets/index/alien.svg" alt="">
+                          <img src="{% static 'assets/index/alien.svg' %}" alt="">
                       </div>
                       <div class="fg_content_desc">
                           <h5>High Quality Images</h5>
@@ -85,7 +86,7 @@
                   </article>
                   <article>
                       <div class="fg_content_img">
-                          <img src="./static/assets/index/house.svg" alt="">
+                          <img src="{% static 'assets/index/house.svg' %}" alt="">
                       </div>
                       <div class="fg_content_desc">
                           <h5>Absolutely Free</h5>
@@ -98,14 +99,12 @@
                   </article>
                   <article>
                       <div class="fg_content_img">
-                          <img src="./static/assets/index/easy_to_use.png" alt="">
+                          <img src="{% static 'assets/index/easy_to_use.png' %}" alt="">
                       </div>
                       <div class="fg_content_desc">
                           <h5>Easy to use</h5>
                           <small>
-                              Have the best experience when you ride
-                              with
-                              us
+                              Have the best experience when you ride with us
                           </small>
                       </div>
                   </article>
@@ -121,7 +120,7 @@
               <a href="" class="btn "> Get Started</a>
           </div>
           <div class="get_started_img">
-              <img src="./static/assets/index/rafiki.png" alt="">
+              <img src="{% static 'assets/index/rafiki.png' %}" alt="">
           </div>
       </div>
   </section>

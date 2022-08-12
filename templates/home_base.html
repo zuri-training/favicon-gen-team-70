@@ -20,7 +20,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <header class="">
         <div class="logo">
             <a href="{% url 'home:index' %}">
@@ -39,10 +38,10 @@
                     <a href="{% url 'dashboard:index' %}">Generator</a>
                 </div>
                 <div>
-                    <a href="#">Contact Us</a>
+                    <a href="{% url 'home:contact' %}">Contact Us</a>
                 </div>
                 <div>
-                    <a href="#">Docs</a>
+                    <a href="{% url 'home:docs' %}">Docs</a>
                 </div>
             </div>
             <div class="desktop-btns">
@@ -100,24 +99,6 @@
                 </div>
             </div>
             <div class="outside-click" onclick="noShow()"></div>
-  <main class="">
-    <div class="mobile mobile-link-div">
-      <div class="links left">
-        <a href="{% url 'home:index' %}" class="spaced">
-          <h5>Home</h5>
-        </a>
-        <a href="{% url 'dashboard:index' %}">
-          <h5>Generator</h5>
-        </a>
-        <a href="{% url 'home:docs' %}">
-          <h5>Docs</h5>
-        </a>
-        <a href="{% url 'home:contact' %}">
-          <h5>Contact Us</h5>
-        </a>
-        <div class="mobile-btn">
-          <a href="{% url 'accounts:register' %}"><button class="mobile-reg">Register</button></a>
-          <a href="{% url 'accounts:login' %}"><button>Login</button></a>
         </div>
         <!-- main block -->
         {% block main %}
