@@ -48,7 +48,7 @@ def upload(request):
             if img_type in accepted:
                 photo = Photo()
                 na_me = uploaded.name.split(".")
-                cleaned = ''.join(ch for ch in na_me[0] if ch.isalnum())
+                cleaned = ''.join(ch for ch in na_me[0] if ch.isalnum() or ch == '_')
                 photo.name = f"{cleaned}.{na_me[1]}"
                 print(uploaded.name)
                 na_me = photo.name.split(".")
