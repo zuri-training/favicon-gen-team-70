@@ -100,6 +100,7 @@ header{
   overflow-x: hidden;
   grid-template-columns: 1fr 0.3fr;
   grid-template-areas: "link transparent";
+  z-index: 10;
 }
 .overflow {
   overflow-y: hidden;
