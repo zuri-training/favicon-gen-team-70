@@ -14,8 +14,8 @@
         <div class="text_left">
             <h1>Error!</h1>
             <p>Something went wrong. Kindly check your connection</p>
-            <button id="try_btn">Try again</button>
-            <button id="bck_btn">Go back</button>
+            <a href="{% url 'home:index' %}"><button id="try_btn">Go Home</button></a>
+            <a href="{{ request.META.HTTP_REFERER|escape }}"><button id="bck_btn">Go back</button></a>
         </div>
         <div class="bck_ground">
         </div>

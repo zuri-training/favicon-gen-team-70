@@ -25,40 +25,42 @@
   <body>   
     <header class="">
       <div class="logo">
-        <img src="../static/assets/index/logo_hd.png">
+        <a href="{% url 'home:index' %}">
+          <img src="../static/assets/index/logo_hd.png">
+        </a>
       </div>
       <i class="fa-solid fa-bars mobile fa-2x icon" onclick="show()"></i>
       <div class="desktop desktop-link-div">
         <div class="desktop-links">
           <div>
-            <a href="#">Home</a>
+            <a href="{% url 'home:index' %}">Home</a>
           </div>
           <div>
-            <a href="#">Generator</a>
+            <a href="{% url 'dashboard:index' %}">Generator</a>
           </div>
           <div>
-            <a href="#">Docs</a>
+            <a href="{% url 'home:docs' %}">Docs</a>
           </div>
           <div>
-            <a href="#">Contact Us</a>
+            <a href="{% url 'home:contact' %}">Contact Us</a>
           </div>
         </div>
         <div class="desktop-btns">
-          <a href="./accounts/login.html"><button>Login</button></a>
-          <a href="./accounts/register.html"><button class="desktop-reg">Register</button></a>
+          <a href="{% url 'accounts:login' %}"><button>Login</button></a>
+          <a href="{% url 'accounts:register' %}"><button class="desktop-reg">Register</button></a>
         </div>
       </div>
     </header>
     <main class="">
       <div class="mobile mobile-link-div">
         <div class="links left">
-          <a href="#" class="spaced"><h5>Home</h5></a>
-          <a href="#"><h5>Generator</h5></a>
-          <a href="#"><h5>Docs</h5></a>
-          <a href="#"><h5>Contact Us</h5></a>
+          <a href="{% url 'home:index' %}" class="spaced"><h5>Home</h5></a>
+          <a href="{% url 'dashboard:index' %}"><h5>Generator</h5></a>
+          <a href="{% url 'home:docs' %}"><h5>Docs</h5></a>
+          <a href="{% url 'home:contact' %}"><h5>Contact Us</h5></a>
           <div class="mobile-btn">
-            <a href="./accounts/login.html"><button>Login</button></a>
-            <a href="./accounts/register.html"><button class="mobile-reg">Register</button></a>
+            <a href="{% url 'accounts:login' %}"><button>Login</button></a>
+            <a href="{% url 'accounts:register' %}"><button class="mobile-reg">Register</button></a>
           </div>
         </div>
         <div class="outside-click" onclick="noShow()"></div>

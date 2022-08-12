@@ -31,7 +31,7 @@
         <div class="desktop desktop-link-div">
             <div class="desktop-links">
                 <div>
-                    <a href="#">Docs</a>
+                    <a href="{% url 'home:docs' %}">Docs</a>
                 </div>
                 <div>
                     <a href="{% url 'dashboard:index' %}">Generator</a>
@@ -43,7 +43,7 @@
                     <a href="{% url 'dashboard:text_to_favicon' %}">Text-to-Favicon</a>
                 </div>
                 <div>
-                    <a href="../home/contact.html">Contact</a>
+                    <a href="{% url 'home:contact' %}">Contact</a>
                 </div>
             </div>
             <div class="desktop-btns">
@@ -68,14 +68,13 @@
                     <path d="M18 17.9983C18 18.2635 17.8946 18.5179 17.7071 18.7054C17.5196 18.893 17.2652 18.9983 17 18.9983H1C0.734784 18.9983 0.48043 18.893 0.292893 18.7054C0.105357 18.5179 2.4071e-07 18.2635 2.4071e-07 17.9983V7.48832C-0.000105484 7.33593 0.0346172 7.18554 0.101516 7.04862C0.168415 6.9117 0.26572 6.79188 0.386 6.69832L8.386 0.476319C8.56154 0.339764 8.7776 0.265625 9 0.265625C9.2224 0.265625 9.43846 0.339764 9.614 0.476319L17.614 6.69832C17.7343 6.79188 17.8316 6.9117 17.8985 7.04862C17.9654 7.18554 18.0001 7.33593 18 7.48832V17.9983ZM16 16.9983V7.97632L9 2.53232L2 7.97632V16.9983H16Z" fill="#FAB005"/>
                     </svg>                    
                     <h5>Home</h5>
-                </a>
                 <a href="{% url 'dashboard:index' %}">
                   <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8C1.46957 8 0.960859 7.78929 0.585786 7.41421C0.210714 7.03914 0 6.53043 0 6C0 5.46957 0.210714 4.96086 0.585786 4.58579C0.960859 4.21071 1.46957 4 2 4C2.53043 4 3.03914 4.21071 3.41421 4.58579C3.78929 4.96086 4 5.46957 4 6C4 6.53043 3.78929 7.03914 3.41421 7.41421C3.03914 7.78929 2.53043 8 2 8ZM8 6C7.46957 6 6.96086 5.78929 6.58579 5.41421C6.21071 5.03914 6 4.53043 6 4C6 3.46957 6.21071 2.96086 6.58579 2.58579C6.96086 2.21071 7.46957 2 8 2C8.53043 2 9.03914 2.21071 9.41421 2.58579C9.78929 2.96086 10 3.46957 10 4C10 4.53043 9.78929 5.03914 9.41421 5.41421C9.03914 5.78929 8.53043 6 8 6ZM14 4C13.4696 4 12.9609 3.78929 12.5858 3.41421C12.2107 3.03914 12 2.53043 12 2C12 1.46957 12.2107 0.96086 12.5858 0.585787C12.9609 0.210714 13.4696 0 14 0C14.5304 0 15.0391 0.210714 15.4142 0.585787C15.7893 0.96086 16 1.46957 16 2C16 2.53043 15.7893 3.03914 15.4142 3.41421C15.0391 3.78929 14.5304 4 14 4Z" fill="#FAB005"/>
                     </svg>                    
                     <h5>Generate</h5>
                 </a>
-                <a href="#">
+                <a href="{% url 'home:contact' %}">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10 0C4.486 0 0 4.486 0 10V14.143C0 15.167 0.897 16 2 16H3C3.26522 16 3.51957 15.8946 3.70711 15.7071C3.89464 15.5196 4 15.2652 4 15V9.857C4 9.59178 3.89464 9.33743 3.70711 9.14989C3.51957 8.96236 3.26522 8.857 3 8.857H2.092C2.648 4.987 5.978 2 10 2C14.022 2 17.352 4.987 17.908 8.857H17C16.7348 8.857 16.4804 8.96236 16.2929 9.14989C16.1054 9.33743 16 9.59178 16 9.857V16C16 17.103 15.103 18 14 18H12V17H8V20H14C16.206 20 18 18.206 18 16C19.103 16 20 15.167 20 14.143V10C20 4.486 15.514 0 10 0Z" fill="#FAB005"/>
                     </svg>                    
@@ -130,17 +129,29 @@
       <li class="features similar">
         <h2>Developers</h2>
         <ul class="box h-box">
+<<<<<<< HEAD
           <li><a href="../home/docs.html">Doumentation</a></li>
           <li><a href="../home/docs.html">Tutorial</a></li>
           <li><a href="../home/docs.html">API Status</a></li>
+=======
+          <li><a href="{% url 'home:docs' %}">Documentation</a></li>
+          <li><a href="{% url 'home:docs' %}">Tutorial</a></li>
+          <li><a href="{% url 'home:docs' %}">API Status</a></li>
+>>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
       <li class=" similar resource">
         <h2>Resources</h2>
         <ul class="box">
+<<<<<<< HEAD
           <li><a href="../home/docs.html">Introduction</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="../home/docs.html">Help</a></li>
+=======
+          <li><a href="{% url 'home:docs' %}">Introduction</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="{% url 'home:docs' %}">Help</a></li>
+>>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
 
@@ -148,8 +159,13 @@
         <h2>Company</h2>
         <ul class="box">
           <li><a href="#">About</a></li>
+<<<<<<< HEAD
           <li><a href="../home/contact.html">Contact</a></li>
           <li><a href="../home/contact.html">Socials</a></li>
+=======
+          <li><a href="{% url 'home:contact' %}">Contact</a></li>
+          <li><a href="{% url 'home:contact' %}">Socials</a></li>
+>>>>>>> 40f9968b6dd31a0275e008c8383a61d70b3e64a9
         </ul>
       </li>
 
