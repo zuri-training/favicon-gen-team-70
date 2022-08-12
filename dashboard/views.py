@@ -56,7 +56,6 @@ def upload(request):
                 photo.uploader =request.user
                 photo.img_file = uploaded
                 photo.save();
-                messages.success(request,f"{uploaded.name} was uploaded successfully!")
                 return redirect('generate:generate_all',photo.id)
             else:
                 messages.error(request,f"{uploaded.name} has an unsupported extension")
@@ -75,7 +74,6 @@ def output(request, zip_id):
         elif 'save' in request.POST:
             zip.is_saved = True
             zip.save();
-            messages.success(request,f"{zip.name} was saved successfully !")
             return redirect('dashboard:saved_favicons')
         return render(request, 'dashboard/output.html',{
             'zip':zip,
