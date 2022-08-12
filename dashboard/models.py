@@ -13,8 +13,8 @@ def user_directory_path(instance, filename):
     return '{0}/{1}/{2}'.format(folder,instance.uploader.id, filename)
 
 class Photo(models.Model):
-    name = models.CharField(max_length=30)
-    zip_name = models.CharField(max_length=30)
+    name = models.CharField(max_length=100)
+    zip_name = models.CharField(max_length=100)
     uploader = models.ForeignKey(User,related_name='uploader',on_delete=models.CASCADE)
     img_file = models.ImageField(upload_to="uploads/")
 
@@ -28,7 +28,7 @@ class Photo(models.Model):
 # create zipfile class here
 
 class Zip(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=100)
     origin = models.ForeignKey(Photo,related_name='origin', on_delete=models.CASCADE)
     downloader = models.ForeignKey(User,related_name='downloader',on_delete=models.CASCADE, blank=True, null=True)
     zip_file = models.FileField(upload_to=user_directory_path)

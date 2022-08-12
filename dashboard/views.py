@@ -47,11 +47,12 @@ def upload(request):
             accepted = ['jpeg','png', 'svg+xml','svg']
             if img_type in accepted:
                 photo = Photo()
-                uploaded.name = uploaded.name.replace(" ","_")
+                na_me = uploaded.name.split(".")
+                cleaned = ''.join(ch for ch in na_me[0] if ch.isalnum())
+                photo.name = f"{cleaned}.{na_me[1]}"
                 print(uploaded.name)
-                photo.name = uploaded.name
                 na_me = photo.name.split(".")
-                photo.zip_name = na_me[0]
+                photo.zip_name = cleaned
                 photo.uploader =request.user
                 photo.img_file = uploaded
                 photo.save();

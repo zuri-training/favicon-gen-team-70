@@ -14,7 +14,11 @@
         <div class="text_left">
             <h1>Error!</h1>
             <p>Something went wrong. Kindly check your connection</p>
-            <a href="{% url 'home:index' %}"><button id="try_btn">Go Home</button></a>
+            {% if user.is_authenticated %}
+                <a href="{% url 'dashboard:index' %}"><button id="try_btn">Go Home</button></a>
+            {% else %}
+                <a href="{% url 'home:index' %}"><button id="try_btn">Go Home</button></a>
+            {% endif %}
             <a href="{{ request.META.HTTP_REFERER|escape }}"><button id="bck_btn">Go back</button></a>
         </div>
         <div class="bck_ground">

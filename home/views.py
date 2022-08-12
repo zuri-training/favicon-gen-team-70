@@ -1,3 +1,4 @@
+from urllib import response
 from django.shortcuts import render
 
 # Create your views here.
@@ -10,5 +11,8 @@ def contact(request):
 def docs(request):
     return render(request, 'home/docs.html')
 
-def error(request, exception):
-    return render(request, 'error/error.html')
+def handler404(request, exception):
+    return render(request,'error/error404.html',status=404)
+
+def handler500(request, *args, **argv):
+    return render(request, 'error/500.html', status=500)
