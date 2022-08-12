@@ -17,6 +17,11 @@
     <p class="error-message" style="z-index: 0;"></p>
     <div class="upload_h1">
         <h1 class="">Upload IMAGE</h1>
+        {% if messages %}
+        {% for message in messages %}
+            <p class="message {{ message.tags }}" style="z-index: 0; text-align:center;font-size:13px">{{ message }}</p>
+        {% endfor %}
+        {% endif %}
     </div>
     <form enctype="multipart/form-data" class="" action="{% url 'dashboard:upload' %}" method="post">
         {% csrf_token %}

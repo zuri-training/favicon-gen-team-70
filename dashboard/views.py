@@ -46,8 +46,12 @@ def upload(request):
             img_type = uploaded.content_type.split("/")[1]
             accepted = ['jpeg','png', 'svg+xml','svg']
             if img_type in accepted:
-                photo = Photo()
                 na_me = uploaded.name.split(".")
+                if len(na_me) > 2:
+                    messages.error(request,f"{uploaded.name} is an unsupported name")
+                    return redirect('dashboard:index')
+                na_me[0] = na_me[0].replace('.', '_')
+                photo = Photo()
                 cleaned = ''.join(ch for ch in na_me[0] if ch.isalnum() or ch == '_')
                 photo.name = f"{cleaned}.{na_me[1]}"
                 print(uploaded.name)
