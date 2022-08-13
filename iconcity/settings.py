@@ -84,22 +84,17 @@ WSGI_APPLICATION = 'iconcity.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 # Switch From sqlite3 to PostGres
-# development
-if config('MODE')=="dev":
-   DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.sqlite3',
-           'NAME': BASE_DIR/'db.sqlite3',
-       }
-       
+
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'NAME': 'iconcity.db',
+       'USER': 'iconcity',
+       'PASSWORD': 'iconcity123',
+       'HOST': '127.0.0.1',
+       'PORT': '',
    }
-# production
-else:
-   DATABASES = {
-       'default': dj_database_url.config(
-           default=config('DATABASE_URL')
-       )
-   }
+}
 
 
 WHITENOISE_USE_FINDERS = True
