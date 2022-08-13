@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', 'iconcity.herokuapp.com', 'iconcity.zurifordummies.com']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '148.251.6.230', 'iconcity.herokuapp.com', 'iconcity.zurifordummies.com','zurifordummies.com']
 
 
 # Application definition
