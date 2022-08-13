@@ -22,6 +22,14 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 >- Users can save downloaded files
 >- Users can choose to redownload a saved file
 
+>Architecture
+>- Adopted the monolith architecture using Django templating
+
+>Folder Structure
+>- home: App for unauthenticated users
+>- dashboard: App for authenticated users
+>- static: For assets and styling sheets
+
 ## For Developers
 **Steps to deploy the Application**
 - Step 1: Create a virtual environment (python -m venv <virtualEnvironmentName>
