@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'iconcity.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-       'NAME': 'iconcity.db',
+       'NAME':  'iconcity.db',
        'USER': 'iconcity',
        'PASSWORD': 'iconcity123',
        'HOST': '127.0.0.1',
@@ -99,10 +99,7 @@ DATABASES = {
 
 WHITENOISE_USE_FINDERS = True
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Password validation
