@@ -56,4 +56,4 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 
 
 
->Note: All project contributors much be familiar with the [Rules of Engagement](https://docs.google.com/document/d/1D9N1TRe5wGy6t3cCa-JtPIFo-S4-cVjq1lsBvtaXHqo/edit?usp=sharing)
+>Note: All project contributors must be familiar with the [Rules of Engagement](https://docs.google.com/document/d/1D9N1TRe5wGy6t3cCa-JtPIFo-S4-cVjq1lsBvtaXHqo/edit?usp=sharing)
