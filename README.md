@@ -47,7 +47,7 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 - Stephanie Umenwa
 - Ujah Abraham Abah
 - Senanyo Benwari
-- Ajayi Oluswaegun Israel
+- Ajayi Oluswasegun Israel
 - Sarah Adu
 - Jemima Ifeanyichukwu
 - Byron Taaka
