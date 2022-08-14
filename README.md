@@ -29,11 +29,12 @@ Our Top priorities are to give users a wonderful UX and smooth favicon generatio
 >- home: App for unauthenticated users
 >- dashboard: App for authenticated users
 >- static: For assets and styling sheets
+>- iconcity: contains project configuration
 
 ## For Developers
 **Steps to deploy the Application**
-- Step 1: Create a virtual environment (python -m venv <virtualEnvironmentName>
-- Step 2: Activate your virtual environment (virtualEnvironmentName/scripts/activate)
+- Step 1: Create a virtual environment (python -m venv <virtualEnvironmentName>)
+- Step 2: Activate your virtual environment (virtualEnvironmentName/Scripts/activate)
 - Step 3: Install the modules (pip install -r requirements.txt)
 - Step 4: Create a .env file and add a secret key
 - Step 5: Start the application command: python manage.py runserver. (Ensure you are in the same directory that has the manage.py file)
